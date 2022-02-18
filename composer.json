@@ -2,6 +2,7 @@
     "require": {
         "twbs/bootstrap": "^5.1",
         "coreui/coreui": "^3.3",
+        "phpmailer/phpmailer": "^6.5",
         "components/jquery": "^3.6",
         "fortawesome/font-awesome": "^5.15"
     }
