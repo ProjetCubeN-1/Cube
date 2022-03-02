@@ -20,7 +20,10 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/Cube/accueil">Projet Cube</a>
+            <img src="/img/logo.png" width="150" height="80">
+            <a class="navbar-brand" href="/cube/accueil">
+                <h3 class="ml-5"><?php echo $title ?></h3>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -28,4 +31,13 @@
 
             </div>
         </div>
+        <a class="c-header-nav-link mr-5" href="/cube/compte" style="color:white; text-decoration:none;">
+            <h4>Compte</h4>
+        </a>
+        <div class="col-1"></div>
+        <ul class="c-header-nav ml-auto mr-3">
+            <a class="c-header-nav-link mr-3" href="/login/index">
+                <h4><i class="fas fa-power-off fa-lg" style="color:white;"></i></h4>
+            </a>
+        </ul>
     </nav>

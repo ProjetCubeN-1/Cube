@@ -23,13 +23,16 @@ class Login extends ExtraController
      */
     public function index()
     {
-        $this->view('/login/authentification');
-    }
+        log_message('debug', 'login::index');
 
+        if (!$this->session->login) {
+            // $this->view('login/index');
+            $this->view('login/authentification');
+        } else $this->redirect('/login/logout');
+    }
     function auth()
     {
         log_message('debug', 'Login::auth()');
-        //$this->addError('coucoiu');
         $this->session->login = false;
         $this->session->user_id = null;
 
@@ -84,9 +87,6 @@ class Login extends ExtraController
             $hashed_pasword = password_hash($new_pass, PASSWORD_DEFAULT);
             $date = date('Y-m-d H:i:s');
 
-
-            // update t_user set prenom = substr(MD5(prenom),LENGTH(prenom),LENGTH(prenom));
-
             //préparer la requête d'insertion SQL
             $req = sprintf(
                 "INSERT INTO t_utilisateurs (nom,prenom,email,date_naissance,mdp,confirmkey,date_creation)
@@ -100,42 +100,6 @@ class Login extends ExtraController
                 $this->db->escape(date_create('Y-m-d H:i:s'))
             );
             $this->db->query($req);
-            //$conf_mail = 'yaml_parse_file'(APPPATH . '/config/mail.yml');
-            //
-            //$mail = new PHPMailer(true);
-            //$mail->CharSet = "UTF-8";
-            ////$mail->SMTPDebug = SMTP::DEBUG_SERVER;   	                //Enable verbose debug output
-            //$mail->isSMTP();                                            //Send using SMTP
-            //
-            //$mail->Host       = $conf_mail['host'];                     //Set the SMTP server to send through
-            //$mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-            //$mail->Username   = $conf_mail['username'];                     //SMTP username
-            //$mail->Password   =  $conf_mail['password'];                               //SMTP password
-            ////$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
-            //$mail->Port       = (int) $conf_mail['port'];
-            ////$mail->SMTPAutoTLS = false;                                   //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
-            //
-            ////Recipients
-            //$mail->setFrom($conf_mail['from'], $conf_mail['from_name']);
-            //
-            ////echo $this->session->email;
-            //$mail->addAddress($this->session->email);     //Add a recipient
-            //// $mail->addAddress($this->session->email);     //Add a recipient
-            //
-            //
-            ////Attachments
-            ////$mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
-            ////$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    //Optional name
-            //
-            ////Content
-            //
-            //$mail->isHTML(true);
-            //$mail->CharSet = "UTF-8";
-            //$mail->Subject = '[PROJETCUBE2022] Vérifier votre compte';
-            //
-            //$mail->Body = 'CLIQUEZ ICI';
-            //if ($mail->send())
-
             $this->redirect('/login/index');
         } else {
             $this->view('/login/create');
@@ -145,6 +109,6 @@ class Login extends ExtraController
     function logout()
     {
         $this->session->sess_destroy();
-        $this->redirect('/login/index');
+        return $this->redirect('/login/index');
     }
 }
