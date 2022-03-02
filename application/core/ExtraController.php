@@ -33,19 +33,41 @@ class ExtraController extends CI_Controller
     {
         return $this->session->login;
     }
+    protected function view_portal($view = null, $datas = null)
+    {
+        if ($this->localdatas)
+            $datas = array($this->localdatas, $datas);
+        $this->load->view('/templates/header', ['title' => $this->title]);
+        if ($this->is_connected())
+            $this->load->view('/templates/topbar_cn', ['title' => $this->title, 'path' => $this->path]);
+        else
+            $this->load->view('/templates/topbar');
+
+
+
+        if ($view)
+            $this->load->view($view, $datas);
+
+        $this->load->view('/templates/footer');
+    }
 
     protected function view($view = null, $datas = null)
     {
         if ($this->localdatas)
             $datas = array($this->localdatas, $datas);
+        $this->load->view('/templates/header', ['title' => $this->title]);
 
         if ($this->is_connected())
             $this->load->view('/templates/topbar_cn', ['title' => $this->title, 'path' => $this->path]);
         else
-            $this->load->view('/templates/header', ['title' => $this->title]);
+            $this->load->view('/templates/topbar');
+        $this->load->view('/templates/menu_start');
 
         if ($view)
             $this->load->view($view, $datas);
+
+        $this->load->view('/templates/menu_end');
+
 
         $this->load->view('/templates/footer');
     }

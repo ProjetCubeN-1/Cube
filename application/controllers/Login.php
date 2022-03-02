@@ -27,9 +27,16 @@ class Login extends ExtraController
 
         if (!$this->session->login) {
             // $this->view('login/index');
-            $this->view('login/authentification');
+            $this->view_portal('login/authentification');
         } else $this->redirect('/login/logout');
     }
+    public function index_nc()
+    {
+
+        $this->redirect('/cube/accueil');
+    }
+
+
     function auth()
     {
         log_message('debug', 'Login::auth()');

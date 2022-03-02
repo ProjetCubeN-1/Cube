@@ -1,20 +1,16 @@
-<div class="row mt-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-3">
-                <div class="input-group mb-3">
-                    <input type="search" class="form-control" id="SearchOffre" value="" placeholder="Nom de la Ressources" aria-label="" aria-describedby="basic-addon1">
-                </div>
-                <h4>Liste des ressources</h4>
-                <ul>
-                    <li><a href="/cube/ressource">Ressource 1</a></li>
-                    <li><a href="#">Ressource 2</a></li>
-                </ul>
-            </div>
-            <div class=" mt-3 col-7">
-                <hr>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae laborum nemo excepturi quibusdam ipsa dolorem beatae asperiores itaque nostrum sint error nulla quaerat nihil velit quo ab suscipit, quidem deserunt.</p>
-            </div>
+<div class="col-9">
+    <div class="card d-flex">
+        <div class="d-flex align-item-center" style="background: linear-gradient(to bottom,#fff,#e8f2f8);border-bottom: solid 1px #a8d7fc;"><img class="shadow-sm" src="/img/logoRF.png" width="30%">
+
+            <h3 class="p-5">(RE)SOURCES RELATIONNELLES</h3>
         </div>
+
     </div>
+    <div class="card">
+        <hr>
+        <p>Lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis tenetur iusto vero nobis id quibusdam veritatis soluta placeat, accusamus ipsa veniam mollitia, repellendus voluptatum dicta culpa voluptatibus harum quidem aperiam? ipsum dolor sit amet consectetur adipisicing elit. Recusandae laborum nemo excepturi quibusdam ipsa dolorem beatae asperiores itaque nostrum sint error nulla quaerat nihil velit quo ab suscipit, quidem deserunt.Lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis tenetur iusto vero nobis id quibusdam veritatis soluta placeat, accusamus ipsa veniam mollitia, repellendus voluptatum dicta culpa voluptatibus harum quidem aperiam? ipsum dolor sit amet consectetur adipisicing elit. Recusandae laborum nemo excepturi quibusdam ipsa dolorem beatae asperiores itaque nostrum sint error nulla quaerat nihil velit quo ab suscipit, quidem deserunt.Lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis tenetur iusto vero nobis id quibusdam veritatis soluta placeat, accusamus ipsa veniam mollitia, repellendus voluptatum dicta culpa voluptatibus harum quidem aperiam? ipsum dolor sit amet consectetur adipisicing elit. Recusandae laborum nemo excepturi quibusdam ipsa dolorem beatae asperiores itaque nostrum sint error nulla quaerat nihil velit quo ab suscipit, quidem deserunt.Lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis tenetur iusto vero nobis id quibusdam veritatis soluta placeat, accusamus ipsa veniam mollitia, repellendus voluptatum dicta culpa voluptatibus harum quidem aperiam? ipsum dolor sit amet consectetur adipisicing elit. Recusandae laborum nemo excepturi quibusdam ipsa dolorem beatae asperiores itaque nostrum sint error nulla quaerat nihil velit quo ab suscipit, quidem deserunt.</p>
+    </div>
+</div>
+</div>
+</div>
 </div>
