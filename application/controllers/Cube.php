@@ -11,11 +11,59 @@ class Cube extends ExtraController
     }
     public function ressource()
     {
-        $this->view('/cube/ressource1');
+        $requete = sprintf(
+            "SELECT * FROM t_ressources where id_ressource = 1"
+        );
+
+        $obj_result = $this->db->query($requete);
+
+        if ($obj_result) {
+            if ($row = $obj_result->unbuffered_row()) {
+                echo $row->nom_ressources;
+            }
+        }
+        $this->view('/cube/ressource1', ['row' => $obj_result]);
     }
+    public function info_ressource()
+    {
+        $requete = sprintf(
+            "SELECT * FROM t_ressources where id_ressource = 1"
+        );
+        $res = [];
+
+        $obj_result = $this->db->query($requete);
+
+        if ($obj_result) {
+            if ($row = $obj_result->unbuffered_row()) {
+                echo $row->nom_ressources;
+            }
+        }
+        $this->redirect('/cube/ressource');
+    }
+
     public function compte()
     {
+        $this->view_portal('/cube/compte');
+    }
+    public function info_compte()
+    {
+        if ($this->session->login = true) {
+            echo 'bonjour';
 
-        $this->view('/cube/compte');
+            $email = $this->input->post('email');
+            $pass = $this->input->post('pass');
+            $nom = $this->input->post('nom');
+            $prenom = $this->input->post('prenom');
+            $conf_pass = $this->input->post('confmdp');
+
+            $query = sprintf(
+                "SELECT * FROM t_utilisateurs WHERE email = %s",
+                $this->db->escape($email),
+                $this->db->escape($nom),
+                $this->db->escape($prenom),
+            );
+            $this->db->query($query);
+        }
+        $this->redirect('/cube/accueil');
     }
 }

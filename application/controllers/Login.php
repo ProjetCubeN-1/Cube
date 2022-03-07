@@ -58,8 +58,7 @@ class Login extends ExtraController
                 $hash = $row->mdp;
                 if (password_verify($pass, $hash)) {
                     $this->session->login = true;
-                    //return $this->redirect('Pprofils/choix/selection');
-                    return $this->redirect('/cube/accueil');
+                    return $this->view('/cube/accueil');
                 }
             }
         } else {
@@ -70,7 +69,7 @@ class Login extends ExtraController
 
     function creation()
     {
-        $this->view('/login/creation');
+        $this->view_portal('/login/creation');
     }
 
     /* Creation de compte de l'utilisateur */
@@ -109,7 +108,7 @@ class Login extends ExtraController
             $this->db->query($req);
             $this->redirect('/login/index');
         } else {
-            $this->view('/login/create');
+            $this->redirect('/login/create');
         }
     }
 

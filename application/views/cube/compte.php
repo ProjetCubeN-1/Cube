@@ -7,21 +7,21 @@
         </div>
         <div class="card-body">
             <div class="col-sm-11 mt-2">
-                <form method="post" action="/cube/compte">
+                <form method="post" action="/cube/info_compte">
 
-                    <label class="mt-1" for="EntrerEmail">Nom*</label>
-                    <input type="text" required="true" id="nom" name="nom" class="form-control mt-2" value="">
+                    <label class="mt-1" for="nom">Nom*</label>
+                    <input type="text" id="nom" name="nom" class="form-control mt-2">
 
-                    <label class="mt-1" for="EntrerEmail">Prénom*</label>
-                    <input type="text" required="true" id="prenom" name="prenom" class="form-control mt-2">
+                    <label class="mt-1" for="prenom">Prénom*</label>
+                    <input type="text" id="prenom" name="prenom" class="form-control mt-2">
 
-                    <label class="mt-1" required="true" for="EntrerEmail">Adresse email*</label>
-                    <input type="email" placeholder="exemple@exemple.fr" required="true" id="email" name="email" class="form-control mt-2">
+                    <label class=" mt-1" for="email">Adresse email*</label>
+                    <input type="email" placeholder="exemple@exemple.fr" id="email" name="email" class="form-control mt-2">
 
-                    <label class="mt-1" for="EntrerEmail">Mot de passe*</label>
+                    <label class=" mt-1" for="pass">Mot de passe*</label>
                     <input type="password" required="true" id="pass" name="pass" class="form-control mt-2">
 
-                    <label for="EntrerMdp">Confirmez le mot de passe*</label>
+                    <label for="confmdp">Confirmez le mot de passe*</label>
                     <input type="password" id="confmdp" name="confmdp" class="form-control mt-2">
                     </br>
                     <div class="col-sm-3 mt-3">

@@ -43,8 +43,6 @@ class ExtraController extends CI_Controller
         else
             $this->load->view('/templates/topbar');
 
-
-
         if ($view)
             $this->load->view($view, $datas);
 
