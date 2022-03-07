@@ -9,21 +9,26 @@ class Cube extends ExtraController
         $this->add_path("Accueil", '/cube/Accueil', '');
         $this->view('/Cube/accueil');
     }
+
+
     public function ressource()
     {
-        $requete = sprintf(
-            "SELECT * FROM t_ressources where id_ressource = 1"
-        );
+        $requete = sprintf("SELECT * FROM t_ressources where id_ressource = 1");
 
         $obj_result = $this->db->query($requete);
 
+        $aaa = null;
+
         if ($obj_result) {
-            if ($row = $obj_result->unbuffered_row()) {
-                echo $row->nom_ressources;
+            if ($row = $obj_result->row()) {
+                $aaa = $row;
             }
         }
-        $this->view('/cube/ressource1', ['row' => $obj_result]);
+        $this->view('/cube/ressource1', ['result' => $aaa]);
     }
+
+
+
     public function info_ressource()
     {
         $requete = sprintf(

@@ -4,7 +4,7 @@
 
 
 
-        <h3><?php echo $obj_result->nom_ressources ?></h3> <?php  //}
+        <h3><?php echo $result->nom_ressources ?></h3> <?php  //}
                                                             ?>
     </div>
 </div>
