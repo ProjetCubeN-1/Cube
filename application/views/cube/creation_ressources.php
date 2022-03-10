@@ -11,8 +11,8 @@
     </div>
     <div class="card-body">
       <form method="post" action="/cube/publier_ressources">
-        <textarea id="mytextarea" name="mytextarea">
-    </textarea>
+        <input class="form-control form-control-lg" id="texxt" name="texxt">
+    </input>
     <button class="btn btn-dark">Publier</button>
       </form>
     </div>

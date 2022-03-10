@@ -13,7 +13,7 @@ class Cube extends ExtraController
 
     public function ressource()
     {
-        $requete = sprintf("SELECT * FROM t_ressources where id_ressource = 1");
+        $requete = sprintf("SELECT * FROM t_ressources where id_ressource = 10");
 
         $obj_result = $this->db->query($requete);
 
@@ -84,8 +84,20 @@ class Cube extends ExtraController
         $this->db->query($key);
         $req = sprintf(
             "INSERT INTO t_ressources (contenu) VALUES (%s)",
-            $this->db->escape($this->input->post('mytextarea'))
+            $this->db->escape($this->input->post('texxt'))
         );
         $this->db->query($req);
+
+        $requete = sprintf("SELECT * FROM t_ressources where id_ressource = 10");
+
+        $obj_result = $this->db->query($requete);
+
+        $aaa = null;
+
+        if ($obj_result) {
+            if ($row = $obj_result->row()) {
+                $aaa = $row;
+            }
+        }
     }
 }
