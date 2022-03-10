@@ -5,7 +5,7 @@ class Cube extends ExtraController
 {
     public function accueil()
     {
-        $this->title = "Acceuil";
+        $this->title = "Accueil";
         $this->add_path("Accueil", '/cube/Accueil', '');
         $this->view('/Cube/accueil');
     }
@@ -70,5 +70,19 @@ class Cube extends ExtraController
             $this->db->query($query);
         }
         $this->redirect('/cube/accueil');
+    }
+
+    public function creation_ressources()
+    {
+        $this->view_portal('/cube/creation_ressources');
+    }
+
+    public function publier_ressources()
+    {
+        $req = sprintf(
+            "INSERT INTO t_ressources (contenu) VALUES (%s)",
+            $this->db->escape($this->input->post('mytextarea'))
+        );
+        $this->db->query($req);
     }
 }

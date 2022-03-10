@@ -112,6 +112,11 @@ class Login extends ExtraController
         }
     }
 
+    public function pass_verif_oublie()
+	{
+		$this->view('login/pass_oublie');
+	}
+
     function logout()
     {
         $this->session->sess_destroy();
