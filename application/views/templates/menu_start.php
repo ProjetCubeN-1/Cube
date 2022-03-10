@@ -12,8 +12,8 @@
                     </div>
                     <div class="card-body">
                         <ul>
-                            <li><a href="/cube/ressource">Ressource 1</a></li>
-                            <li><a href="#">Ressource 2</a></li>
+                            <li><a href="/cube/ressource1">Ressource 1</a></li>
+                            <li><a href="/cube/ressource2">Ressource 2</a></li>
                         </ul>
                     </div>
 

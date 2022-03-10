@@ -1,13 +1,13 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-
 class ExtraController extends CI_Controller
 {
     var $title = 'Accueil';
     var $path = [["text" => "Accueil", 'url' => '/cube/accueil', 'title' => "Retour à l'accueil"]];
     var $acl = false; // access control list  // doit d'acces
     var $localdatas = [];
+
 
     protected function  redirect($url)
     {
@@ -22,6 +22,27 @@ class ExtraController extends CI_Controller
             $this->redirect('/login');
             die();
         }
+    }
+
+    protected function userWithId($id)
+    {
+        $query = sprintf("SELECT * FROM t_utilisateurs WHERE id_utilisateur = %d", $id);
+        $obj_result = $this->db->query($query);
+        return $obj_result->unbuffered_row();
+    }
+    public function user()
+    {
+
+        if ($id = $this->session->user_id) {
+            return $this->userWithId($id);
+        }
+        return null;
+    }
+
+
+    protected function setData($key, $value)
+    {
+        $this->localdatas[$key] = $value;
     }
 
     protected function add_path($text, $url, $title = null)
@@ -49,7 +70,7 @@ class ExtraController extends CI_Controller
         $this->load->view('/templates/footer');
     }
 
-    protected function view($view = null, $datas = null)
+    protected function view($view = null, $datas = null, $ressource_id = null)
     {
         if ($this->localdatas)
             $datas = array($this->localdatas, $datas);

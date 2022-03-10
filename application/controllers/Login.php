@@ -6,6 +6,7 @@ class Login extends ExtraController
 
     var $acl = false;
 
+
     /**
      * Index Page for this controller.
      *
@@ -58,6 +59,7 @@ class Login extends ExtraController
                 $hash = $row->mdp;
                 if (password_verify($pass, $hash)) {
                     $this->session->login = true;
+                    $this->session->set_userdata('user_id', $row->id_utilisateur);
                     return $this->view('/cube/accueil');
                 }
             }
@@ -113,9 +115,9 @@ class Login extends ExtraController
     }
 
     public function pass_verif_oublie()
-	{
-		$this->view('login/pass_oublie');
-	}
+    {
+        $this->view('login/pass_oublie');
+    }
 
     function logout()
     {
