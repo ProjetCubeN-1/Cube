@@ -79,6 +79,9 @@ class Cube extends ExtraController
 
     public function publier_ressources()
     {
+        $key = sprintf("SET FOREIGN_KEY_CHECKS=0;
+        ");
+        $this->db->query($key);
         $req = sprintf(
             "INSERT INTO t_ressources (contenu) VALUES (%s)",
             $this->db->escape($this->input->post('mytextarea'))
