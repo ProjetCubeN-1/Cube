@@ -70,7 +70,7 @@ class ExtraController extends CI_Controller
         $this->load->view('/templates/footer');
     }
 
-    protected function view($view = null, $datas = null, $ressource_id = null)
+    protected function view($view = null, $datas = null)
     {
         if ($this->localdatas)
             $datas = array($this->localdatas, $datas);
@@ -80,7 +80,10 @@ class ExtraController extends CI_Controller
             $this->load->view('/templates/topbar_cn', ['title' => $this->title, 'path' => $this->path]);
         else
             $this->load->view('/templates/topbar');
-        $this->load->view('/templates/menu_start');
+
+        $this->load->model('ressource_model');
+        $ressources_menu = $this->ressource_model->get_ressource_menu();
+        $this->load->view('/templates/menu_start', ['ressources_menu' => $ressources_menu]);
 
         if ($view)
             $this->load->view($view, $datas);

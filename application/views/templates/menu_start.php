@@ -12,10 +12,10 @@
                     </div>
                     <div class="card-body">
                         <ul>
-                            <li><a href="/cube/ressource1">Ressource 1</a></li>
-                            <li><a href="/cube/ressource2">Ressource 2</a></li>
+                            <?php foreach ($ressources_menu as $menu_item) { ?>
+                                <li><a href="/cube/ressource/<?php echo $menu_item->id_ressource; ?>"><?php echo $menu_item->nom_ressources ?></a></li>
+                            <?php } ?>
                         </ul>
                     </div>
-
                 </div>
             </div>

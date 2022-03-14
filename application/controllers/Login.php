@@ -3,7 +3,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Login extends ExtraController
 {
-
     var $acl = false;
 
 
@@ -22,6 +21,7 @@ class Login extends ExtraController
      * map to /index.php/welcome/<method_name>
      * @see https://codeigniter.com/user_guide/general/urls.html
      */
+
     public function index()
     {
         log_message('debug', 'login::index');
@@ -33,16 +33,43 @@ class Login extends ExtraController
     }
     public function index_nc()
     {
+        $this->session->login = false;
 
-        $this->redirect('/cube/accueil');
+        if ($this->input->post('action') == 'nc_connect') {
+            $query = sprintf(
+                "SELECT * FROM t_utilisateurs WHERE id_utilisateur = 4",
+            );
+            $obj_result = $this->db->query($query);
+
+            while ($row = $obj_result->unbuffered_row()) {
+                $this->session->login = false;
+                $this->session->set_userdata('user_id', $row->id_utilisateur);
+?>
+                <div class="alert alert-info" role="alert">
+                    <h5>Veuillez-vous inscrire pour accéder aux différentes fonctionnalitées.<a href="/login/creation"> Cliquez-ici</a></h5>
+                </div>
+<?php
+
+                return $this->view('/cube/accueil');
+            }
+        }
     }
-
 
     function auth()
     {
         log_message('debug', 'Login::auth()');
         $this->session->login = false;
-        $this->session->user_id = null;
+        $this->session->id = null;
+
+        if ($this->input->post('action') == 'nc_connect') {
+            $query = sprintf(
+                "SELECT * FROM t_utilisateurs WHERE id_utilisateur = 4",
+            );
+            $obj_result = $this->db->query($query);
+            $this->session->login = true;
+
+            return $this->view('/cube/accueil');
+        }
 
         if ($this->input->post('action') == 'Connect') {
             $email = $this->input->post('email');
@@ -59,7 +86,8 @@ class Login extends ExtraController
                 $hash = $row->mdp;
                 if (password_verify($pass, $hash)) {
                     $this->session->login = true;
-                    $this->session->set_userdata('user_id', $row->id_utilisateur);
+                    $this->session->id = $row->id_utilisateur;
+                    // $this->session->set_userdata('user_id', $row->id_utilisateur);
                     return $this->view('/cube/accueil');
                 }
             }
@@ -114,7 +142,7 @@ class Login extends ExtraController
         }
     }
 
-    public function pass_verif_oublie()
+    function pass_verif_oublie()
     {
         $this->view('login/pass_oublie');
     }

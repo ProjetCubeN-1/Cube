@@ -37,7 +37,7 @@
                     </div>
                 </form>
             </div>
-            
+
             <div class="col-lg-6 mt-5" style="background-color: rgba(255, 255, 255, 0.75); height:240px">
                 <h2 class="mt-5 text-center mb-5" for="devis">Créer un compte ?</h2>
                 <div class="col-12 justify-content-between">
@@ -49,7 +49,9 @@
                     <p style="text-align:left">
                         <font style="color:secondary">
                             <center>
-                                <a href="/login/index_nc">Consulter le site en tant que citoyen non connecté </a>
+                                <form method="post" action="/login/index_nc">
+                                    <button name="action" value="nc_connect" class="btn btn-dark" type="submit">Consulter le site en tant que citoyen non connecté</button>
+                                </form>
                             </center>
                         </font>
 
