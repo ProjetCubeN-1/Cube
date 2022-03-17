@@ -43,7 +43,7 @@ class Login extends ExtraController
 
             while ($row = $obj_result->unbuffered_row()) {
                 $this->session->login = false;
-                $this->session->set_userdata('user_id', $row->id_utilisateur);
+                $this->session->id = $row->id_utilisateur;
 ?>
                 <div class="alert alert-info" role="alert">
                     <h5>Veuillez-vous inscrire pour accéder aux différentes fonctionnalitées.<a href="/login/creation"> Cliquez-ici</a></h5>
@@ -61,16 +61,6 @@ class Login extends ExtraController
         $this->session->login = false;
         $this->session->id = null;
 
-        if ($this->input->post('action') == 'nc_connect') {
-            $query = sprintf(
-                "SELECT * FROM t_utilisateurs WHERE id_utilisateur = 4",
-            );
-            $obj_result = $this->db->query($query);
-            $this->session->login = true;
-
-            return $this->view('/cube/accueil');
-        }
-
         if ($this->input->post('action') == 'Connect') {
             $email = $this->input->post('email');
             $pass = $this->input->post('pass');
@@ -87,14 +77,18 @@ class Login extends ExtraController
                 if (password_verify($pass, $hash)) {
                     $this->session->login = true;
                     $this->session->id = $row->id_utilisateur;
-                    // $this->session->set_userdata('user_id', $row->id_utilisateur);
+                    //$this->session->set_userdata('user_id', $row->id_utilisateur);
                     return $this->view('/cube/accueil');
+                } else {
+                    $this->session->login = false;
+                    return $this->redirect('/login/authentification');
                 }
             }
         } else {
             log_message('debug', '************** COMPTE non verifié ');
-            return $this->redirect('/login/index');
+            return $this->view_portal('/login/index');
         }
+        return $this->view_portal('/login/authentification');
     }
 
     function creation()
