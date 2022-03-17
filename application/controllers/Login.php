@@ -80,8 +80,7 @@ class Login extends ExtraController
                     //$this->session->set_userdata('user_id', $row->id_utilisateur);
                     return $this->view('/cube/accueil');
                 } else {
-                    $this->session->login = false;
-                    return $this->redirect('/login/authentification');
+                    return $this->redirect('/login/index');
                 }
             }
         } else {
