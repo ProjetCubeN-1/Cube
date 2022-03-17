@@ -16,12 +16,12 @@ class Cube extends ExtraController
         $requete = sprintf("SELECT * FROM t_ressources where id_ressource = %d", $ressource_id);
         $obj_result = $this->db->query($requete);
 
+
         $res = null;
 
         if ($obj_result) {
             if ($row = $obj_result->row()) {
                 $res = $row;
-                //$this->session->set_userdata('ressource_id', $res->id_ressource);
             }
         }
 
@@ -29,6 +29,9 @@ class Cube extends ExtraController
             if ((isset($_POST['contenu_commentaire'])) and !empty($_POST['contenu_commentaire'])) {
 
                 $contenu = htmlspecialchars($_POST['contenu_commentaire']);
+
+                $key = sprintf("SET FOREIGN_KEY_CHECKS=0;");
+                $this->db->query($key);
 
                 $insert = sprintf(
                     "INSERT INTO t_commentaires (contenu,id_utilisateur) VALUES (%s,%s)",
@@ -53,12 +56,12 @@ class Cube extends ExtraController
         if ($result) {
             $u = $result;
         }
+
         $id = sprintf("SELECT * FROM t_utilisateurs WHERE id_utilisateur = %s", $this->session->id);
         $id_res = $this->db->query($id);
         if ($id_res) {
             $uid = $id_res;
         }
-
 
         $this->view_portal('/cube/ressource', [
             'result' => $res,
@@ -71,6 +74,7 @@ class Cube extends ExtraController
     {
         $this->view_portal('/cube/compte');
     }
+
     public function info_compte()
     {
         if ($this->session->login = true) {
@@ -118,5 +122,29 @@ class Cube extends ExtraController
         $this->session->ressource_id =  $last_res_id;
 
         $this->redirect('/cube/accueil');
+    }
+
+    public function favoris($ressource_id = null)
+    {
+            $requete = sprintf("SELECT * FROM t_ressources where id_ressource = %d", $ressource_id);
+            $obj_result = $this->db->query($requete);
+
+            print_r($ressource_id);
+
+
+            if ($obj_result) {
+                if ($row = $obj_result->row()) {
+                    $ressource_id = $row->id_ressource;
+                }
+            }
+
+            $req = sprintf(
+                "INSERT INTO t_favoris (id_ressources,id_utilisateurs) VALUES (%d,%s)",
+                $this->db->escape($ressource_id),
+                $this->db->escape($this->session->id)
+            );
+            $favoris = $this->db->query($req);
+
+            $this->redirect('/cube/ressource');
     }
 }
