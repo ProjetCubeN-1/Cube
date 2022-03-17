@@ -1,7 +1,9 @@
 <div class="card">
     <div class="col-6">
-        <h3><?php echo $result->nom_ressources
-            ?></h3>
+        <form method="post" action="/cube/favoris">
+            <h3><?php echo $result->nom_ressources ?></h3>
+            <input type="submit" name="favoris" value="Send"><i class="far fa-star"></i></input>
+        </form>
         <hr>
     </div>
     <div class="col-sm-8">
