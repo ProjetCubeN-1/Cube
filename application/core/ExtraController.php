@@ -83,7 +83,12 @@ class ExtraController extends CI_Controller
 
         $this->load->model('ressource_model');
         $ressources_menu = $this->ressource_model->get_ressource_menu();
-        $this->load->view('/templates/menu_start', ['ressources_menu' => $ressources_menu]);
+        $this->load->view(
+            '/templates/menu_start',
+            [
+                'ressources_menu' => $ressources_menu
+            ]
+        );
 
         if ($view)
             $this->load->view($view, $datas);

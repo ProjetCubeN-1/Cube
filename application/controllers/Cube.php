@@ -13,17 +13,10 @@ class Cube extends ExtraController
 
     public function ressource($ressource_id = null)
     {
-        $requete = sprintf("SELECT * FROM t_ressources where id_ressource = %d", $ressource_id);
-        $obj_result = $this->db->query($requete);
-
-
-        $res = null;
-
-        if ($obj_result) {
-            if ($row = $obj_result->row()) {
-                $res = $row;
-            }
-        }
+        // $requete = sprintf("SELECT * FROM t_ressources where id_ressource = %d", $ressource_id);
+        // $obj_result = $this->db->query($requete);
+        // $result_ress = $obj_result->row();
+        $video = 'Vidéo';
 
         if (isset($_POST['submit_commentaire'])) {
             if ((isset($_POST['contenu_commentaire'])) and !empty($_POST['contenu_commentaire'])) {
@@ -34,39 +27,28 @@ class Cube extends ExtraController
                 $this->db->query($key);
 
                 $insert = sprintf(
-                    "INSERT INTO t_commentaires (contenu,id_utilisateur) VALUES (%s,%s)",
+                    "INSERT INTO t_commentaires (contenu,id_utilisateur,id_ressource) VALUES (%s,%s,%s)",
                     $this->db->escape($contenu),
-                    $this->db->escape($this->session->id)
+                    $this->db->escape($this->session->id),
+                    $this->db->escape($ressource_id)
                 );
                 $resultat = $this->db->query($insert);
 
-                if ($ins_res = $resultat->row()) {
-                    $res = $ins_res;
-                    //$this->session->set_userdata('ressource_id', $res->id_ressource);
-                }
+                $res = $resultat;
             } else {
             }
         }
-        $u = null;
-        $uid = null;
 
+        $this->load->model('ressource_model');
 
-        $commentaire = sprintf("SELECT * FROM t_commentaires WHERE id_ressource = %d", $ressource_id);
-        $result = $this->db->query($commentaire);
-        if ($result) {
-            $u = $result;
-        }
-
-        $id = sprintf("SELECT * FROM t_utilisateurs WHERE id_utilisateur = %s", $this->session->id);
-        $id_res = $this->db->query($id);
-        if ($id_res) {
-            $uid = $id_res;
-        }
+        $result_ressource = $this->ressource_model->get_ressource($ressource_id);
+        $result_commentaire = $this->ressource_model->get_commentaires($ressource_id);
 
         $this->view_portal('/cube/ressource', [
-            'result' => $res,
-            'com' => $u,
-            'uid' => $uid
+            'result' => $result_ressource,
+            'get_com' => $result_commentaire,
+            'vid' => $video
+
         ]);
     }
 
@@ -126,25 +108,19 @@ class Cube extends ExtraController
 
     public function favoris($ressource_id = null)
     {
-            $requete = sprintf("SELECT * FROM t_ressources where id_ressource = %d", $ressource_id);
-            $obj_result = $this->db->query($requete);
-
-            print_r($ressource_id);
+        $this->load->model('ressource_model');
+        $result_ress = $this->ressource_model->get_ressource($ressource_id);
 
 
-            if ($obj_result) {
-                if ($row = $obj_result->row()) {
-                    $ressource_id = $row->id_ressource;
-                }
-            }
+        $req = sprintf(
+            "INSERT INTO t_favoris (id_ressource,id_utilisateur) VALUES (%d,%s)",
+            $this->db->escape($this->session->ressource_id),
+            $this->db->escape($this->session->id)
+        );
+        $favoris = $this->db->query($req);
 
-            $req = sprintf(
-                "INSERT INTO t_favoris (id_ressources,id_utilisateurs) VALUES (%d,%s)",
-                $this->db->escape($ressource_id),
-                $this->db->escape($this->session->id)
-            );
-            $favoris = $this->db->query($req);
 
-            $this->redirect('/cube/ressource');
+
+        $this->view('/cube/recherche', ['res' => $result_ress]);
     }
 }

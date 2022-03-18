@@ -131,7 +131,7 @@ class Login extends ExtraController
             $this->db->query($req);
             $this->redirect('/login/index');
         } else {
-            $this->redirect('/login/create');
+            $this->redirect('/login/creation');
         }
     }
 
