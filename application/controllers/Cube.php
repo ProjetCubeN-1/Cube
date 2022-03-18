@@ -53,32 +53,6 @@ class Cube extends ExtraController
         ]);
     }
 
-    public function compte()
-    {
-        $this->view_portal('/cube/compte');
-    }
-
-    public function info_compte()
-    {
-        if ($this->session->login = true) {
-            echo 'bonjour';
-
-            $email = $this->input->post('email');
-            $pass = $this->input->post('pass');
-            $nom = $this->input->post('nom');
-            $prenom = $this->input->post('prenom');
-            $conf_pass = $this->input->post('confmdp');
-
-            $query = sprintf(
-                "SELECT * FROM t_utilisateurs WHERE email = %s",
-                $this->db->escape($email),
-                $this->db->escape($nom),
-                $this->db->escape($prenom),
-            );
-            $this->db->query($query);
-        }
-        $this->redirect('/cube/accueil');
-    }
     public function creation_ressources()
     {
         $this->view_portal('/cube/creation_ressources');

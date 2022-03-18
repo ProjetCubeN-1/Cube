@@ -92,7 +92,7 @@ class Login extends ExtraController
 
     function creation()
     {
-        $this->view_portal('/login/creation');
+        $this->view_login('/login/creation');
     }
 
     /* Creation de compte de l'utilisateur */
