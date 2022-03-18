@@ -37,7 +37,7 @@ class Login extends ExtraController
 
         if ($this->input->post('action') == 'nc_connect') {
             $query = sprintf(
-                "SELECT * FROM t_utilisateurs WHERE id_utilisateur = 4",
+                "SELECT * FROM t_utilisateurs WHERE type= 'citoyen_nc'",
             );
             $obj_result = $this->db->query($query);
 

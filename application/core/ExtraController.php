@@ -59,10 +59,15 @@ class ExtraController extends CI_Controller
         if ($this->localdatas)
             $datas = array($this->localdatas, $datas);
         $this->load->view('/templates/header', ['title' => $this->title]);
-        if ($this->is_connected())
-            $this->load->view('/templates/topbar_cn', ['title' => $this->title, 'path' => $this->path]);
-        else
-            $this->load->view('/templates/topbar');
+
+        $this->load->model('ressource_model');
+        $ressources_menu = $this->ressource_model->get_ressource_menu();
+        $this->load->view('/templates/sidebar',  [
+            'ressources_menu' => $ressources_menu
+        ]);
+        $this->load->view('/templates/wrapper', []);
+
+        $this->load->view('/templates/topbar_connect', ['title' => $this->title, 'path' => $this->path]);
 
         if ($view)
             $this->load->view($view, $datas);
@@ -76,10 +81,17 @@ class ExtraController extends CI_Controller
             $datas = array($this->localdatas, $datas);
         $this->load->view('/templates/header', ['title' => $this->title]);
 
-        if ($this->is_connected())
-            $this->load->view('/templates/topbar_cn', ['title' => $this->title, 'path' => $this->path]);
-        else
-            $this->load->view('/templates/topbar');
+
+        $this->load->model('ressource_model');
+        $ressources_menu = $this->ressource_model->get_ressource_menu();
+        $this->load->view('/templates/sidebar',  [
+            'ressources_menu' => $ressources_menu
+        ]);
+
+
+        $this->load->view('/templates/wrapper', []);
+        $this->load->view('/templates/topbar_connect', ['title' => $this->title, 'path' => $this->path]);
+
 
         $this->load->model('ressource_model');
         $favoris_menu = $this->ressource_model->get_favoris($ressource_id);
