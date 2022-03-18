@@ -28,7 +28,7 @@ class Login extends ExtraController
 
         if (!$this->session->login) {
             // $this->view('login/index');
-            $this->view_portal('login/authentification');
+            $this->view_login('login/authentification');
         } else $this->redirect('/login/logout');
     }
     public function index_nc()

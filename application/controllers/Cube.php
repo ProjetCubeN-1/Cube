@@ -16,7 +16,8 @@ class Cube extends ExtraController
         // $requete = sprintf("SELECT * FROM t_ressources where id_ressource = %d", $ressource_id);
         // $obj_result = $this->db->query($requete);
         // $result_ress = $obj_result->row();
-        $video = 'Vidéo';
+        $nb = null;
+        $nb == "3";
 
         if (isset($_POST['submit_commentaire'])) {
             if ((isset($_POST['contenu_commentaire'])) and !empty($_POST['contenu_commentaire'])) {
@@ -47,7 +48,7 @@ class Cube extends ExtraController
         $this->view_portal('/cube/ressource', [
             'result' => $result_ressource,
             'get_com' => $result_commentaire,
-            'vid' => $video
+            'nb' => $nb
 
         ]);
     }

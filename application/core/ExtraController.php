@@ -74,6 +74,27 @@ class ExtraController extends CI_Controller
 
         $this->load->view('/templates/footer');
     }
+    protected function view_login($view = null, $datas = null)
+    {
+        if ($this->localdatas)
+            $datas = array($this->localdatas, $datas);
+        $this->load->view('/templates/header', ['title' => $this->title]);
+
+        $this->load->model('ressource_model');
+        $ressources_menu = $this->ressource_model->get_ressource_menu();
+        $this->load->view('/templates/sidebar',  [
+            'ressources_menu' => $ressources_menu
+        ]);
+        $this->load->view('/templates/wrapper', []);
+
+
+        $this->load->view('/templates/topbar', ['title' => $this->title, 'path' => $this->path]);
+
+        if ($view)
+            $this->load->view($view, $datas);
+
+        $this->load->view('/templates/footer');
+    }
 
     protected function view($view = null, $datas = null, $ressource_id = null)
     {

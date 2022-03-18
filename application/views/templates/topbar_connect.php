@@ -15,7 +15,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             </div>
         </div>
-        <?php if ($this->session->id = '3') {
+        <?php if ($this->session->id == '3') {
         } else { ?>
             <a class="c-header-nav-link mr-4" href="/cube/creation_ressources">
                 <i class="fas fa-plus fa-lg" style="color:white;"></i>

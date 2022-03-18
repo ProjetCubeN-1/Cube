@@ -1,7 +1,7 @@
 <div class="card">
     <div class="col-6">
         <h3><?php echo $result->nom_ressources ?></h3>
-        <?php if ($this->session->id = '3') {
+        <?php if ($this->session->id = $nb) {
         } else { ?>
             <form method="post" action="/cube/favoris/<?php echo $result->id_ressource ?>">
                 <input type="submit" name="favoris" value="Send"><i class="far fa-star"></i></input>
@@ -28,7 +28,7 @@
             <hr>
         <?php }
         ?>
-        <?php if ($this->session->id = '3') {
+        <?php if ($this->session->id = $nb) {
         } else { ?>
             <div class="card-footer">
                 <form method="post" action="/cube/ressource/<?php echo $result->id_ressource ?>">
