@@ -97,7 +97,7 @@ class Cube extends ExtraController
             $this->db->escape($this->input->post('type_relation')),
             $this->db->escape($this->session->id),
         );
-        $ressource = $this->db->query($req);
+        $this->db->query($req);
 
         $last_res_id = $this->db->insert_id();
 
@@ -108,19 +108,15 @@ class Cube extends ExtraController
 
     public function favoris($ressource_id = null)
     {
-        $this->load->model('ressource_model');
-        $result_ress = $this->ressource_model->get_ressource($ressource_id);
-
-
+        $requete = sprintf("SELECT * FROM t_ressources WHERE id_ressource = %d", $ressource_id);
+        $this->db->query($requete);
+        
         $req = sprintf(
-            "INSERT INTO t_favoris (id_ressource,id_utilisateur) VALUES (%d,%s)",
-            $this->db->escape($this->session->ressource_id),
+            "INSERT INTO t_favoris (id_ressources,id_utilisateurs) VALUES (%d,%s)",
+            $ressource_id,
             $this->db->escape($this->session->id)
         );
         $favoris = $this->db->query($req);
-
-
-
-        $this->view('/cube/recherche', ['res' => $result_ress]);
+        print_r($ressource_id);
     }
 }

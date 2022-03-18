@@ -1,7 +1,7 @@
 <div class="container">
-    <div class="card">
-        <div class="card-header mt-2">
-            <div class="col-lg-11 mt-2">
+    <div class="card mt-3">
+        <div class="card-header">
+            <div class="col-lg-11">
                 <h2>Gérer mon compte</h2>
             </div>
         </div>

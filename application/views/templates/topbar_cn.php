@@ -2,7 +2,7 @@
         <div class="container-fluid">
 
             <button type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()">
-                <i class="fas fa-bars fa-lg" style="color:white;"></i> 
+                <i class="fas fa-bars fa-lg"></i> 
             </button>
 
             <img class="ml-5" src="/img/logo.png" width="150" height="80">
@@ -11,10 +11,7 @@
                 <h3 class="ml-5"><?php echo $title ?></h3>
             </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
+ 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             </div>
         </div>

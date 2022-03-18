@@ -25,12 +25,12 @@
             <div class="col-lg-6 mt-5" style="background-color: rgba(255, 255, 255, 0.75); height:240px">
                 <form method="post" action="/login/auth">
 
-                    <label class="mt-1" for="EntrerEmail">Adresse email</label>
-                    <input type="email" placeholder="exemple@exemple.fr" id="EntrerEmail" name="email" class="form-control mt-2">
+                    <label class="mt-1" for="email">Adresse email</label>
+                    <input type="email" placeholder="exemple@exemple.fr" id="email" name="email" class="form-control mt-2">
                     <br>
-                    <label class="d-flex justify-content-between" for="EntrerMdp">Mot de passe
+                    <label class="d-flex justify-content-between" for="pass">Mot de passe
                         <a href="/login/pass_verif_oublie"> Mot de passe oublié ?</a></label>
-                    <input type="password" id="EntrerMdp" name="pass" class="form-control mt-2">
+                    <input type="password" id="pass" name="pass" class="form-control mt-2">
                     <br>
                     <div class="d-flex justify-content-end">
                         <button name="action" value="Connect" class="btn btn-dark" type="submit">Connexion</button>
@@ -40,7 +40,7 @@
 
             <div class="col-lg-6 mt-5" style="background-color: rgba(255, 255, 255, 0.75); height:240px">
                 <h2 class="mt-5 text-center mb-5" for="devis">Créer un compte ?</h2>
-                <div class="col-12 justify-content-between">
+                <div class="col-lg-12 justify-content-between">
                     <a href="/login/creation" class="mt-5 col-lg-12 btn btn-dark btn-lg">Créer un compte</a>
                 </div>
             </div>
