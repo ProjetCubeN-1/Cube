@@ -106,17 +106,34 @@ class Cube extends ExtraController
         $this->redirect('/cube/accueil');
     }
 
-    public function favoris($ressource_id = null)
+    public function ajout_favoris($ressource_id = null)
     {
-        $requete = sprintf("SELECT * FROM t_ressources WHERE id_ressource = %d", $ressource_id);
-        $this->db->query($requete);
-        
+
+        $favoris = sprintf("SELECT * FROM t_ressources WHERE id_ressource = %d", $ressource_id);
+        $this->db->query($favoris);
+
         $req = sprintf(
             "INSERT INTO t_favoris (id_ressources,id_utilisateurs) VALUES (%d,%s)",
             $ressource_id,
             $this->db->escape($this->session->id)
         );
-        $favoris = $this->db->query($req);
+        $this->db->query($req);
+        $this->redirect('/cube/ressource/' . $ressource_id);
+        print_r($ressource_id);
+    }
+
+    public function retirer_favoris($ressource_id = null)
+    {
+        $favoris = sprintf("SELECT * FROM t_ressources WHERE id_ressource = %d", $ressource_id);
+        $this->db->query($favoris);
+
+        $req = sprintf(
+            "DELETE FROM t_favoris WHERE id_ressources = %d AND id_utilisateurs = %s",
+            $ressource_id,
+            $this->db->escape($this->session->id)
+        );
+        $this->db->query($req);
+        $this->redirect('/cube/ressource/' . $ressource_id);
         print_r($ressource_id);
     }
 }

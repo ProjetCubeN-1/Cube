@@ -1,8 +1,13 @@
 <div class="card">
     <div class="col-6">
         <h3><?php echo $result->nom_ressources ?></h3>
-        <form method="post" action="/cube/favoris/<?php echo $result->id_ressource ?>">
-            <input type="submit" name="favoris" value="Send"><i class="far fa-star"></i></input>
+        <form method="post" action="/cube/ajout_favoris/<?php echo $result->id_ressource ?>">
+            <input type="submit" name="favoris" value="Ajouter aux favoris"></input>
+        </form>
+
+
+        <form method="post" action="/cube/retirer_favoris/<?php echo $result->id_ressource ?>">
+            <input type="submit" name="favoris" value="Retirer des favoris"></input>
         </form>
         <hr>
     </div>
@@ -28,7 +33,7 @@
         <div class="card-footer">
             <form method="post" action="/cube/ressource/<?php echo $result->id_ressource ?>">
                 <textarea class="col-10 mb-4" placeholder="Ecrire un commentaire ..." name="contenu_commentaire" id="contenu_commentaire"></textarea><br>
-                <input type="submit" name="submit_commentaire" value="envoyer le commentaire">
+                <input type="submit" name="submit_commentaire" value="Envoyer le commentaire">
             </form>
         </div>
     </div>
