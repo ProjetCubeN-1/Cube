@@ -3,8 +3,11 @@
         <h3><?php echo $result->nom_ressources ?></h3>
         <?php if ($this->session->id == '4') {
         } else { ?>
-            <form method="post" action="/cube/favoris/<?php echo $result->id_ressource ?>">
-                <input type="submit" name="favoris" value="Send"><i class="far fa-star"></i></input>
+            <form method="post" action="/cube/ajout_favoris/<?php echo $result->id_ressource ?>">
+                <input type="submit" name="favoris" value="Ajouter aux favoris"><i class="far fa-star"></i></input>
+            </form>
+            <form method="post" action="/cube/retirer_favoris/<?php echo $result->id_ressource ?>">
+                <input type="submit" name="favoris" value="Retirer des favoris"><i class="far fa-star"></i></input>
             </form>
         <?php } ?>
         <hr>
