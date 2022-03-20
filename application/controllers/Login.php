@@ -118,8 +118,8 @@ class Login extends ExtraController
 
             //préparer la requête d'insertion SQL
             $req = sprintf(
-                "INSERT INTO t_utilisateurs (nom,prenom,email,date_naissance,mdp,confirmkey,date_creation)
-	        VALUES (%s,%s,%s,%s,%s,%s,now())",
+                "INSERT INTO t_utilisateurs (nom,prenom,email,date_naissance,mdp,type,confirmkey,date_creation)
+	        VALUES (%s,%s,%s,%s,%s,'citoyen_connecte',%s,now())",
                 $this->db->escape($this->input->post('nom')),
                 $this->db->escape($this->input->post('prenom')),
                 $this->db->escape($this->input->post('email')),
