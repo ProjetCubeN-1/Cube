@@ -11,11 +11,8 @@ class Cube extends ExtraController
     }
 
 
-    public function ressource($ressource_id = null)
+    public function ressource($ressource_id)
     {
-        // $requete = sprintf("SELECT * FROM t_ressources where id_ressource = %d", $ressource_id);
-        // $obj_result = $this->db->query($requete);
-        // $result_ress = $obj_result->row();
         $nb = null;
         $nb == "3";
 
@@ -43,13 +40,14 @@ class Cube extends ExtraController
         $this->load->model('ressource_model');
 
         $result_ressource = $this->ressource_model->get_ressource($ressource_id);
+        $result_util = $this->ressource_model->get_utilisateurs();
+
         $result_commentaire = $this->ressource_model->get_commentaires($ressource_id);
 
         $this->view_portal('/cube/ressource', [
             'result' => $result_ressource,
             'get_com' => $result_commentaire,
-            'nb' => $nb
-
+            'user' => $result_util
         ]);
     }
 
@@ -94,7 +92,6 @@ class Cube extends ExtraController
         );
         $this->db->query($req);
         $this->redirect('/cube/ressource/' . $ressource_id);
-        print_r($ressource_id);
     }
 
     public function retirer_favoris($ressource_id = null)
@@ -109,6 +106,5 @@ class Cube extends ExtraController
         );
         $this->db->query($req);
         $this->redirect('/cube/ressource/' . $ressource_id);
-        print_r($ressource_id);
     }
 }

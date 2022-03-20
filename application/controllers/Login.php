@@ -85,9 +85,9 @@ class Login extends ExtraController
             }
         } else {
             log_message('debug', '************** COMPTE non verifié ');
-            return $this->view_portal('/login/index');
+            return $this->view_login('/login/index');
         }
-        return $this->view_portal('/login/authentification');
+        return $this->view_login('/login/authentification');
     }
 
     function creation()

@@ -14,8 +14,22 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             </div>
+            <?php
+
+            if ($id_result->type == "super_admin" or $id_result->type == "admin") { ?>
+                <a class="navbar-brand" href="/admin/board">
+                    <h3 class="ml-5">Tableau de bord</h3>
+                    </i>
+                </a>
+
+            <?php } else {
+            } ?>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            </div>
         </div>
-        <?php if ($this->session->id == '3') {
+
+
+        <?php if ($this->session->id == '4') {
         } else { ?>
             <a class="c-header-nav-link mr-4" href="/cube/creation_ressources">
                 <i class="fas fa-plus fa-lg" style="color:white;"></i>
@@ -23,8 +37,9 @@
             <a class="c-header-nav-link mr-4" href="/cube/compte">
                 <i class=" fas fa-cog fa-lg" style="color:white;"></i>
             </a>
-            <a class="c-header-nav-link mr-3" href="/login/index">
-                <i class="fas fa-power-off fa-lg" style="color:white;"></i>
-            </a>
         <?php } ?>
+        <a class="c-header-nav-link mr-3" href="/login/index">
+            <i class="fas fa-power-off fa-lg" style="color:white;"></i>
+        </a>
+
     </nav>

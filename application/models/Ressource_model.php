@@ -35,4 +35,16 @@ class Ressource_model extends CI_Model
         $result_commentaire = $obj_result_com->result();
         return $result_commentaire;
     }
+
+    public function del_catégorie()
+    {
+    }
+
+    public function get_utilisateurs()
+    {
+        $requete_utilisateurs = sprintf("SELECT * FROM t_utilisateurs where id_utilisateur = %d", $this->session->id);
+        $obj_result_util = $this->db->query($requete_utilisateurs);
+        $result_util = $obj_result_util->row();
+        return $result_util;
+    }
 }
