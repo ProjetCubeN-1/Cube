@@ -11,7 +11,7 @@ class Cube extends ExtraController
     }
 
 
-    public function ressource($ressource_id)
+    public function ressource($ressource_id = null)
     {
         $nb = null;
         $nb == "3";

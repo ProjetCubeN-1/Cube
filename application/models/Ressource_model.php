@@ -14,7 +14,7 @@ class Ressource_model extends CI_Model
 
     public function get_favoris($ressource_id)
     {
-        $requete_fav = sprintf("SELECT *, t_ressources.id_ressource, t_ressources.nom_ressources FROM t_favoris INNER JOIN t_ressources ON t_favoris.id_ressources=t_ressources.id_ressource WHERE t_favoris.id_ressources = %d", $ressource_id);
+        $requete_fav = sprintf("SELECT id_ressources, t_ressources.nom_ressources FROM t_favoris INNER JOIN t_ressources ON t_favoris.id_ressources = t_ressources.id_ressource WHERE t_favoris.id_utilisateurs = %d", $this->session->id);
         $obj_result_fav = $this->db->query($requete_fav);
         $result_favoris = $obj_result_fav->result();
         return $result_favoris;

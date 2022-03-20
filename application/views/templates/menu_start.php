@@ -18,7 +18,7 @@
                     <div class="card-body">
                         <ul>
                             <?php foreach ($favoris_menu as $menu_item) { ?>
-                                <li><a href="/cube/ressource/<?php echo $menu_item->id_ressource; ?>"><?php echo $menu_item->nom_ressources ?></a></li>
+                                <li><a href="/cube/ressource/<?php echo $menu_item->id_ressources; ?>"><?php echo $menu_item->nom_ressources ?></a></li>
                             <?php } ?>
                         </ul>
                     </div>
