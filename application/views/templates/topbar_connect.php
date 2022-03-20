@@ -22,8 +22,7 @@
                     </i>
                 </a>
 
-            <?php } else {
-            } ?>
+            <?php } ?>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             </div>
         </div>
