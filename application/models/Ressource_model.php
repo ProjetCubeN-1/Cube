@@ -36,10 +36,6 @@ class Ressource_model extends CI_Model
         return $result_commentaire;
     }
 
-    public function del_catégorie()
-    {
-    }
-
     public function get_utilisateurs()
     {
         $requete_utilisateurs = sprintf("SELECT * FROM t_utilisateurs where id_utilisateur = %d", $this->session->id);
