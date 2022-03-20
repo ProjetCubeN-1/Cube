@@ -6,6 +6,17 @@ class Admin extends ExtraController
 
     public function board()
     {
-        $this->view_portal('/droit/admin_board');
+
+        $this->load->model('admin_model');
+
+        $result_util = $this->admin_model->get_utilisateurs();
+
+
+        $this->view_portal('/droit/admin_board', [
+            'result' => $result_util
+        ]);
+    }
+    public function change_type_utilisateur()
+    {
     }
 }
