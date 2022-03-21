@@ -4,10 +4,10 @@
         <?php if ($this->session->id == '4') {
         } else { ?>
             <form method="post" action="/cube/ajout_favoris/<?php echo $result->id_ressource ?>">
-                <input type="submit" name="favoris" value="Ajouter aux favoris"><i class="far fa-star"></i></input>
+                <input type="submit" name="favoris" value="Ajouter aux favoris"></input>
             </form>
             <form method="post" action="/cube/retirer_favoris/<?php echo $result->id_ressource ?>">
-                <input type="submit" name="favoris" value="Retirer des favoris"><i class="far fa-star"></i></input>
+                <input type="submit" name="favoris" value="Retirer des favoris"></input>
             </form>
         <?php } ?>
         <hr>
