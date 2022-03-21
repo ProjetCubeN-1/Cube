@@ -22,12 +22,14 @@
                                 <td><?php echo $info->prenom ?></td>
                                 <td><?php echo $info->date_naissance ?></td>
                                 <td><?php echo $info->email ?></td>
-                                <td><select class="form-control" id="id-type" name="" value="<?php echo $info->type ?>">
+                                <td>
+                                    <select class="form-control" id="id-type" name="" value="<?php echo $info->type ?>">
                                         <option value="0"><?php echo $info->type ?></option>
                                         <option value="1">admin</option>
                                         <option value="2">modérateur</option>
                                         <option value="3">citoyen_connecté</option>
-                                    </select></td>
+                                    </select>
+                                </td>
                             </tr>
                         <?php } ?>
                     </tbody>

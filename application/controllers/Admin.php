@@ -18,5 +18,12 @@ class Admin extends ExtraController
     }
     public function change_type_utilisateur()
     {
+
+        $this->load->model('admin_model');
+
+        $result_util = $this->admin_model->get_utilisateurs();
+        var_dump($result_util);
+
+        $req = sprintf("UPDATE t_utilisateurs SET type = %s WHERE id_utilisateur= %d");
     }
 }

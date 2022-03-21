@@ -12,7 +12,7 @@ class Admin_model extends CI_Model
 
     public function type_utilisateur($user_id)
     {
-        $this->db->set('type', $hashed_pasword);
+        $this->db->set('type',);
         $this->db->where('id_utilisateur', $user_id);
         $this->db->update('t_user');
     }
