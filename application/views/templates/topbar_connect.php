@@ -16,8 +16,16 @@
             </div>
             <?php
 
-            if ($id_result->type == "super_admin" or $id_result->type == "admin") { ?>
-                <a class="navbar-brand" href="/admin/board">
+            if ($id_result->type == "super_admin") { ?>
+                <a class="navbar-brand" href="/admin/board_superadmin">
+                    <h3 class="ml-5">Tableau de bord</h3>
+                    </i>
+                </a>
+
+            <?php } 
+
+            if ($id_result->type == "admin") { ?>
+                <a class="navbar-brand" href="/admin/board_admin">
                     <h3 class="ml-5">Tableau de bord</h3>
                     </i>
                 </a>
