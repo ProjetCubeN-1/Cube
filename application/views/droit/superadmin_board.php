@@ -1,41 +1,66 @@
 <div class="card">
     <div class="card-body">
         <div class="col-8">
-            <form method="post" action="/admin/supprimer_ressources">
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th>id</th>
-                            <th>Nom de la ressource</th>
-                            <th>Catégorie</th>
-                            <th>Type de relation</th>
-                            <th>Type de ressource</th>
-                            <th>id du créateur</th>
-                            <th>Sélectionner</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php
-                        foreach ($result->result() as $ressources) { ?>
-                            <tr>
-                                <td><?php echo $ressources->id_ressource ?></td>
-                                <td><?php echo $ressources->nom_ressources ?></td>
-                                <td><?php echo $ressources->categorie ?></td>
-                                <td><?php echo $ressources->type_relation ?></td>
-                                <td><?php echo $ressources->type_ressource ?></td>
-                                <td><?php echo $ressources->id_utilisateur ?></td>
-                                <td>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="cocher" value="<?php $ressources->id_ressource ?>" id="cocher">
-                                    </div>
-                                </td>
-                            </tr>
-                        <?php } ?>
-                    </tbody>
-                </table>
-                <input type="submit" class="btn btn-danger" name="supprimer" value="Supprimer"></input>
-            </form>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>nom</th>
+                        <th>prenom</th>
+                        <th>date de naissance</th>
+                        <th>email</th>
+                        <th>type</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                    foreach ($result->result() as $info) { ?>
+                        <form method="post" action="/admin/change_type">
 
+                            <tr>
+                                <td style="display:none;"><input type="text" readonly name="user_id" value="<?php echo $info->id_utilisateur ?>"></td>
+                                <td><?php echo $info->nom ?></td>
+                                <td><?php echo $info->prenom ?></td>
+                                <td><?php echo $info->date_naissance ?></td>
+                                <td><?php echo $info->email ?></td>
+                                <td>
+                                    <select <?php if ($info->type == 'citoyen_nc') { ?> disabled="disabled" <?php } ?> class="form-control" id="type" name="type" value="<?php echo $info->type ?>">
+                                        <option <?php if ($info->type == "super_admin") {
+                                                    echo "selected";
+                                                } ?> value="super_admin">super_admin</option>
+
+                                        <option <?php if ($info->type == "admin") {
+                                                    echo "selected";
+                                                } ?> value="admin">admin</option>
+
+                                        <option <?php if ($info->type == "modérateur") {
+                                                    echo "selected";
+                                                } ?> value="modérateur">modérateur</option>
+
+                                        <option <?php if ($info->type == "citoyen_connecté") {
+                                                    echo "selected";
+                                                } ?> value="citoyen_connecté">citoyen_connecté</option>
+                                        <?php if ($info->type == "citoyen_nc") { ?>
+                                            <option selected value="citoyen_nc">citoyen_nc</option>
+                                        <?php }
+                                        ?>
+                                    </select>
+                                </td>
+                                <?php if ($info->type != "citoyen_nc") { ?>
+                                    <td><input type="submit" value="Valider"></td>
+                            <?php }
+                            } ?>
+                            </tr>
+                        </form>
+
+
+                </tbody>
+            </table>
         </div>
+        <!--<button class="btn btn-danger" name="action" value=""><i class="fas fa-trash-alt"></i> Supprimer</button>
+
+            -->
+
+
     </div>
 </div>

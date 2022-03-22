@@ -10,14 +10,7 @@ class Admin_model extends CI_Model
         return $result_util;
     }
 
-    public function type_utilisateur($user_id)
-    {
-        $this->db->set('type',);
-        $this->db->where('id_utilisateur', $user_id);
-        $this->db->update('t_user');
-    }
-
-    public function get_ressources($id_ressource = null)
+    public function get_ressources()
     {
         $requete_ressources = sprintf("SELECT * FROM t_ressources");
         $obj_result_ressources = $this->db->query($requete_ressources);
@@ -25,13 +18,11 @@ class Admin_model extends CI_Model
         return $result_ressources;
     }
 
-    public function get_idressources($id_ressource = null)
+    public function get_ressource_id($ressource_id)
     {
-        $requete_ressources = sprintf("SELECT id_ressource FROM t_ressources");
-        $obj_result_ressources = $this->db->query($requete_ressources);
-        $result_ressources = $obj_result_ressources;
-        return $result_ressources;
+        $requete_ressource = sprintf("SELECT * FROM t_ressources where id_ressource = %d", $ressource_id);
+        $obj_result = $this->db->query($requete_ressource);
+        $result_ress = $obj_result->row();
+        return $result_ress;
     }
-
-
 }

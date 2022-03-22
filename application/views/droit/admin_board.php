@@ -1,45 +1,41 @@
 <div class="card">
     <div class="card-body">
         <div class="col-8">
-            <form method="post" action="/admin/change_type_utilisateur">
+            <form method="post" action="/admin/supprimer_ressources">
                 <table class="table table-striped">
                     <thead>
                         <tr>
                             <th>id</th>
-                            <th>nom</th>
-                            <th>prenom</th>
-                            <th>date de naissance</th>
-                            <th>email</th>
-                            <th>type</th>
+                            <th>Nom de la ressource</th>
+                            <th>Catégorie</th>
+                            <th>Type de relation</th>
+                            <th>Type de ressource</th>
+                            <th>id du créateur</th>
+                            <th>Sélectionner</th>
                         </tr>
                     </thead>
                     <tbody>
                         <?php
-                        foreach ($result->result() as $info) { ?>
+                        foreach ($result->result() as $ressources) { ?>
                             <tr>
-                                <td><?php echo $info->id_utilisateur ?></td>
-                                <td><?php echo $info->nom ?></td>
-                                <td><?php echo $info->prenom ?></td>
-                                <td><?php echo $info->date_naissance ?></td>
-                                <td><?php echo $info->email ?></td>
+                                <td><?php echo $ressources->id_ressource ?></td>
+                                <td><?php echo $ressources->nom_ressources ?></td>
+                                <td><?php echo $ressources->categorie ?></td>
+                                <td><?php echo $ressources->type_relation ?></td>
+                                <td><?php echo $ressources->type_ressource ?></td>
+                                <td><?php echo $ressources->id_utilisateur ?></td>
                                 <td>
-                                    <select class="form-control" id="id-type" name="" value="<?php echo $info->type ?>">
-                                        <option value="0"><?php echo $info->type ?></option>
-                                        <option value="1">admin</option>
-                                        <option value="2">modérateur</option>
-                                        <option value="3">citoyen_connecté</option>
-                                    </select>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="ressource_id[]" value="<?= $ressources->id_ressource ?>" id="<?php echo $ressources->id_ressource ?>">
+                                    </div>
                                 </td>
                             </tr>
                         <?php } ?>
                     </tbody>
                 </table>
+                <input type="submit" class="btn btn-danger" value="Supprimer"></input>
             </form>
+
         </div>
-        <!--<button class="btn btn-danger" name="action" value=""><i class="fas fa-trash-alt"></i> Supprimer</button>
-
-            <input type="submit" name="favoris" value="Ajouter aux favoris"><i class="far fa-star"></i></input>-->
-
-
     </div>
 </div>

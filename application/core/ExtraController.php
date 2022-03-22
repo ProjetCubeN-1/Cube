@@ -73,7 +73,11 @@ class ExtraController extends CI_Controller
         ]);
         $this->load->view('/templates/wrapper', []);
 
-        $this->load->view('/templates/topbar_connect', ['title' => $this->title, 'path' => $this->path]);
+        $this->load->view('/templates/topbar_connect', [
+            'title' => $this->title,
+            'path' => $this->path,
+            'id_result' => $result_util
+        ]);
 
         if ($view)
             $this->load->view($view, $datas);
