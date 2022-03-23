@@ -1,6 +1,6 @@
 <div class="card">
     <div class="card-body">
-        <div class="col-8">
+        <div class="col-lg-8">
             <table class="table table-striped">
                 <thead>
                     <tr>

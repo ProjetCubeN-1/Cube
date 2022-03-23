@@ -1,4 +1,4 @@
-    <div class="col-6">
+    <div class="col-lg-6">
         <?php
 
         foreach ($data as $d) { ?>

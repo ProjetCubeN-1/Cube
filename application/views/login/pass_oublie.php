@@ -1,5 +1,5 @@
 <div class="mt-2">
-    <div class="container marketing col-12" style="margin-top: 0%;">
+    <div class="container marketing col-lg-12" style="margin-top: 0%;">
         <p>
             &nbsp;
         </p>

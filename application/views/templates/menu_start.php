@@ -1,6 +1,6 @@
     <div class="card p-2">
         <div class="row">
-            <div class="col-3">
+            <div class="col-lg-3">
                 <div class="input-group mb-3">
                     <form method="get" action="/search_controller/searchfunction">
                         <input type="search" class="form-control" id="search_ressources" name="search_ressources" placeholder="Nom de la Ressources">

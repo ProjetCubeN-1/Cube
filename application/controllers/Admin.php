@@ -22,7 +22,6 @@ class Admin extends ExtraController
         $this->load->model('admin_model');
 
         $result_ressources = $this->admin_model->get_ressources();
-
         $this->view_portal('/droit/admin_board', [
             'result' => $result_ressources
         ]);

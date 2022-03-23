@@ -22,7 +22,7 @@
                     </i>
                 </a>
 
-            <?php } 
+            <?php }
 
             if ($id_result->type == "admin") { ?>
                 <a class="navbar-brand" href="/admin/board_admin">
