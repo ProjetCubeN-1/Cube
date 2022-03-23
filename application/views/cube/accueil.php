@@ -1,7 +1,7 @@
 <div class="col-lg-9">
     <div class="card d-flex">
-        <div class="d-flex align-item-center" style="background: linear-gradient(to bottom,#fff,#e8f2f8);border-bottom: solid 1px #a8d7fc;"><img class="shadow-sm" src="/img/logoRF.png" width="auto">
-            <h3 class="p-5">(RE)SOURCES <br> RELATIONNELLES</h3>
+        <div class="d-flex align-item-center" style="background: linear-gradient(to bottom,#fff,#e8f2f8);border-bottom: solid 1px #a8d7fc;"><img class="shadow-sm col-4" src="/img/logoRF.png" width="auto">
+            <h4 class="p-4">(RE)SOURCES <br> RELATIONNELLES</h4>
         </div>
 
     </div>

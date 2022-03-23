@@ -74,10 +74,9 @@ class Login extends ExtraController
 
             while ($row = $obj_result->unbuffered_row()) {
                 $hash = $row->mdp;
-                if (password_verify($pass, $hash)) {
+                if (password_verify($pass, $hash) && $row->confirme == 1) {
                     $this->session->login = true;
                     $this->session->id = $row->id_utilisateur;
-                    //$this->session->set_userdata('user_id', $row->id_utilisateur);
                     return $this->view('/cube/accueil');
                 } else {
                     return $this->redirect('/login/index');
@@ -118,8 +117,8 @@ class Login extends ExtraController
 
             //préparer la requête d'insertion SQL
             $req = sprintf(
-                "INSERT INTO t_utilisateurs (nom,prenom,email,date_naissance,mdp,type,confirmkey,date_creation)
-	        VALUES (%s,%s,%s,%s,%s,'citoyen_connecte',%s,now())",
+                "INSERT INTO t_utilisateurs (nom,prenom,email,date_naissance,mdp,type,confirmkey,date_creation,confirme)
+	        VALUES (%s,%s,%s,%s,%s,'citoyen_connecté',%s,now(),'1')",
                 $this->db->escape($this->input->post('nom')),
                 $this->db->escape($this->input->post('prenom')),
                 $this->db->escape($this->input->post('email')),

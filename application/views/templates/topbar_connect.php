@@ -14,23 +14,15 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             </div>
-            <?php
 
-            if ($id_result->type == "super_admin") { ?>
-                <a class="navbar-brand" href="/admin/board_superadmin">
-                    <h3 class="ml-5">Tableau de bord</h3>
-                    </i>
-                </a>
-
-            <?php }
-
-            if ($id_result->type == "admin") { ?>
-                <a class="navbar-brand" href="/admin/board_admin">
+            <?php if ($id_result->type == "super_admin" or $id_result->type == "admin" or $id_result->type == "modérateur") { ?>
+                <a class="navbar-brand" href="/admin/tab_board">
                     <h3 class="ml-5">Tableau de bord</h3>
                     </i>
                 </a>
 
             <?php } ?>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             </div>
         </div>

@@ -3,16 +3,30 @@
 class Ressource_model extends CI_Model
 {
 
-
     public function get_ressource_menu()
     {
-        $requete = sprintf("SELECT id_ressource,nom_ressources FROM t_ressources");
+        $requete = sprintf("SELECT * FROM t_ressources");
         $obj_result = $this->db->query($requete);
         $ressources_menu = $obj_result->result();
         return $ressources_menu;
     }
 
-    public function get_favoris($ressource_id)
+    public function get_ressources_cote()
+    {
+        $requete = sprintf("SELECT * FROM t_ressources WHERE mis_de_cote = 1 AND valide='true'");
+        $obj_result = $this->db->query($requete);
+        $ressources_menu = $obj_result->result();
+        return $ressources_menu;
+    }
+    public function get_ressources_all()
+    {
+        $requete = sprintf("SELECT * FROM t_ressources");
+        $obj_result = $this->db->query($requete);
+        $ressources_menu = $obj_result->result();
+        return $ressources_menu;
+    }
+
+    public function get_favoris()
     {
         $requete_fav = sprintf("SELECT id_ressources, t_ressources.nom_ressources FROM t_favoris INNER JOIN t_ressources ON t_favoris.id_ressources = t_ressources.id_ressource WHERE t_favoris.id_utilisateurs = %d", $this->session->id);
         $obj_result_fav = $this->db->query($requete_fav);

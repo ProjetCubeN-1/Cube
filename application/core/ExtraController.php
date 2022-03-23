@@ -63,7 +63,6 @@ class ExtraController extends CI_Controller
         $this->load->model('ressource_model');
         $ressources_menu = $this->ressource_model->get_ressource_menu();
         $result_util = $this->ressource_model->get_utilisateurs();
-
         $favoris_menu = $this->ressource_model->get_favoris($ressource_id);
 
         $this->load->view('/templates/sidebar',  [
@@ -91,19 +90,6 @@ class ExtraController extends CI_Controller
 
         $this->load->view('/templates/header', ['title' => $this->title]);
 
-
-        $this->load->model('ressource_model');
-        $ressources_menu = $this->ressource_model->get_ressource_menu();
-        $result_util = $this->ressource_model->get_utilisateurs();
-
-        $favoris_menu = $this->ressource_model->get_favoris($ressource_id);
-
-
-        $this->load->view('/templates/sidebar',  [
-            'ressources_menu' => $ressources_menu,
-            'id_result' => $result_util,
-            'favoris_menu' => $favoris_menu
-        ]);
         $this->load->view('/templates/wrapper', []);
 
 
@@ -125,14 +111,12 @@ class ExtraController extends CI_Controller
         $this->load->model('ressource_model');
         $ressources_menu = $this->ressource_model->get_ressource_menu();
         $result_util = $this->ressource_model->get_utilisateurs();
-
         $favoris_menu = $this->ressource_model->get_favoris($ressource_id);
-
 
         $this->load->view('/templates/sidebar',  [
             'ressources_menu' => $ressources_menu,
             'id_result' => $result_util,
-            'favoris_menu' => $favoris_menu
+            'favoris_menu' => $favoris_menu,
         ]);
 
 
@@ -146,10 +130,13 @@ class ExtraController extends CI_Controller
 
         $this->load->model('ressource_model');
         $favoris_menu = $this->ressource_model->get_favoris($ressource_id);
+        $cote = $this->ressource_model->get_ressources_cote();
+
         $this->load->view(
             '/templates/menu_start',
             [
-                'favoris_menu' => $favoris_menu
+                'favoris_menu' => $favoris_menu,
+                'mcote' => $cote
             ]
         );
 
