@@ -13,8 +13,8 @@ class Cube extends ExtraController
 
     public function ressource($ressource_id = null)
     {
+        
         $this->load->model('ressource_model');
-
 
 
         if (isset($_POST['submit_commentaire'])) {
@@ -114,8 +114,8 @@ class Cube extends ExtraController
     public function ajout_favoris($ressource_id = null)
     {
 
-        $favoris = sprintf("SELECT * FROM t_ressources WHERE id_ressource = %d", $ressource_id);
-        $this->db->query($favoris);
+        $this->load->model('ressource_model');
+        $this->ressource_model->get_ressource($ressource_id);
 
         $req = sprintf(
             "INSERT INTO t_favoris (id_ressources,id_utilisateurs) VALUES (%d,%s)",
@@ -128,8 +128,8 @@ class Cube extends ExtraController
 
     public function retirer_favoris($ressource_id = null)
     {
-        $favoris = sprintf("SELECT * FROM t_ressources WHERE id_ressource = %d", $ressource_id);
-        $this->db->query($favoris);
+        $this->load->model('ressource_model');
+        $this->ressource_model->get_ressource($ressource_id);
 
         $req = sprintf(
             "DELETE FROM t_favoris WHERE id_ressources = %d AND id_utilisateurs = %s",
@@ -139,6 +139,7 @@ class Cube extends ExtraController
         $this->db->query($req);
         $this->redirect('/cube/ressource/' . $ressource_id);
     }
+
     public function response_commentaire($id_com, $idressource)
     {
     }

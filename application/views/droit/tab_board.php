@@ -222,3 +222,48 @@
         </div>
     </div>
 <?php } ?>
+<?php if ($id_result->type == "admin" or $id_result->type == "super_admin") { //Supprimer une catégorie 
+?>
+    <div class="card">
+        <div class="card-header">
+            <h5>Supprimer une catégorie</h5>
+        </div>
+        <div class="card-body">
+            <div class="col-12">
+                <form method="post" action="/admin/supprimer_categorie">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>id</th>
+                                <th>Nom de la catégorie</th>
+                                <th>id du créateur</th>
+                                <th>Sélectionner</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                            foreach ($categorie->result() as $resultat) { ?>
+                                <tr>
+                                    <td style="display:none;"><input type="text" readonly name="categorie_id_text" value="<?php echo $resultat->id_categorie ?>"></td>
+                                    <td><?php echo $resultat->id_categorie ?></td>
+                                    <td><?php echo $resultat->nom_categorie ?></td>
+                                    <td><?php echo $resultat->id_utilisateur ?></td>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="categorie_id[]" value="<?= $resultat->id_categorie ?>" id="<?php echo $resultat->id_categorie ?>">
+                                        </div>
+                                    </td>
+                                </tr>
+                            <?php } ?>
+                        </tbody>
+                    </table>
+                    <?php if ($id_result->type != "modérateur") { ?>
+                        <input type="submit" name="action" class="btn btn-danger" value="Supprimer"></input>
+                    <?php } ?>
+                </form>
+
+            </div>
+        </div>
+    </div>
+<?php } ?>

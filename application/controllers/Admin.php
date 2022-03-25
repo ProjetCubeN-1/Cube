@@ -14,11 +14,14 @@ class Admin extends ExtraController
 
         $result_ressources = $this->admin_model->get_ressources();
 
+        $categorie = $this->admin_model->get_categorie();
+
 
         $this->view_portal('/droit/tab_board', [
             'uid' => $result_util,
             'ressources' => $result_ressources,
-            'citoyen' => $res_citoyen
+            'citoyen' => $res_citoyen,
+            'categorie' => $categorie
         ]);
     }
 
@@ -71,6 +74,18 @@ class Admin extends ExtraController
         $requete_change = sprintf("UPDATE t_ressources SET valide = '%s' WHERE id_ressource = %d", $valide, $ressource_id);
         $obj_result = $this->db->query($requete_change);
 
+        $this->redirect('/admin/tab_board');
+    }
+
+    public function supprimer_categorie()
+    {
+        if ($this->input->post('action') == 'Supprimer') {
+
+            $idCategorie = (isset($_POST['categorie_id']) && is_array($_POST['categorie_id'])) ? implode(",", $_POST['categorie_id']) : $_POST['categorie_id'];
+
+            $requete_categorie = sprintf("DELETE FROM t_categorie WHERE id_categorie IN (%d)", $idCategorie);
+            $this->db->query($requete_categorie);
+        }
         $this->redirect('/admin/tab_board');
     }
 }

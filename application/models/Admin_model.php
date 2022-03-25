@@ -47,6 +47,15 @@ class Admin_model extends CI_Model
         $obj_type = $this->db->query($requete_change);
         return $obj_type;
     }
+
+    public function get_categorie()
+    {
+        $requete_categorie = sprintf("SELECT * FROM t_categorie");
+        $obj_result_categorie = $this->db->query($requete_categorie);
+        $result_categorie = $obj_result_categorie;
+        return $result_categorie;
+    }
+
     public function delete_categorie()
     {
     }
