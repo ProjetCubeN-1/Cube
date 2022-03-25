@@ -57,4 +57,19 @@ class Ressource_model extends CI_Model
         $result_util = $obj_result_util->row();
         return $result_util;
     }
+    public function mettre_cote($ressource_id)
+    {
+        $req = sprintf("UPDATE t_ressources SET mis_de_cote = '1' WHERE id_ressource = %d", $ressource_id);
+        $obj_mc = $this->db->query($req);
+        $result_mc = $obj_mc->result();
+        return $result_mc;
+    }
+
+    public function retirer_mettre_cote($ressource_id)
+    {
+        $req = sprintf("UPDATE t_ressources SET mis_de_cote = '0' WHERE id_ressource = %d", $ressource_id);
+        $obj_rmc = $this->db->query($req);
+        $result_rmc = $obj_rmc->result();
+        return $result_rmc;
+    }
 }

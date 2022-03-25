@@ -145,7 +145,7 @@
                             <?php
                             foreach ($ressources->result() as $resultat) { ?>
                                 <tr>
-                                    <td style="display:none;"><input type="text" readonly name="ressource_id" value="<?php echo $resultat->id_ressource ?>"></td>
+                                    <td style="display:none;"><input type="text" readonly name="ressource_id_text" value="<?php echo $resultat->id_ressource ?>"></td>
                                     <td><?php echo $resultat->id_ressource ?></td>
                                     <td><?php echo $resultat->nom_ressources ?></td>
                                     <td><?php echo $resultat->categorie ?></td>
@@ -182,7 +182,6 @@
                     <table class="table table-striped">
                         <thead>
                             <tr>
-                                <th>id</th>
                                 <th>Nom de la ressource</th>
                                 <th>Catégorie</th>
                                 <th>Type de relation</th>
@@ -197,7 +196,6 @@
                             foreach ($ressources->result() as $resultat) { ?>
                                 <tr>
                                     <td style="display:none;"><input type="text" readonly name="ressource_id" value="<?php echo $resultat->id_ressource ?>"></td>
-                                    <td><?php echo $resultat->id_ressource ?></td>
                                     <td><?php echo $resultat->nom_ressources ?></td>
                                     <td><?php echo $resultat->categorie ?></td>
                                     <td><?php echo $resultat->type_relation ?></td>

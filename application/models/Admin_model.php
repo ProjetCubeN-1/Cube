@@ -36,7 +36,6 @@ class Admin_model extends CI_Model
 
     public function delete_ressources($idRessources)
     {
-
         $requete_ressources = sprintf("DELETE FROM t_ressources WHERE id_ressource IN (%s)", $idRessources);
         $obj_delete = $this->db->query($requete_ressources);
         return $obj_delete;
@@ -47,5 +46,11 @@ class Admin_model extends CI_Model
         $requete_change = sprintf("UPDATE t_utilisateurs SET t_utilisateurs.type = '%s' WHERE id_utilisateur = %d", $type, $user_id);
         $obj_type = $this->db->query($requete_change);
         return $obj_type;
+    }
+    public function delete_categorie()
+    {
+    }
+    public function ajouter_categorie()
+    {
     }
 }

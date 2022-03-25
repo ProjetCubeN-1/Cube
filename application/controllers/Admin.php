@@ -24,15 +24,14 @@ class Admin extends ExtraController
 
     public function supprimer_ressources()
     {
-        $this->load->model('admin_model');
 
-        //if ($this->input->post('action') == 'Supprimer') {
+        if ($this->input->post('action') == 'Supprimer') {
 
-        $idRessources = (isset($_POST['ressource_id']) && is_array($_POST['ressource_id'])) ? implode(",", $_POST['ressource_id']) : $_POST['ressource_id'];
+            $idRessources = (isset($_POST['ressource_id']) && is_array($_POST['ressource_id'])) ? implode(",", $_POST['ressource_id']) : $_POST['ressource_id'];
 
-        $requete_ressources = sprintf("DELETE FROM t_ressources WHERE id_ressource IN (%s)", $idRessources);
-        $this->db->query($requete_ressources);
-
+            $requete_ressources = sprintf("DELETE FROM t_ressources WHERE id_ressource IN (%d)", $idRessources);
+            $this->db->query($requete_ressources);
+        }
         $this->redirect('/admin/tab_board');
     }
 

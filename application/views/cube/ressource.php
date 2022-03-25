@@ -59,14 +59,16 @@
             <hr>
         <?php }
         ?>
-        <?php if ($this->session->id == '4') {
-        } else { ?>
-            <div class="card-footer">
-                <form method="post" action="/cube/ressource/<?php echo $result->id_ressource ?>">
+        <form method="post" action="/cube/ressource/<?php echo $result->id_ressource ?>">
+
+            <?php if ($this->session->id == '4') {
+            } else { ?>
+                <div class="card-footer">
                     <textarea class="col-10 mb-4" placeholder="Ecrire un commentaire ..." name="contenu_commentaire" id="contenu_commentaire"></textarea><br>
                     <input type="submit" name="submit_commentaire" value="envoyer le commentaire">
-                </form>
-            </div>
-        <?php } ?>
+
+                <?php } ?>
+        </form>
     </div>
+</div>
 </div>

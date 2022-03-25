@@ -10,18 +10,17 @@
             <a class="navbar-brand" href="/cube/accueil">
                 <h3 class="ml-5"><?php echo $title ?></h3>
             </a>
-
-
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             </div>
-
-            <?php if ($id_result->type == "super_admin" or $id_result->type == "admin" or $id_result->type == "modérateur") { ?>
+            <?php if ($id_result->type == "super_admin" or $id_result->type == "admin" or $id_result->type == "modérateur") {
+            ?>
                 <a class="navbar-brand" href="/admin/tab_board">
                     <h3 class="ml-5">Tableau de bord</h3>
                     </i>
                 </a>
 
-            <?php } ?>
+            <?php }
+            ?>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             </div>
