@@ -1,3 +1,8 @@
+<?php
+if ($id_result->type == "super_admin" or $id_result->type == "admin") { //changer type utilisateurs 
+?><a href="test_controller/index"><input type="button" value="page de tests"></a>
+<?php }
+?>
 <?php if ($id_result->type == "super_admin") { //changer type utilisateurs 
 ?>
     <div class="card">
