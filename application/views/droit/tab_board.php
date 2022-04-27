@@ -1,11 +1,16 @@
 <?php
-if ($id_result->type == "super_admin" or $id_result->type == "admin") { //changer type utilisateurs 
-?><a href="test_controller/index"><input type="button" value="page de tests"></a>
-<?php }
-?>
-<?php if ($id_result->type == "super_admin") { //changer type utilisateurs 
+if ($id_result->type == "super_admin" or $id_result->type == "admin") { //acceder a la page de test 
 ?>
     <div class="card">
+        <div class="card-header">
+            <h5>Pour acceder a la page de test cliquer sur le bouton :
+                <a href="/test_controller/index"><input type="submit" class="btn btn-info" value="Page de test"></a>
+            </h5>
+        </div>
+    </div>
+<?php }
+?> <?php if ($id_result->type == "super_admin") { //changer type utilisateurs 
+    ?> <div class="card">
         <div class="card-header">
             <h5>changer type utilisateur</h5>
         </div>

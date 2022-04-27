@@ -5,6 +5,6 @@ class Test_controller extends ExtraController
 {
     public function index()
     {
-        $this->view('view_test/dashboard_test');
+        $this->view_portal('view_test/dashboard_test', ['afficher_test' => Extra::afficher()]);
     }
 }
