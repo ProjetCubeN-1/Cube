@@ -5,6 +5,8 @@ class Admin extends ExtraController
 {
     public function tab_board()
     {
+        $this->load->library('unit_test');
+
         $post = $this->input->post('type');
 
         $this->load->model('admin_model');
@@ -16,13 +18,24 @@ class Admin extends ExtraController
 
         $categorie = $this->admin_model->get_categorie();
 
-
         $this->view_portal('/droit/tab_board', [
             'uid' => $result_util,
             'ressources' => $result_ressources,
             'citoyen' => $res_citoyen,
             'categorie' => $categorie
         ]);
+
+        foreach($result_util->result() as $d){
+
+            $test =  $d->type;
+
+            $expected_result = 'citoyen_nc';
+        
+            $test_name = 'Test utilisateur '.$d->id_utilisateur.' : '.$d->nom;
+        
+            echo $this->unit->run($test, $expected_result, $test_name);
+        }
+       
     }
 
     public function supprimer_ressources()

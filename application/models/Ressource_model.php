@@ -13,7 +13,7 @@ class Ressource_model extends CI_Model
 
     public function get_ressources_cote()
     {
-        $requete = sprintf("SELECT * FROM t_ressources WHERE mis_de_cote = 1 AND valide='true'");
+        $requete = sprintf("SELECT * FROM t_ressources WHERE mis_de_cote = 1");
         $obj_result = $this->db->query($requete);
         $ressources_menu = $obj_result->result();
         return $ressources_menu;
@@ -25,6 +25,8 @@ class Ressource_model extends CI_Model
         $ressources_menu = $obj_result->result();
         return $ressources_menu;
     }
+
+
 
     public function get_favoris()
     {
@@ -61,15 +63,21 @@ class Ressource_model extends CI_Model
     {
         $req = sprintf("UPDATE t_ressources SET mis_de_cote = '1' WHERE id_ressource = %d", $ressource_id);
         $obj_mc = $this->db->query($req);
-        $result_mc = $obj_mc->result();
-        return $result_mc;
+        return $obj_mc;
     }
 
     public function retirer_mettre_cote($ressource_id)
     {
         $req = sprintf("UPDATE t_ressources SET mis_de_cote = '0' WHERE id_ressource = %d", $ressource_id);
         $obj_rmc = $this->db->query($req);
-        $result_rmc = $obj_rmc->result();
-        return $result_rmc;
+        return $obj_rmc;
+    }
+
+    public function get_com_id($ressource_id)
+    {
+        $res = sprintf("SELECT id_commentaire FROM t_commentaires WHERE id_ressource = %d", $ressource_id);
+        $obj_com = $this->db->query($res);
+        $result_com = $obj_com->result();
+        return $result_com;
     }
 }

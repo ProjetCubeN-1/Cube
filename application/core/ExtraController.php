@@ -23,6 +23,11 @@ class ExtraController extends CI_Controller
             die();
         }
     }
+    protected function json($data)
+    {
+        header('Content-type: application/json');
+        echo json_encode($data);
+    }
 
     protected function userWithId($id)
     {
