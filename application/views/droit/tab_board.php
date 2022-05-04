@@ -12,7 +12,7 @@ if ($id_result->type == "super_admin" or $id_result->type == "admin") { //accede
 ?> <?php if ($id_result->type == "super_admin") { //changer type utilisateurs 
     ?> <div class="card">
         <div class="card-header">
-            <h5>changer type utilisateur</h5>
+            <h5>changer type utilisateur /////////Probleme ici</h5>
         </div>
         <div class="card-body">
             <div class="col-12">
@@ -29,7 +29,9 @@ if ($id_result->type == "super_admin" or $id_result->type == "admin") { //accede
                     </thead>
                     <tbody>
                         <?php
-                        foreach ($uid->result() as $info) { ?>
+                        foreach ($uid->result() as $info) {
+
+                        ?>
                             <?php if ($info->type != "citoyen_nc") { ?>
                                 <form method="post" action="/admin/change_type">
 
@@ -82,7 +84,7 @@ if ($id_result->type == "super_admin" or $id_result->type == "admin") { //accede
 ?>
     <div class="card">
         <div class="card-header">
-            <h5>Désactiver un compte citoyen</h5>
+            <h5>Désactiver un compte citoyen /////////Probleme ici</h5>
         </div>
         <div class="card-body">
             <div class="col-12">
@@ -104,7 +106,7 @@ if ($id_result->type == "super_admin" or $id_result->type == "admin") { //accede
                                     <td style="display:none;"><input type="text" readonly name="id_user" value="<?php echo $conf_citoyen->id_utilisateur ?>"></td>
                                     <td><?php echo $conf_citoyen->nom ?></td>
                                     <td><?php echo $conf_citoyen->prenom ?></td>
-                                    <td><?php echo $conf_citoyen->type ?></td>
+                                    <td><?php echo $conf_citoyen->email ?></td>
                                     <td>
                                         <select class="form-control" id="confirme" name="confirme" value="<?= $conf_citoyen->confirme ?>">
                                             <option <?php if ($conf_citoyen->confirme == "1") {
@@ -153,7 +155,9 @@ if ($id_result->type == "super_admin" or $id_result->type == "admin") { //accede
                         </thead>
                         <tbody>
                             <?php
-                            foreach ($ressources->result() as $resultat) { ?>
+
+                            foreach ($ressources->result() as $resultat) {
+                            ?>
                                 <tr>
                                     <td style="display:none;"><input type="text" readonly name="ressource_id_text" value="<?php echo $resultat->id_ressource ?>"></td>
                                     <td><?php echo $resultat->id_ressource ?></td>
@@ -184,7 +188,7 @@ if ($id_result->type == "super_admin" or $id_result->type == "admin") { //accede
 ?>
     <div class="card">
         <div class="card-header">
-            <h5>Gérer une ressource</h5>
+            <h5>Gérer une ressource //////////////////////////Probleme ici </h5>
         </div>
         <div class="card-body">
             <div class="col-12">

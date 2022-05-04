@@ -2,23 +2,30 @@
 
 class Admin_model extends CI_Model
 {
-    public function get_utilisateurs()
+    public function get_type_utilisateur()
     {
-        $requete_utilisateurs = sprintf("SELECT * FROM t_utilisateurs");
+        $requete_utilisateurs = sprintf("SELECT * FROM t_type INNER JOIN t_utilisateurs ON t_type.id_type = t_utilisateurs.id_type WHERE t_utilisateurs.id_utilisateur = t_utilisateurs.id_utilisateur");
         $obj_result_util = $this->db->query($requete_utilisateurs);
-        $result_util = $obj_result_util;
-        return $result_util;
+
+        return $obj_result_util;
     }
 
     public function get_utilisateur_for_citoyen()
     {
-        $requete_utilisateurs = sprintf("SELECT * FROM t_utilisateurs WHERE t_utilisateurs.type='citoyen_connecté' ");
+        $requete_utilisateurs = sprintf("SELECT * FROM t_utilisateurs WHERE t_utilisateurs.id_type='4' ");
         $obj_result_util = $this->db->query($requete_utilisateurs);
         $result_util = $obj_result_util;
         return $result_util;
     }
 
-    public function get_ressources()
+    public function get_ressources_by_relation_type()
+    {
+        $requete_ressource = sprintf("SELECT *,t_type_relation.type_relation,t_type_ressource.type_ressource FROM t_type_relation INNER JOIN t_ressources ON t_type_relation.id_type_relation = t_ressources.id_type_relation INNER JOIN t_type_ressource ON t_type_ressource.id_type_ressource = t_ressources.id_type_ressource WHERE t_ressources.id_ressource = t_ressources.id_ressource ");
+        $obj_result = $this->db->query($requete_ressource);
+        $result_ress = $obj_result;
+        return $result_ress;
+    }
+    public function get_ressource()
     {
         $requete_ressources = sprintf("SELECT * FROM t_ressources");
         $obj_result_ressources = $this->db->query($requete_ressources);

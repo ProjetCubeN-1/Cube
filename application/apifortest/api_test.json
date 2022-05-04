@@ -63,5 +63,11 @@
         "id": "13",
         "uuid": "SC4_F06",
         "nom": "Tester la validation d'une ressource"   
+    },
+    {
+        "id": "14",
+        "uuid": "SC4_F07",
+        "nom": "Tester le type des utilisateurs"   
     }
+    
 ]

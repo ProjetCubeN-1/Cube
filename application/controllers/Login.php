@@ -36,9 +36,11 @@ class Login extends ExtraController
         $this->session->login = false;
 
         if ($this->input->post('action') == 'nc_connect') {
-            $query = sprintf(
-                "SELECT * FROM t_utilisateurs WHERE t_utilisateurs.type= 'citoyen_nc'",
-            );
+            $query = sprintf("SELECT t_type.type,t_utilisateurs.id_utilisateur,t_utilisateurs.id_type FROM t_type INNER JOIN t_utilisateurs ON t_type.id_type = t_utilisateurs.id_type WHERE t_utilisateurs.id_type = '4'");
+
+            //$query = sprintf(
+            //    "SELECT * FROM t_utilisateurs WHERE t_utilisateurs.type= 'citoyen_nc'",
+            //);
             $obj_result = $this->db->query($query);
 
             while ($row = $obj_result->unbuffered_row()) {

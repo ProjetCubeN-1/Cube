@@ -5,16 +5,12 @@ class Admin extends ExtraController
 {
     public function tab_board()
     {
-        $this->load->library('unit_test');
-
-        $post = $this->input->post('type');
-
         $this->load->model('admin_model');
 
-        $result_util = $this->admin_model->get_utilisateurs();
+        $result_util = $this->admin_model->get_type_utilisateur();
         $res_citoyen = $this->admin_model->get_utilisateur_for_citoyen();
 
-        $result_ressources = $this->admin_model->get_ressources();
+        $result_ressources = $this->admin_model->get_ressources_by_relation_type();
 
         $categorie = $this->admin_model->get_categorie();
 
@@ -24,27 +20,12 @@ class Admin extends ExtraController
             'citoyen' => $res_citoyen,
             'categorie' => $categorie
         ]);
-
-        foreach($result_util->result() as $d){
-
-            $test =  $d->type;
-
-            $expected_result = 'citoyen_nc';
-        
-            $test_name = 'Test utilisateur '.$d->id_utilisateur.' : '.$d->nom;
-        
-            echo $this->unit->run($test, $expected_result, $test_name);
-        }
-       
     }
 
     public function supprimer_ressources()
     {
-
         if ($this->input->post('action') == 'Supprimer') {
-
             $idRessources = (isset($_POST['ressource_id']) && is_array($_POST['ressource_id'])) ? implode(",", $_POST['ressource_id']) : $_POST['ressource_id'];
-
             $requete_ressources = sprintf("DELETE FROM t_ressources WHERE id_ressource IN (%d)", $idRessources);
             $this->db->query($requete_ressources);
         }
@@ -58,8 +39,11 @@ class Admin extends ExtraController
         $user_id = $_POST['user_id'];
 
         $this->load->model('admin_model');
+        //$requete_utilisateurs = sprintf("SELECT * FROM t_type INNER JOIN t_utilisateurs ON t_type.id_type = t_utilisateurs.id_type WHERE t_utilisateurs.id_utilisateur = t_utilisateurs.id_utilisateur");
 
-        $requete_change = sprintf("UPDATE t_utilisateurs SET t_utilisateurs.type = '%s' WHERE id_utilisateur = %d", $type, $user_id);
+        //$requete_change = sprintf("UPDATE t_utilisateurs SET t_utilisateurs.id_type = %s WHERE id_utilisateur = %d", $type, $user_id);
+        $requete_change = sprintf("UPDATE t_type.type FROM t_type INNER JOIN t_utilisateurs ON t_type.id_type = t_utilisateurs.id_type SET t_utilisateurs.id_type = %s WHERE id_utilisateur = %d", $type, $user_id);
+
         $obj_result = $this->db->query($requete_change);
 
         $this->redirect('/admin/tab_board');
