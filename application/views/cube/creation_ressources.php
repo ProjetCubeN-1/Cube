@@ -11,12 +11,16 @@
         </div>
         <div>
           <h6>Type :</h6>
-          <select class="form-control" id="type_contenu" name="type_contenu" value="">
-            <option value="None">Indiquer le type de contenu</option>
-            <option value="Vidéo">Vidéo</option>
-            <option value="Article">Article</option>
-            <option value="Défi">Défi</option>
-          </select><br />
+          <select class="form-control" id="type" name="type">
+            <option value="None">Indiquer le type de la ressource</option>
+
+            <?php foreach ($result_type_ressource as $type_ressource) { ?>
+
+              <option value="<?php echo $type_ressource->id_type_ressource ?>"><?php echo $type_ressource->type_ressource ?></option>
+
+            <?php  } ?>
+
+          </select><br>
         </div>
         <div>
           <h6>Contenu :</h6>
@@ -24,19 +28,29 @@
         </div>
         <div>
           <h6>Catégorie :</h6>
-          <select class="form-control" id="text_categorie" name="text_categorie" value="">
+
+          <select class="form-control" id="categorie" name="categorie">
             <option value="None">Indiquer la catégorie</option>
-            <option value="Monde professionnel">Monde professionnel</option>
-            <option value="Qualité de vie">Qualité de vie</option>
-          </select><br />
+
+            <?php foreach ($result_categorie as $categorie) { ?>
+
+              <option value="<?php echo $categorie->id_categorie ?>"><?php echo $categorie->nom_categorie ?></option>
+
+            <?php  } ?>
+          </select><br>
         </div>
         <div>
           <h6>type de relation :</h6>
-          <select class="form-control" id="type_relation" name="type_relation" value="">
+          <select class="form-control" id="type_relation" name="type_relation">
             <option value="None">Indiquer le type de relation</option>
-            <option value="Professionnelle">Professionnelle</option>
-            <option value="Famille">Famille</option>
-          </select><br />
+
+            <?php foreach ($result_type_relation as $type_relation) { ?>
+
+              <option value="<?php echo $type_relation->id_type_relation ?>"><?php echo $type_relation->type_relation ?></option>
+
+            <?php  } ?>
+          </select><br>
+
         </div>
         <button class="btn btn-dark">Publier</button>
       </form>

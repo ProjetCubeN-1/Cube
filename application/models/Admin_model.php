@@ -25,6 +25,13 @@ class Admin_model extends CI_Model
         $result_ress = $obj_result;
         return $result_ress;
     }
+    public function get_ressources_by_relation_type_categorie()
+    {
+        $requete_ressource = sprintf("SELECT *,t_type_relation.type_relation,t_type_ressource.type_ressource,t_categorie.nom_categorie FROM t_type_relation INNER JOIN t_ressources ON t_type_relation.id_type_relation = t_ressources.id_type_relation INNER JOIN t_type_ressource ON t_type_ressource.id_type_ressource = t_ressources.id_type_ressource INNER JOIN t_categorie ON t_categorie.id_categorie = t_ressources.id_categorie WHERE t_ressources.id_ressource = t_ressources.id_ressource ");
+        $obj_result = $this->db->query($requete_ressource);
+        $result_ress = $obj_result;
+        return $result_ress;
+    }
     public function get_ressource()
     {
         $requete_ressources = sprintf("SELECT * FROM t_ressources");

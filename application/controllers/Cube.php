@@ -56,17 +56,23 @@ class Cube extends ExtraController
         ]);
     }
 
-    public function creation_ressources($ressources_menu = null, $requete = null)
+    public function creation_ressources()
     {
         $this->load->model('ressource_model');
 
 
-        $result_ressource = $this->ressource_model->get_ressources_all();
+        $result_ressource = $this->ressource_model->get_ressource_menu();
+
+        $result_type_ressource = $this->ressource_model->get_type_ressource();
+        $result_categorie = $this->ressource_model->get_categorie();
+        $result_type_relation = $this->ressource_model->get_type_relation();
 
 
         $this->view_portal('/cube/creation_ressources', [
             'result' => $result_ressource,
-
+            'result_type_ressource' => $result_type_ressource,
+            'result_categorie' => $result_categorie,
+            'result_type_relation' => $result_type_relation
         ]);
     }
 
@@ -85,50 +91,32 @@ class Cube extends ExtraController
     public function retirer_mettre_cote($ressource_id = null)
     {
 
-        //$this->load->model('ressource_model');
-        //
-        //$this->ressource_model->get_ressource($ressource_id);
-        //
-        //$this->ressource_model->retirer_mettre_cote($ressource_id);
+        $this->load->model('ressource_model');
 
-        $misdecote = sprintf("SELECT * FROM t_ressources WHERE id_ressource = %d", $ressource_id);
-        $this->db->query($misdecote);
+        $this->ressource_model->get_ressource($ressource_id);
 
-        $req = sprintf(
-            "DELETE FROM t_misdecote WHERE id_ressources = %d AND id_utilisateurs = %s",
-            $ressource_id,
-            $this->db->escape($this->session->id)
-        );
-        $this->db->query($req);
+        $this->ressource_model->retirer_mettre_cote($ressource_id);
 
         $this->redirect('/cube/ressource/' . $ressource_id);
     }
 
     public function publier_ressources()
     {
-        $key = sprintf("SET FOREIGN_KEY_CHECKS=0;
-        ");
-        $this->db->query($key);
-        $this->load->library('unit_test');
+
 
         $req = sprintf(
-            "INSERT INTO t_ressources (nom_ressources,id_type_ressource,contenu,categorie,type_relation,id_utilisateur,valide) 
-            VALUES (%s,%s,%s,%s,%s,%d,'false')",
+            "INSERT INTO t_ressources (nom_ressources,id_type_ressource,contenu,id_categorie,id_type_relation,id_utilisateur,valide) 
+            VALUES (%s,%s,%s,%s,%s,%s,'false')",
             $this->db->escape($this->input->post('text_titre')),
-            $this->db->escape($this->input->post('type_contenu')),
+            $this->db->escape($this->input->post('type')),
             $this->db->escape($this->input->post('text_contenu')),
-            $this->db->escape($this->input->post('text_categorie')),
+            $this->db->escape($this->input->post('categorie')),
             $this->db->escape($this->input->post('type_relation')),
             $this->db->escape($this->session->id)
         );
         $test = $this->db->query($req);
 
         $last_res_id = $this->db->insert_id();
-
-        $test_name = "coucou";
-        $this->session->ressource_id =  $last_res_id;
-
-        echo $this->unit->run($req, $test, $test_name);
 
         $this->redirect('/cube/accueil');
     }

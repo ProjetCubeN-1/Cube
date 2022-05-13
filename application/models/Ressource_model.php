@@ -72,9 +72,14 @@ class Ressource_model extends CI_Model
 
     public function retirer_mettre_cote($ressource_id)
     {
-        $req = sprintf("DELETE FROM t_favoris WHERE id_ressources = %d AND id_utilisateurs = %s", $ressource_id, $this->db->escape($this->session->id));
-        $obj_rmc = $this->db->query($req);
-        return $obj_rmc;
+
+        $req = sprintf(
+            "DELETE FROM t_misdecote WHERE id_ressources = %d AND id_utilisateurs = %s",
+            $ressource_id,
+            $this->db->escape($this->session->id)
+        );
+        $obj_mc = $this->db->query($req);
+        return $obj_mc;
     }
 
     public function get_com_id($ressource_id)
@@ -83,5 +88,27 @@ class Ressource_model extends CI_Model
         $obj_com = $this->db->query($res);
         $result_com = $obj_com->result();
         return $result_com;
+    }
+
+    public function get_type_ressource()
+    {
+        $requete_type_ressource = sprintf("SELECT * FROM t_type_ressource");
+        $obj_type_ressource = $this->db->query($requete_type_ressource);
+        $result_type_ressource = $obj_type_ressource->result();
+        return $result_type_ressource;
+    }
+    public function get_categorie()
+    {
+        $requete_categorie = sprintf("SELECT * FROM t_categorie");
+        $obj_categorie = $this->db->query($requete_categorie);
+        $result_categorie = $obj_categorie->result();
+        return $result_categorie;
+    }
+    public function get_type_relation()
+    {
+        $requete_type_relation = sprintf("SELECT * FROM t_type_relation");
+        $obj_type_relation = $this->db->query($requete_type_relation);
+        $result_type_relation = $obj_type_relation->result();
+        return $result_type_relation;
     }
 }

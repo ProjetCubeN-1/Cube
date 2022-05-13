@@ -156,13 +156,13 @@ if ($id_result->type == "super_admin" or $id_result->type == "admin") { //accede
                         <tbody>
                             <?php
 
-                            foreach ($ressources->result() as $resultat) {
+                            foreach ($ressources_categorie_relation_type->result() as $resultat) {
                             ?>
                                 <tr>
                                     <td style="display:none;"><input type="text" readonly name="ressource_id_text" value="<?php echo $resultat->id_ressource ?>"></td>
                                     <td><?php echo $resultat->id_ressource ?></td>
                                     <td><?php echo $resultat->nom_ressources ?></td>
-                                    <td><?php echo $resultat->categorie ?></td>
+                                    <td><?php echo $resultat->nom_categorie ?></td>
                                     <td><?php echo $resultat->type_relation ?></td>
                                     <td><?php echo $resultat->type_ressource ?></td>
                                     <td><?php echo $resultat->id_utilisateur ?></td>
@@ -207,12 +207,12 @@ if ($id_result->type == "super_admin" or $id_result->type == "admin") { //accede
                     </thead>
                     <tbody>
                         <?php
-                        foreach ($ressources->result() as $resultat) { ?>
+                        foreach ($ressources_categorie_relation_type->result() as $resultat) { ?>
                             <form method="get" action="/admin/ressource_valide">
                                 <tr>
                                     <td style="display:none;"><input type="text" readonly name="ressource_id" value="<?php echo $resultat->id_ressource ?>"></td>
                                     <td><?php echo $resultat->nom_ressources ?></td>
-                                    <td><?php echo $resultat->categorie ?></td>
+                                    <td><?php echo $resultat->nom_categorie ?></td>
                                     <td><?php echo $resultat->type_relation ?></td>
                                     <td><?php echo $resultat->type_ressource ?></td>
                                     <td><?php echo $resultat->id_utilisateur ?></td>

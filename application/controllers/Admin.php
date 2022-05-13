@@ -11,6 +11,7 @@ class Admin extends ExtraController
         $res_citoyen = $this->admin_model->get_utilisateur_for_citoyen();
 
         $result_ressources = $this->admin_model->get_ressources_by_relation_type();
+        $result_ressources_categorie_relation_type = $this->admin_model->get_ressources_by_relation_type_categorie();
 
         $categorie = $this->admin_model->get_categorie();
 
@@ -18,7 +19,8 @@ class Admin extends ExtraController
             'uid' => $result_util,
             'ressources' => $result_ressources,
             'citoyen' => $res_citoyen,
-            'categorie' => $categorie
+            'categorie' => $categorie,
+            'ressources_categorie_relation_type' => $result_ressources_categorie_relation_type
         ]);
     }
 
