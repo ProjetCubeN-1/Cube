@@ -18,8 +18,7 @@
                 <?php
                 } ?>
 
-                <?php if ($result->mis_de_cote != '1') {
-                ?>
+                <?php if (!$result) { ?>
                     <div class="mr-3">
                         <form method="post" action="/cube/mettre_cote/<?php echo $result->id_ressource ?>">
                             <input type="submit" name="cote" class="btn btn-secondary" value="Mettre de coté">

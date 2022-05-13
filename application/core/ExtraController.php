@@ -67,7 +67,7 @@ class ExtraController extends CI_Controller
 
         $this->load->model('ressource_model');
         $ressources_menu = $this->ressource_model->get_ressource_menu();
-        $result_util = $this->ressource_model->get_utilisateurs();
+        $result_util = $this->ressource_model->get_type_utilisateur();
         $favoris_menu = $this->ressource_model->get_favoris($ressource_id);
 
         $this->load->view('/templates/sidebar',  [
@@ -115,7 +115,7 @@ class ExtraController extends CI_Controller
 
         $this->load->model('ressource_model');
         $ressources_menu = $this->ressource_model->get_ressource_menu();
-        $result_util = $this->ressource_model->get_utilisateurs();
+        $result_util = $this->ressource_model->get_type_utilisateur();
         $favoris_menu = $this->ressource_model->get_favoris($ressource_id);
 
         $this->load->view('/templates/sidebar',  [

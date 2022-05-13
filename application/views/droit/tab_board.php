@@ -29,7 +29,9 @@ if ($id_result->type == "super_admin" or $id_result->type == "admin") { //accede
                     </thead>
                     <tbody>
                         <?php
-                        foreach ($uid->result() as $info) { ?>
+                        foreach ($uid->result() as $info) {
+
+                        ?>
                             <?php if ($info->type != "citoyen_nc") { ?>
                                 <form method="post" action="/admin/change_type">
 
@@ -43,21 +45,21 @@ if ($id_result->type == "super_admin" or $id_result->type == "admin") { //accede
                                             <select <?php if ($info->type == "citoyen_nc") { ?> disabled="disabled" <?php } ?> class="form-control" id="type" name="type" value="<?php echo $info->type ?>">
                                                 <option <?php if ($info->type == "super_admin") {
                                                             echo "selected";
-                                                        } ?> value="super_admin">super_admin</option>
+                                                        } ?> value="1">super_admin</option>
 
                                                 <option <?php if ($info->type == "admin") {
                                                             echo "selected";
-                                                        } ?> value="admin">admin</option>
+                                                        } ?> value="2">admin</option>
 
                                                 <option <?php if ($info->type == "modérateur") {
                                                             echo "selected";
-                                                        } ?> value="modérateur">modérateur</option>
+                                                        } ?> value="3">modérateur</option>
 
                                                 <option <?php if ($info->type == "citoyen_connecté") {
                                                             echo "selected";
-                                                        } ?> value="citoyen_connecté">citoyen_connecté</option>
+                                                        } ?> value="5">citoyen_connecté</option>
                                                 <?php if ($info->type == "citoyen_nc") { ?>
-                                                    <option selected value="citoyen_nc">citoyen_nc</option>
+                                                    <option selected value="4">citoyen_nc</option>
                                                 <?php }
                                                 ?>
                                             </select>
@@ -104,7 +106,7 @@ if ($id_result->type == "super_admin" or $id_result->type == "admin") { //accede
                                     <td style="display:none;"><input type="text" readonly name="id_user" value="<?php echo $conf_citoyen->id_utilisateur ?>"></td>
                                     <td><?php echo $conf_citoyen->nom ?></td>
                                     <td><?php echo $conf_citoyen->prenom ?></td>
-                                    <td><?php echo $conf_citoyen->type ?></td>
+                                    <td><?php echo $conf_citoyen->email ?></td>
                                     <td>
                                         <select class="form-control" id="confirme" name="confirme" value="<?= $conf_citoyen->confirme ?>">
                                             <option <?php if ($conf_citoyen->confirme == "1") {
@@ -153,7 +155,9 @@ if ($id_result->type == "super_admin" or $id_result->type == "admin") { //accede
                         </thead>
                         <tbody>
                             <?php
-                            foreach ($ressources->result() as $resultat) { ?>
+
+                            foreach ($ressources->result() as $resultat) {
+                            ?>
                                 <tr>
                                     <td style="display:none;"><input type="text" readonly name="ressource_id_text" value="<?php echo $resultat->id_ressource ?>"></td>
                                     <td><?php echo $resultat->id_ressource ?></td>
@@ -188,22 +192,23 @@ if ($id_result->type == "super_admin" or $id_result->type == "admin") { //accede
         </div>
         <div class="card-body">
             <div class="col-12">
-                <form method="post" action="/admin/ressource_valide">
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th>Nom de la ressource</th>
-                                <th>Catégorie</th>
-                                <th>Type de relation</th>
-                                <th>Type de ressource</th>
-                                <th>id du créateur</th>
-                                <th>Valide</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php
-                            foreach ($ressources->result() as $resultat) { ?>
+
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Nom de la ressource</th>
+                            <th>Catégorie</th>
+                            <th>Type de relation</th>
+                            <th>Type de ressource</th>
+                            <th>id du créateur</th>
+                            <th>Valide</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                        foreach ($ressources->result() as $resultat) { ?>
+                            <form method="get" action="/admin/ressource_valide">
                                 <tr>
                                     <td style="display:none;"><input type="text" readonly name="ressource_id" value="<?php echo $resultat->id_ressource ?>"></td>
                                     <td><?php echo $resultat->nom_ressources ?></td>
@@ -224,10 +229,10 @@ if ($id_result->type == "super_admin" or $id_result->type == "admin") { //accede
                                     </td>
                                     <td><input type="submit" name="action" class="btn btn-secondary" value="Valider"></td>
                                 </tr>
-                            <?php } ?>
-                        </tbody>
-                    </table>
-                </form>
+                            </form>
+                        <?php } ?>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>

@@ -13,20 +13,11 @@ class Ressource_model extends CI_Model
 
     public function get_ressources_cote()
     {
-        $requete = sprintf("SELECT * FROM t_ressources WHERE mis_de_cote = 1");
+        $requete = sprintf("SELECT *,id_ressources FROM t_misdecote INNER JOIN t_ressources ON t_misdecote.id_ressources = t_ressources.id_ressource WHERE t_misdecote.id_utilisateurs = %d", $this->session->id);
         $obj_result = $this->db->query($requete);
         $ressources_menu = $obj_result->result();
         return $ressources_menu;
     }
-    public function get_ressources_all()
-    {
-        $requete = sprintf("SELECT * FROM t_ressources");
-        $obj_result = $this->db->query($requete);
-        $ressources_menu = $obj_result->result();
-        return $ressources_menu;
-    }
-
-
 
     public function get_favoris()
     {
@@ -54,21 +45,34 @@ class Ressource_model extends CI_Model
 
     public function get_utilisateurs()
     {
-        $requete_utilisateurs = sprintf("SELECT * FROM t_utilisateurs where id_utilisateur = %d", $this->session->id);
+        $requete_utilisateurs = sprintf("SELECT * FROM t_utilisateurs where id_utilisateur = %d", $this->session->id_user);
         $obj_result_util = $this->db->query($requete_utilisateurs);
         $result_util = $obj_result_util->row();
         return $result_util;
     }
+
+    public function get_type_utilisateur()
+    {
+        $requete_utilisateurs = sprintf("SELECT t_type.type,t_utilisateurs.id_type FROM t_type INNER JOIN t_utilisateurs ON t_type.id_type = t_utilisateurs.id_type WHERE t_utilisateurs.id_utilisateur = %d", $this->session->id);
+        $obj_result_util = $this->db->query($requete_utilisateurs);
+        $result_util = $obj_result_util->row();
+        return $result_util;
+    }
+
     public function mettre_cote($ressource_id)
     {
-        $req = sprintf("UPDATE t_ressources SET mis_de_cote = '1' WHERE id_ressource = %d", $ressource_id);
+        $req = sprintf(
+            " INSERT INTO t_misdecote (id_ressources,id_utilisateurs) VALUES (%d,%s)",
+            $ressource_id,
+            $this->db->escape($this->session->id)
+        );
         $obj_mc = $this->db->query($req);
         return $obj_mc;
     }
 
     public function retirer_mettre_cote($ressource_id)
     {
-        $req = sprintf("UPDATE t_ressources SET mis_de_cote = '0' WHERE id_ressource = %d", $ressource_id);
+        $req = sprintf("DELETE FROM t_favoris WHERE id_ressources = %d AND id_utilisateurs = %s", $ressource_id, $this->db->escape($this->session->id));
         $obj_rmc = $this->db->query($req);
         return $obj_rmc;
     }
