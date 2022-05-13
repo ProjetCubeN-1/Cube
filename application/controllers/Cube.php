@@ -42,6 +42,7 @@ class Cube extends ExtraController
         $result_ressource = $this->ressource_model->get_ressource($ressource_id);
         $result_util = $this->ressource_model->get_type_utilisateur();
         $favoris = $this->ressource_model->get_favoris();
+        $misdecote = $this->ressource_model->get_ressources_cote();
         $result_commentaire = $this->ressource_model->get_commentaires($ressource_id);
 
 
@@ -49,7 +50,9 @@ class Cube extends ExtraController
             'result' => $result_ressource,
             'get_com' => $result_commentaire,
             'user' => $result_util,
-            'favoris' => $favoris
+            'favoris' => $favoris,
+            'misdecote' => $misdecote,
+
         ]);
     }
 
