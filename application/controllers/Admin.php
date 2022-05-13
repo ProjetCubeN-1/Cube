@@ -41,8 +41,8 @@ class Admin extends ExtraController
         $this->load->model('admin_model');
         //$requete_utilisateurs = sprintf("SELECT * FROM t_type INNER JOIN t_utilisateurs ON t_type.id_type = t_utilisateurs.id_type WHERE t_utilisateurs.id_utilisateur = t_utilisateurs.id_utilisateur");
 
-        //$requete_change = sprintf("UPDATE t_utilisateurs SET t_utilisateurs.id_type = %s WHERE id_utilisateur = %d", $type, $user_id);
-        $requete_change = sprintf("UPDATE t_type.type FROM t_type INNER JOIN t_utilisateurs ON t_type.id_type = t_utilisateurs.id_type SET t_utilisateurs.id_type = %s WHERE id_utilisateur = %d", $type, $user_id);
+        $requete_change = sprintf("UPDATE t_utilisateurs SET t_utilisateurs.id_type = %s WHERE id_utilisateur = %d", $type, $user_id);
+        //$requete_change = sprintf("UPDATE t_type.type FROM t_type INNER JOIN t_utilisateurs ON t_type.id_type = t_utilisateurs.id_type SET t_utilisateurs.id_type = %s WHERE id_utilisateur = %d", $type, $user_id);
 
         $obj_result = $this->db->query($requete_change);
 
@@ -64,9 +64,10 @@ class Admin extends ExtraController
 
     public function ressource_valide()
     {
-        $valide = $_POST['valide'];
+        $valide = $_GET['valide'];
 
-        $ressource_id = $_POST['ressource_id'];
+
+        $ressource_id = $_GET['ressource_id'];
 
         $requete_change = sprintf("UPDATE t_ressources SET valide = '%s' WHERE id_ressource = %d", $valide, $ressource_id);
         $obj_result = $this->db->query($requete_change);

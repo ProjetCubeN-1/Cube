@@ -7,7 +7,7 @@ class Cube extends ExtraController
     {
         $this->title = "Accueil";
         $this->add_path("Accueil", '/cube/Accueil', '');
-        $this->view('/Cube/accueil');
+        $this->view('/cube/accueil');
     }
 
 
@@ -40,7 +40,7 @@ class Cube extends ExtraController
             }
         }
         $result_ressource = $this->ressource_model->get_ressource($ressource_id);
-        $result_util = $this->ressource_model->get_utilisateurs();
+        $result_util = $this->ressource_model->get_type_utilisateur();
         $favoris = $this->ressource_model->get_favoris();
         $result_commentaire = $this->ressource_model->get_commentaires($ressource_id);
 
@@ -53,10 +53,10 @@ class Cube extends ExtraController
         ]);
     }
 
-    public function creation_ressources($ressources_menu= null, $requete=null)
+    public function creation_ressources($ressources_menu = null, $requete = null)
     {
         $this->load->model('ressource_model');
-        
+
 
         $result_ressource = $this->ressource_model->get_ressources_all();
 
@@ -75,17 +75,28 @@ class Cube extends ExtraController
         $this->ressource_model->get_ressource($ressource_id);
         $this->ressource_model->mettre_cote($ressource_id);
 
+
         $this->redirect('/cube/ressource/' . $ressource_id);
     }
 
     public function retirer_mettre_cote($ressource_id = null)
     {
 
-        $this->load->model('ressource_model');
+        //$this->load->model('ressource_model');
+        //
+        //$this->ressource_model->get_ressource($ressource_id);
+        //
+        //$this->ressource_model->retirer_mettre_cote($ressource_id);
 
-        $this->ressource_model->get_ressource($ressource_id);
-        $this->ressource_model->retirer_mettre_cote($ressource_id);
+        $misdecote = sprintf("SELECT * FROM t_ressources WHERE id_ressource = %d", $ressource_id);
+        $this->db->query($misdecote);
 
+        $req = sprintf(
+            "DELETE FROM t_misdecote WHERE id_ressources = %d AND id_utilisateurs = %s",
+            $ressource_id,
+            $this->db->escape($this->session->id)
+        );
+        $this->db->query($req);
 
         $this->redirect('/cube/ressource/' . $ressource_id);
     }
@@ -98,7 +109,7 @@ class Cube extends ExtraController
         $this->load->library('unit_test');
 
         $req = sprintf(
-            "INSERT INTO t_ressources (nom_ressources,type_ressource,contenu,categorie,type_relation,id_utilisateur,valide) 
+            "INSERT INTO t_ressources (nom_ressources,id_type_ressource,contenu,categorie,type_relation,id_utilisateur,valide) 
             VALUES (%s,%s,%s,%s,%s,%d,'false')",
             $this->db->escape($this->input->post('text_titre')),
             $this->db->escape($this->input->post('type_contenu')),

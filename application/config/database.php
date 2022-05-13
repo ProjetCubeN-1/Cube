@@ -73,13 +73,37 @@ defined('BASEPATH') or exit('No direct script access allowed');
 $active_group = 'default';
 $query_builder = TRUE;
 
-if (ENVIRONMENT != "production") {
+if (ENVIRONMENT == "production") { //je suis en developpement
 	$db['default'] = array(
 		'dsn'	=> '',
-		//'hostname' => 'localhost',
-		//'username' => 'cube',
-		//'password' => 'CESI',
-		//'database' => 'cube',
+		'hostname' => 'localhost',
+		'username' => 'cube',
+		'password' => 'CESI',
+		'database' => 'cube',
+		//'hostname' => 'localhost:8889',
+		//'username' => 'root',
+		//'password' => 'root',
+		//'database' => 'cube_new',
+		'dbdriver' => 'mysqli',
+		'dbprefix' => '',
+		'pconnect' => FALSE,
+		'db_debug' => (ENVIRONMENT !== 'production'),
+		'cache_on' => FALSE,
+		'cachedir' => '',
+		'char_set' => 'utf8',
+		'dbcollat' => 'utf8_general_ci',
+		'swap_pre' => '',
+		'encrypt' => FALSE,
+		'compress' => FALSE,
+		'stricton' => FALSE,
+		'failover' => array(),
+		'save_queries' => TRUE
+	);
+} else {
+
+
+	$db['default'] = array(
+		'dsn'	=> '',
 		'hostname' => 'localhost:8889',
 		'username' => 'root',
 		'password' => 'root',
@@ -99,28 +123,4 @@ if (ENVIRONMENT != "production") {
 		'failover' => array(),
 		'save_queries' => TRUE
 	);
-} else {
-
-
-	//$db['default'] = array(
-	//	'dsn'	=> '',
-	//	'hostname' => 'localhost:8889',
-	//	'username' => 'root',
-	//	'password' => 'root',
-	//	'database' => 'cube_dev',
-	//	'dbdriver' => 'mysqli',
-	//	'dbprefix' => '',
-	//	'pconnect' => FALSE,
-	//	'db_debug' => (ENVIRONMENT !== 'production'),
-	//	'cache_on' => FALSE,
-	//	'cachedir' => '',
-	//	'char_set' => 'utf8',
-	//	'dbcollat' => 'utf8_general_ci',
-	//	'swap_pre' => '',
-	//	'encrypt' => FALSE,
-	//	'compress' => FALSE,
-	//	'stricton' => FALSE,
-	//	'failover' => array(),
-	//	'save_queries' => TRUE
-	//);
 }

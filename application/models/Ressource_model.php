@@ -13,9 +13,7 @@ class Ressource_model extends CI_Model
 
     public function get_ressources_cote()
     {
-        $requete = sprintf("SELECT * FROM t_misdecote WHERE t_misdecote.id_utilisateurs = %d", $this->session->id);
-
-        //$requete = sprintf("SELECT * FROM t_ressources WHERE mis_de_cote = 1");
+        $requete = sprintf("SELECT *,id_ressources FROM t_misdecote INNER JOIN t_ressources ON t_misdecote.id_ressources = t_ressources.id_ressource WHERE t_misdecote.id_utilisateurs = %d", $this->session->id);
         $obj_result = $this->db->query($requete);
         $ressources_menu = $obj_result->result();
         return $ressources_menu;
@@ -63,14 +61,18 @@ class Ressource_model extends CI_Model
 
     public function mettre_cote($ressource_id)
     {
-        $req = sprintf("UPDATE t_ressources SET mis_de_cote = '1' WHERE id_ressource = %d", $ressource_id);
+        $req = sprintf(
+            " INSERT INTO t_misdecote (id_ressources,id_utilisateurs) VALUES (%d,%s)",
+            $ressource_id,
+            $this->db->escape($this->session->id)
+        );
         $obj_mc = $this->db->query($req);
         return $obj_mc;
     }
 
     public function retirer_mettre_cote($ressource_id)
     {
-        $req = sprintf("UPDATE t_ressources SET mis_de_cote = '0' WHERE id_ressource = %d", $ressource_id);
+        $req = sprintf("DELETE FROM t_favoris WHERE id_ressources = %d AND id_utilisateurs = %s", $ressource_id, $this->db->escape($this->session->id));
         $obj_rmc = $this->db->query($req);
         return $obj_rmc;
     }

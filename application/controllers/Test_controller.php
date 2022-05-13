@@ -28,7 +28,7 @@ class Test_controller extends ExtraController
     {
         $this->load->model('admin_model');
 
-        $result_util = $this->admin_model->get_utilisateurs();
+        $result_util = $this->admin_model->get_type_utilisateur();
 
         $this->load->library('unit_test');
 
