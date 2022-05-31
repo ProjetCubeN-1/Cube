@@ -4,5 +4,12 @@
         "coreui/coreui": "^3.3",
         "components/jquery": "^3.6",
         "fortawesome/font-awesome": "^5.15"
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "oomphinc/composer-installers-extender": true,
+            "robloach/component-installer": true
+        }
     }
 }
