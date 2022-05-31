@@ -76,7 +76,7 @@ $query_builder = TRUE;
 if (ENVIRONMENT == "production") { //je suis en developpement
 	$db['default'] = array(
 		'dsn'	=> '',
-		'hostname' => 'https://cube.bookingcal.cloud/myadmin_67YY/',
+		'hostname' => 'http://cube.bookingcal.cloud/myadmin_67YY/',
 		'username' => 'cube',
 		'password' => 'CESI',
 		'database' => 'cube',
