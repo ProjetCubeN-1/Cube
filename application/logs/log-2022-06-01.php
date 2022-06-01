@@ -3328,3 +3328,2122 @@ INFO - 2022-06-01 07:51:13 --> File loaded: /home/debian/Cube/application/views/
 INFO - 2022-06-01 07:51:13 --> File loaded: /home/debian/Cube/application/views//templates/footer.php
 INFO - 2022-06-01 07:51:13 --> Final output sent to browser
 DEBUG - 2022-06-01 07:51:13 --> Total execution time: 0.0047
+ERROR - 2022-06-01 07:58:53 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 07:58:53 --> Config Class Initialized
+INFO - 2022-06-01 07:58:53 --> Hooks Class Initialized
+DEBUG - 2022-06-01 07:58:53 --> UTF-8 Support Enabled
+INFO - 2022-06-01 07:58:53 --> Utf8 Class Initialized
+INFO - 2022-06-01 07:58:53 --> URI Class Initialized
+INFO - 2022-06-01 07:58:53 --> Router Class Initialized
+INFO - 2022-06-01 07:58:53 --> Output Class Initialized
+INFO - 2022-06-01 07:58:53 --> Security Class Initialized
+DEBUG - 2022-06-01 07:58:53 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 07:58:53 --> Input Class Initialized
+INFO - 2022-06-01 07:58:53 --> Language Class Initialized
+INFO - 2022-06-01 07:58:53 --> Loader Class Initialized
+INFO - 2022-06-01 07:58:53 --> Database Driver Class Initialized
+INFO - 2022-06-01 07:58:53 --> Session: Class initialized using 'files' driver.
+INFO - 2022-06-01 07:58:53 --> Controller Class Initialized
+INFO - 2022-06-01 07:58:53 --> Model "Admin_model" initialized
+INFO - 2022-06-01 07:58:53 --> File loaded: /home/debian/Cube/application/views//templates/header.php
+INFO - 2022-06-01 07:58:53 --> Model "Ressource_model" initialized
+INFO - 2022-06-01 07:58:53 --> File loaded: /home/debian/Cube/application/views//templates/sidebar.php
+INFO - 2022-06-01 07:58:53 --> File loaded: /home/debian/Cube/application/views//templates/wrapper.php
+INFO - 2022-06-01 07:58:53 --> File loaded: /home/debian/Cube/application/views//templates/topbar_connect.php
+INFO - 2022-06-01 07:58:53 --> File loaded: /home/debian/Cube/application/views//droit/tab_board.php
+INFO - 2022-06-01 07:58:53 --> File loaded: /home/debian/Cube/application/views//templates/footer.php
+INFO - 2022-06-01 07:58:53 --> Final output sent to browser
+DEBUG - 2022-06-01 07:58:53 --> Total execution time: 0.0116
+ERROR - 2022-06-01 07:58:53 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 07:58:53 --> Config Class Initialized
+INFO - 2022-06-01 07:58:53 --> Hooks Class Initialized
+DEBUG - 2022-06-01 07:58:53 --> UTF-8 Support Enabled
+INFO - 2022-06-01 07:58:53 --> Utf8 Class Initialized
+ERROR - 2022-06-01 07:58:53 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 07:58:53 --> Config Class Initialized
+INFO - 2022-06-01 07:58:53 --> Hooks Class Initialized
+DEBUG - 2022-06-01 07:58:53 --> UTF-8 Support Enabled
+INFO - 2022-06-01 07:58:53 --> Utf8 Class Initialized
+INFO - 2022-06-01 07:58:53 --> URI Class Initialized
+INFO - 2022-06-01 07:58:53 --> Router Class Initialized
+INFO - 2022-06-01 07:58:53 --> Output Class Initialized
+INFO - 2022-06-01 07:58:53 --> Security Class Initialized
+DEBUG - 2022-06-01 07:58:53 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 07:58:53 --> Input Class Initialized
+INFO - 2022-06-01 07:58:53 --> Language Class Initialized
+ERROR - 2022-06-01 07:58:53 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 07:58:53 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 07:58:53 --> Config Class Initialized
+INFO - 2022-06-01 07:58:53 --> Hooks Class Initialized
+DEBUG - 2022-06-01 07:58:53 --> UTF-8 Support Enabled
+INFO - 2022-06-01 07:58:53 --> Utf8 Class Initialized
+INFO - 2022-06-01 07:58:53 --> URI Class Initialized
+INFO - 2022-06-01 07:58:53 --> Router Class Initialized
+INFO - 2022-06-01 07:58:53 --> Output Class Initialized
+INFO - 2022-06-01 07:58:53 --> Security Class Initialized
+DEBUG - 2022-06-01 07:58:53 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 07:58:53 --> Input Class Initialized
+INFO - 2022-06-01 07:58:53 --> Language Class Initialized
+ERROR - 2022-06-01 07:58:53 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 07:58:54 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 07:58:54 --> Config Class Initialized
+INFO - 2022-06-01 07:58:54 --> Hooks Class Initialized
+DEBUG - 2022-06-01 07:58:54 --> UTF-8 Support Enabled
+INFO - 2022-06-01 07:58:54 --> Utf8 Class Initialized
+INFO - 2022-06-01 07:58:54 --> URI Class Initialized
+INFO - 2022-06-01 07:58:54 --> Router Class Initialized
+INFO - 2022-06-01 07:58:54 --> Output Class Initialized
+INFO - 2022-06-01 07:58:54 --> Security Class Initialized
+DEBUG - 2022-06-01 07:58:54 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 07:58:54 --> Input Class Initialized
+INFO - 2022-06-01 07:58:54 --> Language Class Initialized
+INFO - 2022-06-01 07:58:54 --> Loader Class Initialized
+INFO - 2022-06-01 07:58:54 --> Database Driver Class Initialized
+INFO - 2022-06-01 07:58:54 --> Session: Class initialized using 'files' driver.
+INFO - 2022-06-01 07:58:54 --> Controller Class Initialized
+INFO - 2022-06-01 07:58:54 --> Model "Admin_model" initialized
+INFO - 2022-06-01 07:58:54 --> File loaded: /home/debian/Cube/application/views//templates/header.php
+INFO - 2022-06-01 07:58:54 --> Model "Ressource_model" initialized
+INFO - 2022-06-01 07:58:54 --> File loaded: /home/debian/Cube/application/views//templates/sidebar.php
+INFO - 2022-06-01 07:58:54 --> File loaded: /home/debian/Cube/application/views//templates/wrapper.php
+INFO - 2022-06-01 07:58:54 --> File loaded: /home/debian/Cube/application/views//templates/topbar_connect.php
+INFO - 2022-06-01 07:58:54 --> File loaded: /home/debian/Cube/application/views//droit/tab_board.php
+INFO - 2022-06-01 07:58:54 --> File loaded: /home/debian/Cube/application/views//templates/footer.php
+INFO - 2022-06-01 07:58:54 --> Final output sent to browser
+DEBUG - 2022-06-01 07:58:54 --> Total execution time: 0.0088
+ERROR - 2022-06-01 07:58:54 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 07:58:54 --> Config Class Initialized
+INFO - 2022-06-01 07:58:54 --> Hooks Class Initialized
+DEBUG - 2022-06-01 07:58:54 --> UTF-8 Support Enabled
+INFO - 2022-06-01 07:58:54 --> Utf8 Class Initialized
+ERROR - 2022-06-01 07:58:54 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 07:58:54 --> Config Class Initialized
+INFO - 2022-06-01 07:58:54 --> Hooks Class Initialized
+DEBUG - 2022-06-01 07:58:54 --> UTF-8 Support Enabled
+INFO - 2022-06-01 07:58:54 --> Utf8 Class Initialized
+INFO - 2022-06-01 07:58:54 --> URI Class Initialized
+INFO - 2022-06-01 07:58:54 --> Router Class Initialized
+INFO - 2022-06-01 07:58:54 --> Output Class Initialized
+INFO - 2022-06-01 07:58:54 --> Security Class Initialized
+DEBUG - 2022-06-01 07:58:54 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 07:58:54 --> Input Class Initialized
+INFO - 2022-06-01 07:58:54 --> Language Class Initialized
+ERROR - 2022-06-01 07:58:54 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 07:58:54 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 07:58:54 --> Config Class Initialized
+INFO - 2022-06-01 07:58:54 --> Hooks Class Initialized
+DEBUG - 2022-06-01 07:58:54 --> UTF-8 Support Enabled
+INFO - 2022-06-01 07:58:54 --> Utf8 Class Initialized
+INFO - 2022-06-01 07:58:54 --> URI Class Initialized
+INFO - 2022-06-01 07:58:54 --> Router Class Initialized
+INFO - 2022-06-01 07:58:54 --> Output Class Initialized
+INFO - 2022-06-01 07:58:54 --> Security Class Initialized
+DEBUG - 2022-06-01 07:58:54 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 07:58:54 --> Input Class Initialized
+INFO - 2022-06-01 07:58:54 --> Language Class Initialized
+ERROR - 2022-06-01 07:58:54 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 08:04:10 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:04:10 --> Config Class Initialized
+INFO - 2022-06-01 08:04:10 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:04:10 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:04:10 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:04:10 --> URI Class Initialized
+INFO - 2022-06-01 08:04:10 --> Router Class Initialized
+INFO - 2022-06-01 08:04:10 --> Output Class Initialized
+INFO - 2022-06-01 08:04:10 --> Security Class Initialized
+DEBUG - 2022-06-01 08:04:10 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:04:10 --> Input Class Initialized
+INFO - 2022-06-01 08:04:10 --> Language Class Initialized
+ERROR - 2022-06-01 08:04:10 --> 404 Page Not Found: Static/version1650638659
+ERROR - 2022-06-01 08:04:10 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:04:10 --> Config Class Initialized
+INFO - 2022-06-01 08:04:10 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:04:10 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:04:10 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:04:10 --> URI Class Initialized
+DEBUG - 2022-06-01 08:04:10 --> No URI present. Default controller set.
+INFO - 2022-06-01 08:04:10 --> Router Class Initialized
+INFO - 2022-06-01 08:04:10 --> Output Class Initialized
+INFO - 2022-06-01 08:04:10 --> Security Class Initialized
+DEBUG - 2022-06-01 08:04:10 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:04:10 --> Input Class Initialized
+INFO - 2022-06-01 08:04:10 --> Language Class Initialized
+INFO - 2022-06-01 08:04:10 --> Loader Class Initialized
+INFO - 2022-06-01 08:04:10 --> Database Driver Class Initialized
+INFO - 2022-06-01 08:04:10 --> Session: Class initialized using 'files' driver.
+INFO - 2022-06-01 08:04:10 --> Controller Class Initialized
+DEBUG - 2022-06-01 08:04:10 --> login::index
+INFO - 2022-06-01 08:04:10 --> File loaded: /home/debian/Cube/application/views//templates/header.php
+INFO - 2022-06-01 08:04:10 --> File loaded: /home/debian/Cube/application/views//templates/wrapper.php
+INFO - 2022-06-01 08:04:10 --> File loaded: /home/debian/Cube/application/views//templates/topbar.php
+INFO - 2022-06-01 08:04:10 --> File loaded: /home/debian/Cube/application/views/login/authentification.php
+INFO - 2022-06-01 08:04:10 --> File loaded: /home/debian/Cube/application/views//templates/footer.php
+INFO - 2022-06-01 08:04:10 --> Final output sent to browser
+DEBUG - 2022-06-01 08:04:10 --> Total execution time: 0.0062
+ERROR - 2022-06-01 08:05:01 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:05:01 --> Config Class Initialized
+INFO - 2022-06-01 08:05:01 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:05:01 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:05:01 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:05:01 --> URI Class Initialized
+INFO - 2022-06-01 08:05:01 --> Router Class Initialized
+INFO - 2022-06-01 08:05:01 --> Output Class Initialized
+INFO - 2022-06-01 08:05:01 --> Security Class Initialized
+DEBUG - 2022-06-01 08:05:01 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:05:01 --> Input Class Initialized
+INFO - 2022-06-01 08:05:01 --> Language Class Initialized
+INFO - 2022-06-01 08:05:01 --> Loader Class Initialized
+INFO - 2022-06-01 08:05:01 --> Database Driver Class Initialized
+INFO - 2022-06-01 08:05:01 --> Session: Class initialized using 'files' driver.
+INFO - 2022-06-01 08:05:01 --> Controller Class Initialized
+INFO - 2022-06-01 08:05:01 --> Model "Admin_model" initialized
+INFO - 2022-06-01 08:05:01 --> File loaded: /home/debian/Cube/application/views//templates/header.php
+INFO - 2022-06-01 08:05:01 --> Model "Ressource_model" initialized
+INFO - 2022-06-01 08:05:01 --> File loaded: /home/debian/Cube/application/views//templates/sidebar.php
+INFO - 2022-06-01 08:05:01 --> File loaded: /home/debian/Cube/application/views//templates/wrapper.php
+INFO - 2022-06-01 08:05:01 --> File loaded: /home/debian/Cube/application/views//templates/topbar_connect.php
+INFO - 2022-06-01 08:05:01 --> File loaded: /home/debian/Cube/application/views//droit/tab_board.php
+INFO - 2022-06-01 08:05:01 --> File loaded: /home/debian/Cube/application/views//templates/footer.php
+INFO - 2022-06-01 08:05:01 --> Final output sent to browser
+DEBUG - 2022-06-01 08:05:01 --> Total execution time: 0.0083
+ERROR - 2022-06-01 08:05:01 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:05:01 --> Config Class Initialized
+INFO - 2022-06-01 08:05:01 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:05:01 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:05:01 --> Utf8 Class Initialized
+ERROR - 2022-06-01 08:05:01 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:05:01 --> Config Class Initialized
+INFO - 2022-06-01 08:05:01 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:05:01 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:05:01 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:05:01 --> URI Class Initialized
+INFO - 2022-06-01 08:05:01 --> Router Class Initialized
+INFO - 2022-06-01 08:05:01 --> Output Class Initialized
+INFO - 2022-06-01 08:05:01 --> Security Class Initialized
+DEBUG - 2022-06-01 08:05:01 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:05:01 --> Input Class Initialized
+INFO - 2022-06-01 08:05:01 --> Language Class Initialized
+ERROR - 2022-06-01 08:05:01 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 08:05:02 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:05:02 --> Config Class Initialized
+INFO - 2022-06-01 08:05:02 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:05:02 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:05:02 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:05:02 --> URI Class Initialized
+INFO - 2022-06-01 08:05:02 --> Router Class Initialized
+INFO - 2022-06-01 08:05:02 --> Output Class Initialized
+INFO - 2022-06-01 08:05:02 --> Security Class Initialized
+DEBUG - 2022-06-01 08:05:02 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:05:02 --> Input Class Initialized
+INFO - 2022-06-01 08:05:02 --> Language Class Initialized
+ERROR - 2022-06-01 08:05:02 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 08:10:45 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:45 --> Config Class Initialized
+INFO - 2022-06-01 08:10:45 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:45 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:45 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:45 --> URI Class Initialized
+INFO - 2022-06-01 08:10:45 --> Router Class Initialized
+INFO - 2022-06-01 08:10:45 --> Output Class Initialized
+INFO - 2022-06-01 08:10:45 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:45 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:45 --> Input Class Initialized
+INFO - 2022-06-01 08:10:45 --> Language Class Initialized
+INFO - 2022-06-01 08:10:45 --> Loader Class Initialized
+INFO - 2022-06-01 08:10:45 --> Database Driver Class Initialized
+INFO - 2022-06-01 08:10:45 --> Session: Class initialized using 'files' driver.
+INFO - 2022-06-01 08:10:45 --> Controller Class Initialized
+INFO - 2022-06-01 08:10:45 --> Model "Admin_model" initialized
+INFO - 2022-06-01 08:10:45 --> File loaded: /home/debian/Cube/application/views//templates/header.php
+INFO - 2022-06-01 08:10:45 --> Model "Ressource_model" initialized
+INFO - 2022-06-01 08:10:45 --> File loaded: /home/debian/Cube/application/views//templates/sidebar.php
+INFO - 2022-06-01 08:10:45 --> File loaded: /home/debian/Cube/application/views//templates/wrapper.php
+INFO - 2022-06-01 08:10:45 --> File loaded: /home/debian/Cube/application/views//templates/topbar_connect.php
+INFO - 2022-06-01 08:10:45 --> File loaded: /home/debian/Cube/application/views//droit/tab_board.php
+INFO - 2022-06-01 08:10:45 --> File loaded: /home/debian/Cube/application/views//templates/footer.php
+INFO - 2022-06-01 08:10:45 --> Final output sent to browser
+DEBUG - 2022-06-01 08:10:45 --> Total execution time: 0.0100
+ERROR - 2022-06-01 08:10:45 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:45 --> Config Class Initialized
+INFO - 2022-06-01 08:10:45 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:45 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:45 --> Utf8 Class Initialized
+ERROR - 2022-06-01 08:10:45 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:45 --> Config Class Initialized
+INFO - 2022-06-01 08:10:45 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:45 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:45 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:45 --> URI Class Initialized
+INFO - 2022-06-01 08:10:45 --> Router Class Initialized
+INFO - 2022-06-01 08:10:45 --> Output Class Initialized
+INFO - 2022-06-01 08:10:45 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:45 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:45 --> Input Class Initialized
+INFO - 2022-06-01 08:10:45 --> Language Class Initialized
+ERROR - 2022-06-01 08:10:45 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 08:10:45 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:45 --> Config Class Initialized
+INFO - 2022-06-01 08:10:45 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:45 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:45 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:45 --> URI Class Initialized
+INFO - 2022-06-01 08:10:45 --> Router Class Initialized
+INFO - 2022-06-01 08:10:45 --> Output Class Initialized
+INFO - 2022-06-01 08:10:45 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:45 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:45 --> Input Class Initialized
+INFO - 2022-06-01 08:10:45 --> Language Class Initialized
+ERROR - 2022-06-01 08:10:45 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 08:10:46 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:46 --> Config Class Initialized
+INFO - 2022-06-01 08:10:46 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:46 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:46 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:46 --> URI Class Initialized
+INFO - 2022-06-01 08:10:46 --> Router Class Initialized
+INFO - 2022-06-01 08:10:46 --> Output Class Initialized
+INFO - 2022-06-01 08:10:46 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:46 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:46 --> Input Class Initialized
+INFO - 2022-06-01 08:10:46 --> Language Class Initialized
+INFO - 2022-06-01 08:10:46 --> Loader Class Initialized
+INFO - 2022-06-01 08:10:46 --> Database Driver Class Initialized
+INFO - 2022-06-01 08:10:46 --> Session: Class initialized using 'files' driver.
+INFO - 2022-06-01 08:10:46 --> Controller Class Initialized
+INFO - 2022-06-01 08:10:46 --> Model "Admin_model" initialized
+INFO - 2022-06-01 08:10:46 --> File loaded: /home/debian/Cube/application/views//templates/header.php
+INFO - 2022-06-01 08:10:46 --> Model "Ressource_model" initialized
+INFO - 2022-06-01 08:10:46 --> File loaded: /home/debian/Cube/application/views//templates/sidebar.php
+INFO - 2022-06-01 08:10:46 --> File loaded: /home/debian/Cube/application/views//templates/wrapper.php
+INFO - 2022-06-01 08:10:46 --> File loaded: /home/debian/Cube/application/views//templates/topbar_connect.php
+INFO - 2022-06-01 08:10:46 --> File loaded: /home/debian/Cube/application/views//droit/tab_board.php
+INFO - 2022-06-01 08:10:46 --> File loaded: /home/debian/Cube/application/views//templates/footer.php
+INFO - 2022-06-01 08:10:46 --> Final output sent to browser
+DEBUG - 2022-06-01 08:10:46 --> Total execution time: 0.0083
+ERROR - 2022-06-01 08:10:46 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:46 --> Config Class Initialized
+INFO - 2022-06-01 08:10:46 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:46 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:46 --> Utf8 Class Initialized
+ERROR - 2022-06-01 08:10:46 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:46 --> Config Class Initialized
+INFO - 2022-06-01 08:10:46 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:46 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:46 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:46 --> URI Class Initialized
+INFO - 2022-06-01 08:10:46 --> Router Class Initialized
+INFO - 2022-06-01 08:10:46 --> Output Class Initialized
+INFO - 2022-06-01 08:10:46 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:46 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:46 --> Input Class Initialized
+INFO - 2022-06-01 08:10:46 --> Language Class Initialized
+ERROR - 2022-06-01 08:10:46 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 08:10:46 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:46 --> Config Class Initialized
+INFO - 2022-06-01 08:10:46 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:46 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:46 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:46 --> URI Class Initialized
+INFO - 2022-06-01 08:10:46 --> Router Class Initialized
+INFO - 2022-06-01 08:10:46 --> Output Class Initialized
+INFO - 2022-06-01 08:10:46 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:46 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:46 --> Input Class Initialized
+INFO - 2022-06-01 08:10:46 --> Language Class Initialized
+ERROR - 2022-06-01 08:10:46 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 08:10:46 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:46 --> Config Class Initialized
+INFO - 2022-06-01 08:10:46 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:46 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:46 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:46 --> URI Class Initialized
+INFO - 2022-06-01 08:10:46 --> Router Class Initialized
+INFO - 2022-06-01 08:10:46 --> Output Class Initialized
+INFO - 2022-06-01 08:10:46 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:46 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:46 --> Input Class Initialized
+INFO - 2022-06-01 08:10:46 --> Language Class Initialized
+INFO - 2022-06-01 08:10:46 --> Loader Class Initialized
+INFO - 2022-06-01 08:10:46 --> Database Driver Class Initialized
+INFO - 2022-06-01 08:10:46 --> Session: Class initialized using 'files' driver.
+INFO - 2022-06-01 08:10:46 --> Controller Class Initialized
+INFO - 2022-06-01 08:10:46 --> Model "Admin_model" initialized
+INFO - 2022-06-01 08:10:46 --> File loaded: /home/debian/Cube/application/views//templates/header.php
+INFO - 2022-06-01 08:10:46 --> Model "Ressource_model" initialized
+INFO - 2022-06-01 08:10:46 --> File loaded: /home/debian/Cube/application/views//templates/sidebar.php
+INFO - 2022-06-01 08:10:46 --> File loaded: /home/debian/Cube/application/views//templates/wrapper.php
+INFO - 2022-06-01 08:10:46 --> File loaded: /home/debian/Cube/application/views//templates/topbar_connect.php
+INFO - 2022-06-01 08:10:46 --> File loaded: /home/debian/Cube/application/views//droit/tab_board.php
+INFO - 2022-06-01 08:10:46 --> File loaded: /home/debian/Cube/application/views//templates/footer.php
+INFO - 2022-06-01 08:10:46 --> Final output sent to browser
+DEBUG - 2022-06-01 08:10:46 --> Total execution time: 0.0067
+ERROR - 2022-06-01 08:10:46 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:46 --> Config Class Initialized
+INFO - 2022-06-01 08:10:46 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:46 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:46 --> Utf8 Class Initialized
+ERROR - 2022-06-01 08:10:46 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:46 --> Config Class Initialized
+INFO - 2022-06-01 08:10:46 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:46 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:46 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:46 --> URI Class Initialized
+INFO - 2022-06-01 08:10:46 --> Router Class Initialized
+INFO - 2022-06-01 08:10:46 --> Output Class Initialized
+INFO - 2022-06-01 08:10:46 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:46 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:46 --> Input Class Initialized
+INFO - 2022-06-01 08:10:46 --> Language Class Initialized
+ERROR - 2022-06-01 08:10:46 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 08:10:46 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:46 --> Config Class Initialized
+INFO - 2022-06-01 08:10:46 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:46 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:46 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:46 --> URI Class Initialized
+INFO - 2022-06-01 08:10:46 --> Router Class Initialized
+INFO - 2022-06-01 08:10:46 --> Output Class Initialized
+INFO - 2022-06-01 08:10:46 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:46 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:46 --> Input Class Initialized
+INFO - 2022-06-01 08:10:46 --> Language Class Initialized
+ERROR - 2022-06-01 08:10:46 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 08:10:46 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:46 --> Config Class Initialized
+INFO - 2022-06-01 08:10:46 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:46 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:46 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:46 --> URI Class Initialized
+INFO - 2022-06-01 08:10:46 --> Router Class Initialized
+INFO - 2022-06-01 08:10:46 --> Output Class Initialized
+INFO - 2022-06-01 08:10:46 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:46 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:46 --> Input Class Initialized
+INFO - 2022-06-01 08:10:46 --> Language Class Initialized
+INFO - 2022-06-01 08:10:46 --> Loader Class Initialized
+INFO - 2022-06-01 08:10:46 --> Database Driver Class Initialized
+INFO - 2022-06-01 08:10:46 --> Session: Class initialized using 'files' driver.
+INFO - 2022-06-01 08:10:46 --> Controller Class Initialized
+INFO - 2022-06-01 08:10:46 --> Model "Admin_model" initialized
+INFO - 2022-06-01 08:10:46 --> File loaded: /home/debian/Cube/application/views//templates/header.php
+INFO - 2022-06-01 08:10:46 --> Model "Ressource_model" initialized
+INFO - 2022-06-01 08:10:46 --> File loaded: /home/debian/Cube/application/views//templates/sidebar.php
+INFO - 2022-06-01 08:10:46 --> File loaded: /home/debian/Cube/application/views//templates/wrapper.php
+INFO - 2022-06-01 08:10:46 --> File loaded: /home/debian/Cube/application/views//templates/topbar_connect.php
+INFO - 2022-06-01 08:10:46 --> File loaded: /home/debian/Cube/application/views//droit/tab_board.php
+INFO - 2022-06-01 08:10:46 --> File loaded: /home/debian/Cube/application/views//templates/footer.php
+INFO - 2022-06-01 08:10:46 --> Final output sent to browser
+DEBUG - 2022-06-01 08:10:46 --> Total execution time: 0.0081
+ERROR - 2022-06-01 08:10:46 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:46 --> Config Class Initialized
+INFO - 2022-06-01 08:10:46 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:46 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:46 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:46 --> URI Class Initialized
+INFO - 2022-06-01 08:10:46 --> Router Class Initialized
+INFO - 2022-06-01 08:10:46 --> Output Class Initialized
+INFO - 2022-06-01 08:10:46 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:46 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:46 --> Input Class Initialized
+INFO - 2022-06-01 08:10:46 --> Language Class Initialized
+ERROR - 2022-06-01 08:10:46 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 08:10:46 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:46 --> Config Class Initialized
+INFO - 2022-06-01 08:10:46 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:46 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:46 --> Utf8 Class Initialized
+ERROR - 2022-06-01 08:10:46 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:46 --> Config Class Initialized
+INFO - 2022-06-01 08:10:46 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:46 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:46 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:46 --> URI Class Initialized
+INFO - 2022-06-01 08:10:46 --> Router Class Initialized
+INFO - 2022-06-01 08:10:46 --> Output Class Initialized
+INFO - 2022-06-01 08:10:46 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:46 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:46 --> Input Class Initialized
+INFO - 2022-06-01 08:10:46 --> Language Class Initialized
+ERROR - 2022-06-01 08:10:46 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 08:10:46 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:46 --> Config Class Initialized
+INFO - 2022-06-01 08:10:46 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:46 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:46 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:46 --> URI Class Initialized
+INFO - 2022-06-01 08:10:46 --> Router Class Initialized
+INFO - 2022-06-01 08:10:46 --> Output Class Initialized
+INFO - 2022-06-01 08:10:46 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:46 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:46 --> Input Class Initialized
+INFO - 2022-06-01 08:10:46 --> Language Class Initialized
+INFO - 2022-06-01 08:10:46 --> Loader Class Initialized
+INFO - 2022-06-01 08:10:46 --> Database Driver Class Initialized
+INFO - 2022-06-01 08:10:46 --> Session: Class initialized using 'files' driver.
+INFO - 2022-06-01 08:10:46 --> Controller Class Initialized
+INFO - 2022-06-01 08:10:46 --> Model "Admin_model" initialized
+INFO - 2022-06-01 08:10:46 --> File loaded: /home/debian/Cube/application/views//templates/header.php
+INFO - 2022-06-01 08:10:46 --> Model "Ressource_model" initialized
+INFO - 2022-06-01 08:10:46 --> File loaded: /home/debian/Cube/application/views//templates/sidebar.php
+INFO - 2022-06-01 08:10:46 --> File loaded: /home/debian/Cube/application/views//templates/wrapper.php
+INFO - 2022-06-01 08:10:46 --> File loaded: /home/debian/Cube/application/views//templates/topbar_connect.php
+INFO - 2022-06-01 08:10:46 --> File loaded: /home/debian/Cube/application/views//droit/tab_board.php
+INFO - 2022-06-01 08:10:46 --> File loaded: /home/debian/Cube/application/views//templates/footer.php
+INFO - 2022-06-01 08:10:46 --> Final output sent to browser
+DEBUG - 2022-06-01 08:10:46 --> Total execution time: 0.0082
+ERROR - 2022-06-01 08:10:46 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:46 --> Config Class Initialized
+INFO - 2022-06-01 08:10:46 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:46 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:46 --> Utf8 Class Initialized
+ERROR - 2022-06-01 08:10:46 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:46 --> Config Class Initialized
+INFO - 2022-06-01 08:10:46 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:46 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:46 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:46 --> URI Class Initialized
+INFO - 2022-06-01 08:10:46 --> Router Class Initialized
+INFO - 2022-06-01 08:10:46 --> Output Class Initialized
+INFO - 2022-06-01 08:10:46 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:46 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:46 --> Input Class Initialized
+INFO - 2022-06-01 08:10:46 --> Language Class Initialized
+ERROR - 2022-06-01 08:10:46 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 08:10:46 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:46 --> Config Class Initialized
+INFO - 2022-06-01 08:10:46 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:46 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:46 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:46 --> URI Class Initialized
+INFO - 2022-06-01 08:10:46 --> Router Class Initialized
+INFO - 2022-06-01 08:10:46 --> Output Class Initialized
+INFO - 2022-06-01 08:10:46 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:46 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:46 --> Input Class Initialized
+INFO - 2022-06-01 08:10:46 --> Language Class Initialized
+ERROR - 2022-06-01 08:10:46 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 08:10:46 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:46 --> Config Class Initialized
+INFO - 2022-06-01 08:10:46 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:46 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:46 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:46 --> URI Class Initialized
+INFO - 2022-06-01 08:10:46 --> Router Class Initialized
+INFO - 2022-06-01 08:10:46 --> Output Class Initialized
+INFO - 2022-06-01 08:10:46 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:46 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:46 --> Input Class Initialized
+INFO - 2022-06-01 08:10:46 --> Language Class Initialized
+INFO - 2022-06-01 08:10:46 --> Loader Class Initialized
+INFO - 2022-06-01 08:10:46 --> Database Driver Class Initialized
+INFO - 2022-06-01 08:10:46 --> Session: Class initialized using 'files' driver.
+INFO - 2022-06-01 08:10:46 --> Controller Class Initialized
+INFO - 2022-06-01 08:10:46 --> Model "Admin_model" initialized
+INFO - 2022-06-01 08:10:46 --> File loaded: /home/debian/Cube/application/views//templates/header.php
+INFO - 2022-06-01 08:10:46 --> Model "Ressource_model" initialized
+INFO - 2022-06-01 08:10:46 --> File loaded: /home/debian/Cube/application/views//templates/sidebar.php
+INFO - 2022-06-01 08:10:46 --> File loaded: /home/debian/Cube/application/views//templates/wrapper.php
+INFO - 2022-06-01 08:10:46 --> File loaded: /home/debian/Cube/application/views//templates/topbar_connect.php
+INFO - 2022-06-01 08:10:46 --> File loaded: /home/debian/Cube/application/views//droit/tab_board.php
+INFO - 2022-06-01 08:10:46 --> File loaded: /home/debian/Cube/application/views//templates/footer.php
+INFO - 2022-06-01 08:10:46 --> Final output sent to browser
+DEBUG - 2022-06-01 08:10:46 --> Total execution time: 0.0072
+ERROR - 2022-06-01 08:10:47 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:47 --> Config Class Initialized
+INFO - 2022-06-01 08:10:47 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:47 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:47 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:47 --> URI Class Initialized
+INFO - 2022-06-01 08:10:47 --> Router Class Initialized
+INFO - 2022-06-01 08:10:47 --> Output Class Initialized
+INFO - 2022-06-01 08:10:47 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:47 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2022-06-01 08:10:47 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:47 --> Config Class Initialized
+INFO - 2022-06-01 08:10:47 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:47 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:47 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:47 --> Input Class Initialized
+INFO - 2022-06-01 08:10:47 --> Language Class Initialized
+ERROR - 2022-06-01 08:10:47 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 08:10:47 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:47 --> Config Class Initialized
+INFO - 2022-06-01 08:10:47 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:47 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:47 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:47 --> URI Class Initialized
+INFO - 2022-06-01 08:10:47 --> Router Class Initialized
+INFO - 2022-06-01 08:10:47 --> Output Class Initialized
+INFO - 2022-06-01 08:10:47 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:47 --> Input Class Initialized
+INFO - 2022-06-01 08:10:47 --> Language Class Initialized
+ERROR - 2022-06-01 08:10:47 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 08:10:47 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:47 --> Config Class Initialized
+INFO - 2022-06-01 08:10:47 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:47 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:47 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:47 --> URI Class Initialized
+INFO - 2022-06-01 08:10:47 --> Router Class Initialized
+INFO - 2022-06-01 08:10:47 --> Output Class Initialized
+INFO - 2022-06-01 08:10:47 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:47 --> Input Class Initialized
+INFO - 2022-06-01 08:10:47 --> Language Class Initialized
+INFO - 2022-06-01 08:10:47 --> Loader Class Initialized
+INFO - 2022-06-01 08:10:47 --> Database Driver Class Initialized
+INFO - 2022-06-01 08:10:47 --> Session: Class initialized using 'files' driver.
+INFO - 2022-06-01 08:10:47 --> Controller Class Initialized
+INFO - 2022-06-01 08:10:47 --> Model "Admin_model" initialized
+INFO - 2022-06-01 08:10:47 --> File loaded: /home/debian/Cube/application/views//templates/header.php
+INFO - 2022-06-01 08:10:47 --> Model "Ressource_model" initialized
+INFO - 2022-06-01 08:10:47 --> File loaded: /home/debian/Cube/application/views//templates/sidebar.php
+INFO - 2022-06-01 08:10:47 --> File loaded: /home/debian/Cube/application/views//templates/wrapper.php
+INFO - 2022-06-01 08:10:47 --> File loaded: /home/debian/Cube/application/views//templates/topbar_connect.php
+INFO - 2022-06-01 08:10:47 --> File loaded: /home/debian/Cube/application/views//droit/tab_board.php
+INFO - 2022-06-01 08:10:47 --> File loaded: /home/debian/Cube/application/views//templates/footer.php
+INFO - 2022-06-01 08:10:47 --> Final output sent to browser
+DEBUG - 2022-06-01 08:10:47 --> Total execution time: 0.0092
+ERROR - 2022-06-01 08:10:47 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:47 --> Config Class Initialized
+INFO - 2022-06-01 08:10:47 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:47 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:47 --> Utf8 Class Initialized
+ERROR - 2022-06-01 08:10:47 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:47 --> Config Class Initialized
+INFO - 2022-06-01 08:10:47 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:47 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:47 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:47 --> URI Class Initialized
+INFO - 2022-06-01 08:10:47 --> Router Class Initialized
+INFO - 2022-06-01 08:10:47 --> Output Class Initialized
+INFO - 2022-06-01 08:10:47 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:47 --> Input Class Initialized
+INFO - 2022-06-01 08:10:47 --> Language Class Initialized
+ERROR - 2022-06-01 08:10:47 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 08:10:47 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:47 --> Config Class Initialized
+INFO - 2022-06-01 08:10:47 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:47 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:47 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:47 --> URI Class Initialized
+INFO - 2022-06-01 08:10:47 --> Router Class Initialized
+INFO - 2022-06-01 08:10:47 --> Output Class Initialized
+INFO - 2022-06-01 08:10:47 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:47 --> Input Class Initialized
+INFO - 2022-06-01 08:10:47 --> Language Class Initialized
+ERROR - 2022-06-01 08:10:47 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 08:10:47 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:47 --> Config Class Initialized
+INFO - 2022-06-01 08:10:47 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:47 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:47 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:47 --> URI Class Initialized
+INFO - 2022-06-01 08:10:47 --> Router Class Initialized
+INFO - 2022-06-01 08:10:47 --> Output Class Initialized
+INFO - 2022-06-01 08:10:47 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:47 --> Input Class Initialized
+INFO - 2022-06-01 08:10:47 --> Language Class Initialized
+INFO - 2022-06-01 08:10:47 --> Loader Class Initialized
+INFO - 2022-06-01 08:10:47 --> Database Driver Class Initialized
+INFO - 2022-06-01 08:10:47 --> Session: Class initialized using 'files' driver.
+INFO - 2022-06-01 08:10:47 --> Controller Class Initialized
+INFO - 2022-06-01 08:10:47 --> Model "Admin_model" initialized
+INFO - 2022-06-01 08:10:47 --> File loaded: /home/debian/Cube/application/views//templates/header.php
+INFO - 2022-06-01 08:10:47 --> Model "Ressource_model" initialized
+INFO - 2022-06-01 08:10:47 --> File loaded: /home/debian/Cube/application/views//templates/sidebar.php
+INFO - 2022-06-01 08:10:47 --> File loaded: /home/debian/Cube/application/views//templates/wrapper.php
+INFO - 2022-06-01 08:10:47 --> File loaded: /home/debian/Cube/application/views//templates/topbar_connect.php
+INFO - 2022-06-01 08:10:47 --> File loaded: /home/debian/Cube/application/views//droit/tab_board.php
+INFO - 2022-06-01 08:10:47 --> File loaded: /home/debian/Cube/application/views//templates/footer.php
+INFO - 2022-06-01 08:10:47 --> Final output sent to browser
+DEBUG - 2022-06-01 08:10:47 --> Total execution time: 0.0088
+ERROR - 2022-06-01 08:10:47 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:47 --> Config Class Initialized
+INFO - 2022-06-01 08:10:47 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:47 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:47 --> Utf8 Class Initialized
+ERROR - 2022-06-01 08:10:47 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:47 --> Config Class Initialized
+INFO - 2022-06-01 08:10:47 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:47 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:47 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:47 --> URI Class Initialized
+INFO - 2022-06-01 08:10:47 --> Router Class Initialized
+INFO - 2022-06-01 08:10:47 --> Output Class Initialized
+INFO - 2022-06-01 08:10:47 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:47 --> Input Class Initialized
+INFO - 2022-06-01 08:10:47 --> Language Class Initialized
+ERROR - 2022-06-01 08:10:47 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 08:10:47 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:47 --> Config Class Initialized
+INFO - 2022-06-01 08:10:47 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:47 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:47 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:47 --> URI Class Initialized
+INFO - 2022-06-01 08:10:47 --> Router Class Initialized
+INFO - 2022-06-01 08:10:47 --> Output Class Initialized
+INFO - 2022-06-01 08:10:47 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:47 --> Input Class Initialized
+INFO - 2022-06-01 08:10:47 --> Language Class Initialized
+ERROR - 2022-06-01 08:10:47 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 08:10:47 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:47 --> Config Class Initialized
+INFO - 2022-06-01 08:10:47 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:47 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:47 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:47 --> URI Class Initialized
+INFO - 2022-06-01 08:10:47 --> Router Class Initialized
+INFO - 2022-06-01 08:10:47 --> Output Class Initialized
+INFO - 2022-06-01 08:10:47 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:47 --> Input Class Initialized
+INFO - 2022-06-01 08:10:47 --> Language Class Initialized
+INFO - 2022-06-01 08:10:47 --> Loader Class Initialized
+INFO - 2022-06-01 08:10:47 --> Database Driver Class Initialized
+INFO - 2022-06-01 08:10:47 --> Session: Class initialized using 'files' driver.
+INFO - 2022-06-01 08:10:47 --> Controller Class Initialized
+INFO - 2022-06-01 08:10:47 --> Model "Admin_model" initialized
+INFO - 2022-06-01 08:10:47 --> File loaded: /home/debian/Cube/application/views//templates/header.php
+INFO - 2022-06-01 08:10:47 --> Model "Ressource_model" initialized
+INFO - 2022-06-01 08:10:47 --> File loaded: /home/debian/Cube/application/views//templates/sidebar.php
+INFO - 2022-06-01 08:10:47 --> File loaded: /home/debian/Cube/application/views//templates/wrapper.php
+INFO - 2022-06-01 08:10:47 --> File loaded: /home/debian/Cube/application/views//templates/topbar_connect.php
+INFO - 2022-06-01 08:10:47 --> File loaded: /home/debian/Cube/application/views//droit/tab_board.php
+INFO - 2022-06-01 08:10:47 --> File loaded: /home/debian/Cube/application/views//templates/footer.php
+INFO - 2022-06-01 08:10:47 --> Final output sent to browser
+DEBUG - 2022-06-01 08:10:47 --> Total execution time: 0.0089
+ERROR - 2022-06-01 08:10:47 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:47 --> Config Class Initialized
+INFO - 2022-06-01 08:10:47 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:47 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:47 --> Utf8 Class Initialized
+ERROR - 2022-06-01 08:10:47 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:47 --> Config Class Initialized
+INFO - 2022-06-01 08:10:47 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:47 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:47 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:47 --> URI Class Initialized
+INFO - 2022-06-01 08:10:47 --> Router Class Initialized
+INFO - 2022-06-01 08:10:47 --> Output Class Initialized
+INFO - 2022-06-01 08:10:47 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:47 --> Input Class Initialized
+INFO - 2022-06-01 08:10:47 --> Language Class Initialized
+ERROR - 2022-06-01 08:10:47 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 08:10:47 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:47 --> Config Class Initialized
+INFO - 2022-06-01 08:10:47 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:47 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:47 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:47 --> URI Class Initialized
+INFO - 2022-06-01 08:10:47 --> Router Class Initialized
+INFO - 2022-06-01 08:10:47 --> Output Class Initialized
+INFO - 2022-06-01 08:10:47 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:47 --> Input Class Initialized
+INFO - 2022-06-01 08:10:47 --> Language Class Initialized
+ERROR - 2022-06-01 08:10:47 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 08:10:47 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:47 --> Config Class Initialized
+INFO - 2022-06-01 08:10:47 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:47 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:47 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:47 --> URI Class Initialized
+INFO - 2022-06-01 08:10:47 --> Router Class Initialized
+INFO - 2022-06-01 08:10:47 --> Output Class Initialized
+INFO - 2022-06-01 08:10:47 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:47 --> Input Class Initialized
+INFO - 2022-06-01 08:10:47 --> Language Class Initialized
+INFO - 2022-06-01 08:10:47 --> Loader Class Initialized
+INFO - 2022-06-01 08:10:47 --> Database Driver Class Initialized
+INFO - 2022-06-01 08:10:47 --> Session: Class initialized using 'files' driver.
+INFO - 2022-06-01 08:10:47 --> Controller Class Initialized
+INFO - 2022-06-01 08:10:47 --> Model "Admin_model" initialized
+INFO - 2022-06-01 08:10:47 --> File loaded: /home/debian/Cube/application/views//templates/header.php
+INFO - 2022-06-01 08:10:47 --> Model "Ressource_model" initialized
+INFO - 2022-06-01 08:10:47 --> File loaded: /home/debian/Cube/application/views//templates/sidebar.php
+INFO - 2022-06-01 08:10:47 --> File loaded: /home/debian/Cube/application/views//templates/wrapper.php
+INFO - 2022-06-01 08:10:47 --> File loaded: /home/debian/Cube/application/views//templates/topbar_connect.php
+INFO - 2022-06-01 08:10:47 --> File loaded: /home/debian/Cube/application/views//droit/tab_board.php
+INFO - 2022-06-01 08:10:47 --> File loaded: /home/debian/Cube/application/views//templates/footer.php
+INFO - 2022-06-01 08:10:47 --> Final output sent to browser
+DEBUG - 2022-06-01 08:10:47 --> Total execution time: 0.0072
+ERROR - 2022-06-01 08:10:47 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:47 --> Config Class Initialized
+INFO - 2022-06-01 08:10:47 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:47 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:47 --> Utf8 Class Initialized
+ERROR - 2022-06-01 08:10:47 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:47 --> Config Class Initialized
+INFO - 2022-06-01 08:10:47 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:47 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:47 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:47 --> URI Class Initialized
+INFO - 2022-06-01 08:10:47 --> Router Class Initialized
+INFO - 2022-06-01 08:10:47 --> Output Class Initialized
+INFO - 2022-06-01 08:10:47 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:47 --> Input Class Initialized
+INFO - 2022-06-01 08:10:47 --> Language Class Initialized
+ERROR - 2022-06-01 08:10:47 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 08:10:47 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:47 --> Config Class Initialized
+INFO - 2022-06-01 08:10:47 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:47 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:47 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:47 --> URI Class Initialized
+INFO - 2022-06-01 08:10:47 --> Router Class Initialized
+INFO - 2022-06-01 08:10:47 --> Output Class Initialized
+INFO - 2022-06-01 08:10:47 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:47 --> Input Class Initialized
+INFO - 2022-06-01 08:10:47 --> Language Class Initialized
+ERROR - 2022-06-01 08:10:47 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 08:10:47 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:47 --> Config Class Initialized
+INFO - 2022-06-01 08:10:47 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:47 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:47 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:47 --> URI Class Initialized
+INFO - 2022-06-01 08:10:47 --> Router Class Initialized
+INFO - 2022-06-01 08:10:47 --> Output Class Initialized
+INFO - 2022-06-01 08:10:47 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:47 --> Input Class Initialized
+INFO - 2022-06-01 08:10:47 --> Language Class Initialized
+INFO - 2022-06-01 08:10:47 --> Loader Class Initialized
+INFO - 2022-06-01 08:10:47 --> Database Driver Class Initialized
+INFO - 2022-06-01 08:10:47 --> Session: Class initialized using 'files' driver.
+INFO - 2022-06-01 08:10:47 --> Controller Class Initialized
+INFO - 2022-06-01 08:10:47 --> Model "Admin_model" initialized
+INFO - 2022-06-01 08:10:47 --> File loaded: /home/debian/Cube/application/views//templates/header.php
+INFO - 2022-06-01 08:10:47 --> Model "Ressource_model" initialized
+INFO - 2022-06-01 08:10:47 --> File loaded: /home/debian/Cube/application/views//templates/sidebar.php
+INFO - 2022-06-01 08:10:47 --> File loaded: /home/debian/Cube/application/views//templates/wrapper.php
+INFO - 2022-06-01 08:10:47 --> File loaded: /home/debian/Cube/application/views//templates/topbar_connect.php
+INFO - 2022-06-01 08:10:47 --> File loaded: /home/debian/Cube/application/views//droit/tab_board.php
+INFO - 2022-06-01 08:10:47 --> File loaded: /home/debian/Cube/application/views//templates/footer.php
+INFO - 2022-06-01 08:10:47 --> Final output sent to browser
+DEBUG - 2022-06-01 08:10:47 --> Total execution time: 0.0085
+ERROR - 2022-06-01 08:10:47 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:47 --> Config Class Initialized
+INFO - 2022-06-01 08:10:47 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:47 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:47 --> Utf8 Class Initialized
+ERROR - 2022-06-01 08:10:47 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:47 --> Config Class Initialized
+INFO - 2022-06-01 08:10:47 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:47 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:47 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:47 --> URI Class Initialized
+INFO - 2022-06-01 08:10:47 --> Router Class Initialized
+INFO - 2022-06-01 08:10:47 --> Output Class Initialized
+INFO - 2022-06-01 08:10:47 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:47 --> Input Class Initialized
+INFO - 2022-06-01 08:10:47 --> Language Class Initialized
+ERROR - 2022-06-01 08:10:47 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 08:10:47 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:47 --> Config Class Initialized
+INFO - 2022-06-01 08:10:47 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:47 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:47 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:47 --> URI Class Initialized
+INFO - 2022-06-01 08:10:47 --> Router Class Initialized
+INFO - 2022-06-01 08:10:47 --> Output Class Initialized
+INFO - 2022-06-01 08:10:47 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:47 --> Input Class Initialized
+INFO - 2022-06-01 08:10:47 --> Language Class Initialized
+ERROR - 2022-06-01 08:10:47 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 08:10:48 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:48 --> Config Class Initialized
+INFO - 2022-06-01 08:10:48 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:48 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:48 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:48 --> URI Class Initialized
+INFO - 2022-06-01 08:10:48 --> Router Class Initialized
+INFO - 2022-06-01 08:10:48 --> Output Class Initialized
+INFO - 2022-06-01 08:10:48 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:48 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:48 --> Input Class Initialized
+INFO - 2022-06-01 08:10:48 --> Language Class Initialized
+INFO - 2022-06-01 08:10:48 --> Loader Class Initialized
+INFO - 2022-06-01 08:10:48 --> Database Driver Class Initialized
+INFO - 2022-06-01 08:10:48 --> Session: Class initialized using 'files' driver.
+INFO - 2022-06-01 08:10:48 --> Controller Class Initialized
+INFO - 2022-06-01 08:10:48 --> Model "Admin_model" initialized
+INFO - 2022-06-01 08:10:48 --> File loaded: /home/debian/Cube/application/views//templates/header.php
+INFO - 2022-06-01 08:10:48 --> Model "Ressource_model" initialized
+INFO - 2022-06-01 08:10:48 --> File loaded: /home/debian/Cube/application/views//templates/sidebar.php
+INFO - 2022-06-01 08:10:48 --> File loaded: /home/debian/Cube/application/views//templates/wrapper.php
+INFO - 2022-06-01 08:10:48 --> File loaded: /home/debian/Cube/application/views//templates/topbar_connect.php
+INFO - 2022-06-01 08:10:48 --> File loaded: /home/debian/Cube/application/views//droit/tab_board.php
+INFO - 2022-06-01 08:10:48 --> File loaded: /home/debian/Cube/application/views//templates/footer.php
+INFO - 2022-06-01 08:10:48 --> Final output sent to browser
+DEBUG - 2022-06-01 08:10:48 --> Total execution time: 0.0073
+ERROR - 2022-06-01 08:10:48 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:48 --> Config Class Initialized
+INFO - 2022-06-01 08:10:48 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:48 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:48 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:48 --> URI Class Initialized
+INFO - 2022-06-01 08:10:48 --> Router Class Initialized
+INFO - 2022-06-01 08:10:48 --> Output Class Initialized
+INFO - 2022-06-01 08:10:48 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:48 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:48 --> Input Class Initialized
+INFO - 2022-06-01 08:10:48 --> Language Class Initialized
+ERROR - 2022-06-01 08:10:48 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 08:10:48 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:48 --> Config Class Initialized
+INFO - 2022-06-01 08:10:48 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:48 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:48 --> Utf8 Class Initialized
+ERROR - 2022-06-01 08:10:48 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:48 --> Config Class Initialized
+INFO - 2022-06-01 08:10:48 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:48 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:48 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:48 --> URI Class Initialized
+INFO - 2022-06-01 08:10:48 --> Router Class Initialized
+INFO - 2022-06-01 08:10:48 --> Output Class Initialized
+INFO - 2022-06-01 08:10:48 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:48 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:48 --> Input Class Initialized
+INFO - 2022-06-01 08:10:48 --> Language Class Initialized
+ERROR - 2022-06-01 08:10:48 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 08:10:48 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:48 --> Config Class Initialized
+INFO - 2022-06-01 08:10:48 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:48 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:48 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:48 --> URI Class Initialized
+INFO - 2022-06-01 08:10:48 --> Router Class Initialized
+INFO - 2022-06-01 08:10:48 --> Output Class Initialized
+INFO - 2022-06-01 08:10:48 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:48 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:48 --> Input Class Initialized
+INFO - 2022-06-01 08:10:48 --> Language Class Initialized
+INFO - 2022-06-01 08:10:48 --> Loader Class Initialized
+INFO - 2022-06-01 08:10:48 --> Database Driver Class Initialized
+INFO - 2022-06-01 08:10:48 --> Session: Class initialized using 'files' driver.
+INFO - 2022-06-01 08:10:48 --> Controller Class Initialized
+INFO - 2022-06-01 08:10:48 --> Model "Admin_model" initialized
+INFO - 2022-06-01 08:10:48 --> File loaded: /home/debian/Cube/application/views//templates/header.php
+INFO - 2022-06-01 08:10:48 --> Model "Ressource_model" initialized
+INFO - 2022-06-01 08:10:48 --> File loaded: /home/debian/Cube/application/views//templates/sidebar.php
+INFO - 2022-06-01 08:10:48 --> File loaded: /home/debian/Cube/application/views//templates/wrapper.php
+INFO - 2022-06-01 08:10:48 --> File loaded: /home/debian/Cube/application/views//templates/topbar_connect.php
+INFO - 2022-06-01 08:10:48 --> File loaded: /home/debian/Cube/application/views//droit/tab_board.php
+INFO - 2022-06-01 08:10:48 --> File loaded: /home/debian/Cube/application/views//templates/footer.php
+INFO - 2022-06-01 08:10:48 --> Final output sent to browser
+DEBUG - 2022-06-01 08:10:48 --> Total execution time: 0.0076
+ERROR - 2022-06-01 08:10:48 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:48 --> Config Class Initialized
+INFO - 2022-06-01 08:10:48 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:48 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:48 --> Utf8 Class Initialized
+ERROR - 2022-06-01 08:10:48 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:48 --> Config Class Initialized
+INFO - 2022-06-01 08:10:48 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:48 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:48 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:48 --> URI Class Initialized
+INFO - 2022-06-01 08:10:48 --> Router Class Initialized
+INFO - 2022-06-01 08:10:48 --> Output Class Initialized
+INFO - 2022-06-01 08:10:48 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:48 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:48 --> Input Class Initialized
+INFO - 2022-06-01 08:10:48 --> Language Class Initialized
+ERROR - 2022-06-01 08:10:48 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 08:10:48 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:48 --> Config Class Initialized
+INFO - 2022-06-01 08:10:48 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:48 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:48 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:48 --> URI Class Initialized
+INFO - 2022-06-01 08:10:48 --> Router Class Initialized
+INFO - 2022-06-01 08:10:48 --> Output Class Initialized
+INFO - 2022-06-01 08:10:48 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:48 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:48 --> Input Class Initialized
+INFO - 2022-06-01 08:10:48 --> Language Class Initialized
+ERROR - 2022-06-01 08:10:48 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 08:10:48 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:48 --> Config Class Initialized
+INFO - 2022-06-01 08:10:48 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:48 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:48 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:48 --> URI Class Initialized
+INFO - 2022-06-01 08:10:48 --> Router Class Initialized
+INFO - 2022-06-01 08:10:48 --> Output Class Initialized
+INFO - 2022-06-01 08:10:48 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:48 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:48 --> Input Class Initialized
+INFO - 2022-06-01 08:10:48 --> Language Class Initialized
+INFO - 2022-06-01 08:10:48 --> Loader Class Initialized
+INFO - 2022-06-01 08:10:48 --> Database Driver Class Initialized
+INFO - 2022-06-01 08:10:48 --> Session: Class initialized using 'files' driver.
+INFO - 2022-06-01 08:10:48 --> Controller Class Initialized
+INFO - 2022-06-01 08:10:48 --> Model "Admin_model" initialized
+INFO - 2022-06-01 08:10:48 --> File loaded: /home/debian/Cube/application/views//templates/header.php
+INFO - 2022-06-01 08:10:48 --> Model "Ressource_model" initialized
+INFO - 2022-06-01 08:10:48 --> File loaded: /home/debian/Cube/application/views//templates/sidebar.php
+INFO - 2022-06-01 08:10:48 --> File loaded: /home/debian/Cube/application/views//templates/wrapper.php
+INFO - 2022-06-01 08:10:48 --> File loaded: /home/debian/Cube/application/views//templates/topbar_connect.php
+INFO - 2022-06-01 08:10:48 --> File loaded: /home/debian/Cube/application/views//droit/tab_board.php
+INFO - 2022-06-01 08:10:48 --> File loaded: /home/debian/Cube/application/views//templates/footer.php
+INFO - 2022-06-01 08:10:48 --> Final output sent to browser
+DEBUG - 2022-06-01 08:10:48 --> Total execution time: 0.0087
+ERROR - 2022-06-01 08:10:48 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:48 --> Config Class Initialized
+INFO - 2022-06-01 08:10:48 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:48 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:48 --> Utf8 Class Initialized
+ERROR - 2022-06-01 08:10:48 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:48 --> Config Class Initialized
+INFO - 2022-06-01 08:10:48 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:48 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:48 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:48 --> URI Class Initialized
+INFO - 2022-06-01 08:10:48 --> Router Class Initialized
+INFO - 2022-06-01 08:10:48 --> Output Class Initialized
+INFO - 2022-06-01 08:10:48 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:48 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:48 --> Input Class Initialized
+INFO - 2022-06-01 08:10:48 --> Language Class Initialized
+ERROR - 2022-06-01 08:10:48 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 08:10:48 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:48 --> Config Class Initialized
+INFO - 2022-06-01 08:10:48 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:48 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:48 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:48 --> URI Class Initialized
+INFO - 2022-06-01 08:10:48 --> Router Class Initialized
+INFO - 2022-06-01 08:10:48 --> Output Class Initialized
+INFO - 2022-06-01 08:10:48 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:48 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:48 --> Input Class Initialized
+INFO - 2022-06-01 08:10:48 --> Language Class Initialized
+ERROR - 2022-06-01 08:10:48 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 08:10:48 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:48 --> Config Class Initialized
+INFO - 2022-06-01 08:10:48 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:48 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:48 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:48 --> URI Class Initialized
+INFO - 2022-06-01 08:10:48 --> Router Class Initialized
+INFO - 2022-06-01 08:10:48 --> Output Class Initialized
+INFO - 2022-06-01 08:10:48 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:48 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:48 --> Input Class Initialized
+INFO - 2022-06-01 08:10:48 --> Language Class Initialized
+INFO - 2022-06-01 08:10:48 --> Loader Class Initialized
+INFO - 2022-06-01 08:10:48 --> Database Driver Class Initialized
+INFO - 2022-06-01 08:10:48 --> Session: Class initialized using 'files' driver.
+INFO - 2022-06-01 08:10:48 --> Controller Class Initialized
+INFO - 2022-06-01 08:10:48 --> Model "Admin_model" initialized
+INFO - 2022-06-01 08:10:48 --> File loaded: /home/debian/Cube/application/views//templates/header.php
+INFO - 2022-06-01 08:10:48 --> Model "Ressource_model" initialized
+INFO - 2022-06-01 08:10:48 --> File loaded: /home/debian/Cube/application/views//templates/sidebar.php
+INFO - 2022-06-01 08:10:48 --> File loaded: /home/debian/Cube/application/views//templates/wrapper.php
+INFO - 2022-06-01 08:10:48 --> File loaded: /home/debian/Cube/application/views//templates/topbar_connect.php
+INFO - 2022-06-01 08:10:48 --> File loaded: /home/debian/Cube/application/views//droit/tab_board.php
+INFO - 2022-06-01 08:10:48 --> File loaded: /home/debian/Cube/application/views//templates/footer.php
+INFO - 2022-06-01 08:10:48 --> Final output sent to browser
+DEBUG - 2022-06-01 08:10:48 --> Total execution time: 0.0082
+ERROR - 2022-06-01 08:10:48 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:48 --> Config Class Initialized
+INFO - 2022-06-01 08:10:48 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:48 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:48 --> Utf8 Class Initialized
+ERROR - 2022-06-01 08:10:48 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:48 --> Config Class Initialized
+INFO - 2022-06-01 08:10:48 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:48 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:48 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:48 --> URI Class Initialized
+INFO - 2022-06-01 08:10:48 --> Router Class Initialized
+INFO - 2022-06-01 08:10:48 --> Output Class Initialized
+INFO - 2022-06-01 08:10:48 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:48 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:48 --> Input Class Initialized
+INFO - 2022-06-01 08:10:48 --> Language Class Initialized
+ERROR - 2022-06-01 08:10:48 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 08:10:48 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:48 --> Config Class Initialized
+INFO - 2022-06-01 08:10:48 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:48 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:48 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:48 --> URI Class Initialized
+INFO - 2022-06-01 08:10:48 --> Router Class Initialized
+INFO - 2022-06-01 08:10:48 --> Output Class Initialized
+INFO - 2022-06-01 08:10:48 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:48 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:48 --> Input Class Initialized
+INFO - 2022-06-01 08:10:48 --> Language Class Initialized
+ERROR - 2022-06-01 08:10:48 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 08:10:48 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:48 --> Config Class Initialized
+INFO - 2022-06-01 08:10:48 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:48 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:48 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:48 --> URI Class Initialized
+INFO - 2022-06-01 08:10:48 --> Router Class Initialized
+INFO - 2022-06-01 08:10:48 --> Output Class Initialized
+INFO - 2022-06-01 08:10:48 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:48 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:48 --> Input Class Initialized
+INFO - 2022-06-01 08:10:48 --> Language Class Initialized
+INFO - 2022-06-01 08:10:48 --> Loader Class Initialized
+INFO - 2022-06-01 08:10:48 --> Database Driver Class Initialized
+INFO - 2022-06-01 08:10:48 --> Session: Class initialized using 'files' driver.
+INFO - 2022-06-01 08:10:48 --> Controller Class Initialized
+INFO - 2022-06-01 08:10:48 --> Model "Admin_model" initialized
+INFO - 2022-06-01 08:10:48 --> File loaded: /home/debian/Cube/application/views//templates/header.php
+INFO - 2022-06-01 08:10:48 --> Model "Ressource_model" initialized
+INFO - 2022-06-01 08:10:48 --> File loaded: /home/debian/Cube/application/views//templates/sidebar.php
+INFO - 2022-06-01 08:10:48 --> File loaded: /home/debian/Cube/application/views//templates/wrapper.php
+INFO - 2022-06-01 08:10:48 --> File loaded: /home/debian/Cube/application/views//templates/topbar_connect.php
+INFO - 2022-06-01 08:10:48 --> File loaded: /home/debian/Cube/application/views//droit/tab_board.php
+INFO - 2022-06-01 08:10:48 --> File loaded: /home/debian/Cube/application/views//templates/footer.php
+INFO - 2022-06-01 08:10:48 --> Final output sent to browser
+DEBUG - 2022-06-01 08:10:48 --> Total execution time: 0.0081
+ERROR - 2022-06-01 08:10:48 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:48 --> Config Class Initialized
+INFO - 2022-06-01 08:10:48 --> Hooks Class Initialized
+ERROR - 2022-06-01 08:10:48 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:48 --> Config Class Initialized
+INFO - 2022-06-01 08:10:48 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:48 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:48 --> Utf8 Class Initialized
+DEBUG - 2022-06-01 08:10:48 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:48 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:48 --> URI Class Initialized
+INFO - 2022-06-01 08:10:48 --> Router Class Initialized
+INFO - 2022-06-01 08:10:48 --> Output Class Initialized
+INFO - 2022-06-01 08:10:48 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:48 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:48 --> Input Class Initialized
+INFO - 2022-06-01 08:10:48 --> Language Class Initialized
+ERROR - 2022-06-01 08:10:48 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 08:10:48 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:48 --> Config Class Initialized
+INFO - 2022-06-01 08:10:48 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:48 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:48 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:48 --> URI Class Initialized
+INFO - 2022-06-01 08:10:48 --> Router Class Initialized
+INFO - 2022-06-01 08:10:48 --> Output Class Initialized
+INFO - 2022-06-01 08:10:48 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:48 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:48 --> Input Class Initialized
+INFO - 2022-06-01 08:10:48 --> Language Class Initialized
+ERROR - 2022-06-01 08:10:48 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 08:10:51 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:51 --> Config Class Initialized
+INFO - 2022-06-01 08:10:51 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:51 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:51 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:51 --> URI Class Initialized
+INFO - 2022-06-01 08:10:51 --> Router Class Initialized
+INFO - 2022-06-01 08:10:51 --> Output Class Initialized
+INFO - 2022-06-01 08:10:51 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:51 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:51 --> Input Class Initialized
+INFO - 2022-06-01 08:10:51 --> Language Class Initialized
+INFO - 2022-06-01 08:10:51 --> Loader Class Initialized
+INFO - 2022-06-01 08:10:51 --> Database Driver Class Initialized
+INFO - 2022-06-01 08:10:51 --> Session: Class initialized using 'files' driver.
+INFO - 2022-06-01 08:10:51 --> Controller Class Initialized
+INFO - 2022-06-01 08:10:51 --> Model "Admin_model" initialized
+INFO - 2022-06-01 08:10:51 --> File loaded: /home/debian/Cube/application/views//templates/header.php
+INFO - 2022-06-01 08:10:51 --> Model "Ressource_model" initialized
+INFO - 2022-06-01 08:10:51 --> File loaded: /home/debian/Cube/application/views//templates/sidebar.php
+INFO - 2022-06-01 08:10:51 --> File loaded: /home/debian/Cube/application/views//templates/wrapper.php
+INFO - 2022-06-01 08:10:51 --> File loaded: /home/debian/Cube/application/views//templates/topbar_connect.php
+INFO - 2022-06-01 08:10:51 --> File loaded: /home/debian/Cube/application/views//droit/tab_board.php
+INFO - 2022-06-01 08:10:51 --> File loaded: /home/debian/Cube/application/views//templates/footer.php
+INFO - 2022-06-01 08:10:51 --> Final output sent to browser
+DEBUG - 2022-06-01 08:10:51 --> Total execution time: 0.0073
+ERROR - 2022-06-01 08:10:51 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:51 --> Config Class Initialized
+INFO - 2022-06-01 08:10:51 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:51 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:51 --> Utf8 Class Initialized
+ERROR - 2022-06-01 08:10:51 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:51 --> Config Class Initialized
+INFO - 2022-06-01 08:10:51 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:51 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:51 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:51 --> URI Class Initialized
+INFO - 2022-06-01 08:10:51 --> Router Class Initialized
+INFO - 2022-06-01 08:10:51 --> Output Class Initialized
+INFO - 2022-06-01 08:10:51 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:51 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:51 --> Input Class Initialized
+INFO - 2022-06-01 08:10:51 --> Language Class Initialized
+ERROR - 2022-06-01 08:10:51 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 08:10:51 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:51 --> Config Class Initialized
+INFO - 2022-06-01 08:10:51 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:51 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:51 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:51 --> URI Class Initialized
+INFO - 2022-06-01 08:10:51 --> Router Class Initialized
+INFO - 2022-06-01 08:10:51 --> Output Class Initialized
+INFO - 2022-06-01 08:10:51 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:51 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:51 --> Input Class Initialized
+INFO - 2022-06-01 08:10:51 --> Language Class Initialized
+ERROR - 2022-06-01 08:10:51 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 08:10:51 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:51 --> Config Class Initialized
+INFO - 2022-06-01 08:10:51 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:51 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:51 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:51 --> URI Class Initialized
+INFO - 2022-06-01 08:10:51 --> Router Class Initialized
+INFO - 2022-06-01 08:10:51 --> Output Class Initialized
+INFO - 2022-06-01 08:10:51 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:51 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:51 --> Input Class Initialized
+INFO - 2022-06-01 08:10:51 --> Language Class Initialized
+INFO - 2022-06-01 08:10:51 --> Loader Class Initialized
+INFO - 2022-06-01 08:10:51 --> Database Driver Class Initialized
+INFO - 2022-06-01 08:10:51 --> Session: Class initialized using 'files' driver.
+INFO - 2022-06-01 08:10:51 --> Controller Class Initialized
+INFO - 2022-06-01 08:10:51 --> Model "Admin_model" initialized
+INFO - 2022-06-01 08:10:51 --> File loaded: /home/debian/Cube/application/views//templates/header.php
+INFO - 2022-06-01 08:10:51 --> Model "Ressource_model" initialized
+INFO - 2022-06-01 08:10:51 --> File loaded: /home/debian/Cube/application/views//templates/sidebar.php
+INFO - 2022-06-01 08:10:51 --> File loaded: /home/debian/Cube/application/views//templates/wrapper.php
+INFO - 2022-06-01 08:10:51 --> File loaded: /home/debian/Cube/application/views//templates/topbar_connect.php
+INFO - 2022-06-01 08:10:51 --> File loaded: /home/debian/Cube/application/views//droit/tab_board.php
+INFO - 2022-06-01 08:10:51 --> File loaded: /home/debian/Cube/application/views//templates/footer.php
+INFO - 2022-06-01 08:10:51 --> Final output sent to browser
+DEBUG - 2022-06-01 08:10:51 --> Total execution time: 0.0093
+ERROR - 2022-06-01 08:10:51 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:51 --> Config Class Initialized
+INFO - 2022-06-01 08:10:51 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:51 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:51 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:51 --> URI Class Initialized
+INFO - 2022-06-01 08:10:51 --> Router Class Initialized
+INFO - 2022-06-01 08:10:51 --> Output Class Initialized
+INFO - 2022-06-01 08:10:51 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:51 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:51 --> Input Class Initialized
+INFO - 2022-06-01 08:10:51 --> Language Class Initialized
+ERROR - 2022-06-01 08:10:51 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 08:10:51 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:51 --> Config Class Initialized
+INFO - 2022-06-01 08:10:51 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:51 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:51 --> Utf8 Class Initialized
+ERROR - 2022-06-01 08:10:51 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:51 --> Config Class Initialized
+INFO - 2022-06-01 08:10:51 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:51 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:51 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:51 --> URI Class Initialized
+INFO - 2022-06-01 08:10:51 --> Router Class Initialized
+INFO - 2022-06-01 08:10:51 --> Output Class Initialized
+INFO - 2022-06-01 08:10:51 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:51 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:51 --> Input Class Initialized
+INFO - 2022-06-01 08:10:51 --> Language Class Initialized
+ERROR - 2022-06-01 08:10:51 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 08:10:51 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:51 --> Config Class Initialized
+INFO - 2022-06-01 08:10:51 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:51 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:51 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:51 --> URI Class Initialized
+INFO - 2022-06-01 08:10:51 --> Router Class Initialized
+INFO - 2022-06-01 08:10:51 --> Output Class Initialized
+INFO - 2022-06-01 08:10:51 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:51 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:51 --> Input Class Initialized
+INFO - 2022-06-01 08:10:51 --> Language Class Initialized
+INFO - 2022-06-01 08:10:51 --> Loader Class Initialized
+INFO - 2022-06-01 08:10:51 --> Database Driver Class Initialized
+INFO - 2022-06-01 08:10:51 --> Session: Class initialized using 'files' driver.
+INFO - 2022-06-01 08:10:51 --> Controller Class Initialized
+INFO - 2022-06-01 08:10:51 --> Model "Admin_model" initialized
+INFO - 2022-06-01 08:10:51 --> File loaded: /home/debian/Cube/application/views//templates/header.php
+INFO - 2022-06-01 08:10:51 --> Model "Ressource_model" initialized
+INFO - 2022-06-01 08:10:51 --> File loaded: /home/debian/Cube/application/views//templates/sidebar.php
+INFO - 2022-06-01 08:10:51 --> File loaded: /home/debian/Cube/application/views//templates/wrapper.php
+INFO - 2022-06-01 08:10:51 --> File loaded: /home/debian/Cube/application/views//templates/topbar_connect.php
+INFO - 2022-06-01 08:10:51 --> File loaded: /home/debian/Cube/application/views//droit/tab_board.php
+INFO - 2022-06-01 08:10:51 --> File loaded: /home/debian/Cube/application/views//templates/footer.php
+INFO - 2022-06-01 08:10:51 --> Final output sent to browser
+DEBUG - 2022-06-01 08:10:51 --> Total execution time: 0.0079
+ERROR - 2022-06-01 08:10:51 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+ERROR - 2022-06-01 08:10:51 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:51 --> Config Class Initialized
+INFO - 2022-06-01 08:10:51 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:51 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:51 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:51 --> Config Class Initialized
+INFO - 2022-06-01 08:10:51 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:51 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:51 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:51 --> URI Class Initialized
+INFO - 2022-06-01 08:10:52 --> Router Class Initialized
+INFO - 2022-06-01 08:10:52 --> Output Class Initialized
+INFO - 2022-06-01 08:10:52 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:52 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:52 --> Input Class Initialized
+INFO - 2022-06-01 08:10:52 --> Language Class Initialized
+ERROR - 2022-06-01 08:10:52 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 08:10:52 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:10:52 --> Config Class Initialized
+INFO - 2022-06-01 08:10:52 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:10:52 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:10:52 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:10:52 --> URI Class Initialized
+INFO - 2022-06-01 08:10:52 --> Router Class Initialized
+INFO - 2022-06-01 08:10:52 --> Output Class Initialized
+INFO - 2022-06-01 08:10:52 --> Security Class Initialized
+DEBUG - 2022-06-01 08:10:52 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:10:52 --> Input Class Initialized
+INFO - 2022-06-01 08:10:52 --> Language Class Initialized
+ERROR - 2022-06-01 08:10:52 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 08:15:32 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:15:32 --> Config Class Initialized
+INFO - 2022-06-01 08:15:32 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:15:32 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:15:32 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:15:32 --> URI Class Initialized
+INFO - 2022-06-01 08:15:32 --> Router Class Initialized
+INFO - 2022-06-01 08:15:32 --> Output Class Initialized
+INFO - 2022-06-01 08:15:32 --> Security Class Initialized
+DEBUG - 2022-06-01 08:15:32 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:15:32 --> Input Class Initialized
+INFO - 2022-06-01 08:15:32 --> Language Class Initialized
+INFO - 2022-06-01 08:15:32 --> Loader Class Initialized
+INFO - 2022-06-01 08:15:32 --> Database Driver Class Initialized
+INFO - 2022-06-01 08:15:32 --> Session: Class initialized using 'files' driver.
+INFO - 2022-06-01 08:15:32 --> Controller Class Initialized
+INFO - 2022-06-01 08:15:32 --> Model "Admin_model" initialized
+ERROR - 2022-06-01 08:15:32 --> Query error: Unknown column 't_ressources.id_categorie' in 'on clause' - Invalid query: SELECT *,t_type_relation.type_relation,t_type_ressource.type_ressource,t_categorie.nom_categorie FROM t_type_relation INNER JOIN t_ressources ON t_type_relation.id_type_relation = t_ressources.id_type_relation INNER JOIN t_type_ressource ON t_type_ressource.id_type_ressource = t_ressources.id_type_ressource INNER JOIN t_categorie ON t_categorie.id_categorie = t_ressources.id_categorie WHERE t_ressources.id_ressource = t_ressources.id_ressource 
+INFO - 2022-06-01 08:15:32 --> Language file loaded: language/english/db_lang.php
+ERROR - 2022-06-01 08:16:00 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:16:00 --> Config Class Initialized
+INFO - 2022-06-01 08:16:00 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:16:00 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:16:00 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:16:00 --> URI Class Initialized
+DEBUG - 2022-06-01 08:16:00 --> No URI present. Default controller set.
+INFO - 2022-06-01 08:16:00 --> Router Class Initialized
+INFO - 2022-06-01 08:16:00 --> Output Class Initialized
+INFO - 2022-06-01 08:16:00 --> Security Class Initialized
+DEBUG - 2022-06-01 08:16:00 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:16:00 --> Input Class Initialized
+INFO - 2022-06-01 08:16:00 --> Language Class Initialized
+INFO - 2022-06-01 08:16:00 --> Loader Class Initialized
+INFO - 2022-06-01 08:16:00 --> Database Driver Class Initialized
+INFO - 2022-06-01 08:16:00 --> Session: Class initialized using 'files' driver.
+INFO - 2022-06-01 08:16:00 --> Controller Class Initialized
+DEBUG - 2022-06-01 08:16:00 --> login::index
+ERROR - 2022-06-01 08:16:00 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:16:00 --> Config Class Initialized
+INFO - 2022-06-01 08:16:00 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:16:00 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:16:00 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:16:00 --> URI Class Initialized
+INFO - 2022-06-01 08:16:00 --> Router Class Initialized
+INFO - 2022-06-01 08:16:00 --> Output Class Initialized
+INFO - 2022-06-01 08:16:00 --> Security Class Initialized
+DEBUG - 2022-06-01 08:16:00 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:16:00 --> Input Class Initialized
+INFO - 2022-06-01 08:16:00 --> Language Class Initialized
+INFO - 2022-06-01 08:16:00 --> Loader Class Initialized
+INFO - 2022-06-01 08:16:00 --> Database Driver Class Initialized
+INFO - 2022-06-01 08:16:00 --> Session: Class initialized using 'files' driver.
+INFO - 2022-06-01 08:16:00 --> Controller Class Initialized
+ERROR - 2022-06-01 08:16:00 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:16:00 --> Config Class Initialized
+INFO - 2022-06-01 08:16:00 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:16:00 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:16:00 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:16:00 --> URI Class Initialized
+INFO - 2022-06-01 08:16:00 --> Router Class Initialized
+INFO - 2022-06-01 08:16:00 --> Output Class Initialized
+INFO - 2022-06-01 08:16:00 --> Security Class Initialized
+DEBUG - 2022-06-01 08:16:00 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:16:00 --> Input Class Initialized
+INFO - 2022-06-01 08:16:00 --> Language Class Initialized
+INFO - 2022-06-01 08:16:00 --> Loader Class Initialized
+INFO - 2022-06-01 08:16:00 --> Database Driver Class Initialized
+INFO - 2022-06-01 08:16:00 --> Session: Class initialized using 'files' driver.
+INFO - 2022-06-01 08:16:00 --> Controller Class Initialized
+DEBUG - 2022-06-01 08:16:00 --> login::index
+INFO - 2022-06-01 08:16:00 --> File loaded: /home/debian/Cube/application/views//templates/header.php
+INFO - 2022-06-01 08:16:00 --> File loaded: /home/debian/Cube/application/views//templates/wrapper.php
+INFO - 2022-06-01 08:16:00 --> File loaded: /home/debian/Cube/application/views//templates/topbar.php
+INFO - 2022-06-01 08:16:00 --> File loaded: /home/debian/Cube/application/views/login/authentification.php
+INFO - 2022-06-01 08:16:00 --> File loaded: /home/debian/Cube/application/views//templates/footer.php
+INFO - 2022-06-01 08:16:00 --> Final output sent to browser
+DEBUG - 2022-06-01 08:16:00 --> Total execution time: 0.0036
+ERROR - 2022-06-01 08:16:01 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:16:01 --> Config Class Initialized
+INFO - 2022-06-01 08:16:01 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:16:01 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:16:01 --> Utf8 Class Initialized
+ERROR - 2022-06-01 08:16:01 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:16:01 --> Config Class Initialized
+INFO - 2022-06-01 08:16:01 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:16:01 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:16:01 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:16:01 --> URI Class Initialized
+INFO - 2022-06-01 08:16:01 --> Router Class Initialized
+INFO - 2022-06-01 08:16:01 --> Output Class Initialized
+INFO - 2022-06-01 08:16:01 --> Security Class Initialized
+DEBUG - 2022-06-01 08:16:01 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:16:01 --> Input Class Initialized
+INFO - 2022-06-01 08:16:01 --> Language Class Initialized
+ERROR - 2022-06-01 08:16:01 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 08:16:01 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:16:01 --> Config Class Initialized
+INFO - 2022-06-01 08:16:01 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:16:01 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:16:01 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:16:01 --> URI Class Initialized
+INFO - 2022-06-01 08:16:01 --> Router Class Initialized
+INFO - 2022-06-01 08:16:01 --> Output Class Initialized
+INFO - 2022-06-01 08:16:01 --> Security Class Initialized
+DEBUG - 2022-06-01 08:16:01 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:16:01 --> Input Class Initialized
+INFO - 2022-06-01 08:16:01 --> Language Class Initialized
+ERROR - 2022-06-01 08:16:01 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 08:16:06 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:16:06 --> Config Class Initialized
+INFO - 2022-06-01 08:16:06 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:16:06 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:16:06 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:16:06 --> URI Class Initialized
+INFO - 2022-06-01 08:16:06 --> Router Class Initialized
+INFO - 2022-06-01 08:16:06 --> Output Class Initialized
+INFO - 2022-06-01 08:16:06 --> Security Class Initialized
+DEBUG - 2022-06-01 08:16:06 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:16:06 --> Input Class Initialized
+INFO - 2022-06-01 08:16:06 --> Language Class Initialized
+INFO - 2022-06-01 08:16:06 --> Loader Class Initialized
+INFO - 2022-06-01 08:16:06 --> Database Driver Class Initialized
+INFO - 2022-06-01 08:16:06 --> Session: Class initialized using 'files' driver.
+INFO - 2022-06-01 08:16:06 --> Controller Class Initialized
+DEBUG - 2022-06-01 08:16:06 --> Login::auth()
+INFO - 2022-06-01 08:16:07 --> File loaded: /home/debian/Cube/application/views//templates/header.php
+INFO - 2022-06-01 08:16:07 --> Model "Ressource_model" initialized
+INFO - 2022-06-01 08:16:07 --> File loaded: /home/debian/Cube/application/views//templates/sidebar.php
+INFO - 2022-06-01 08:16:07 --> File loaded: /home/debian/Cube/application/views//templates/wrapper.php
+INFO - 2022-06-01 08:16:07 --> File loaded: /home/debian/Cube/application/views//templates/topbar_connect.php
+INFO - 2022-06-01 08:16:07 --> File loaded: /home/debian/Cube/application/views//templates/menu_start.php
+INFO - 2022-06-01 08:16:07 --> File loaded: /home/debian/Cube/application/views//cube/accueil.php
+INFO - 2022-06-01 08:16:07 --> File loaded: /home/debian/Cube/application/views//templates/menu_end.php
+INFO - 2022-06-01 08:16:07 --> File loaded: /home/debian/Cube/application/views//templates/footer.php
+INFO - 2022-06-01 08:16:07 --> Final output sent to browser
+DEBUG - 2022-06-01 08:16:07 --> Total execution time: 0.0992
+ERROR - 2022-06-01 08:16:07 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+ERROR - 2022-06-01 08:16:07 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:16:07 --> Config Class Initialized
+INFO - 2022-06-01 08:16:07 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:16:07 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:16:07 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:16:07 --> Config Class Initialized
+INFO - 2022-06-01 08:16:07 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:16:07 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:16:07 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:16:07 --> URI Class Initialized
+INFO - 2022-06-01 08:16:07 --> Router Class Initialized
+INFO - 2022-06-01 08:16:07 --> Output Class Initialized
+INFO - 2022-06-01 08:16:07 --> Security Class Initialized
+DEBUG - 2022-06-01 08:16:07 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:16:07 --> Input Class Initialized
+INFO - 2022-06-01 08:16:07 --> Language Class Initialized
+ERROR - 2022-06-01 08:16:07 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 08:16:07 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:16:07 --> Config Class Initialized
+INFO - 2022-06-01 08:16:07 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:16:07 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:16:07 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:16:07 --> URI Class Initialized
+INFO - 2022-06-01 08:16:07 --> Router Class Initialized
+INFO - 2022-06-01 08:16:07 --> Output Class Initialized
+INFO - 2022-06-01 08:16:07 --> Security Class Initialized
+DEBUG - 2022-06-01 08:16:07 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:16:07 --> Input Class Initialized
+INFO - 2022-06-01 08:16:07 --> Language Class Initialized
+ERROR - 2022-06-01 08:16:07 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 08:16:10 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:16:10 --> Config Class Initialized
+INFO - 2022-06-01 08:16:10 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:16:10 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:16:10 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:16:10 --> URI Class Initialized
+INFO - 2022-06-01 08:16:10 --> Router Class Initialized
+INFO - 2022-06-01 08:16:10 --> Output Class Initialized
+INFO - 2022-06-01 08:16:10 --> Security Class Initialized
+DEBUG - 2022-06-01 08:16:10 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:16:10 --> Input Class Initialized
+INFO - 2022-06-01 08:16:10 --> Language Class Initialized
+INFO - 2022-06-01 08:16:10 --> Loader Class Initialized
+INFO - 2022-06-01 08:16:10 --> Database Driver Class Initialized
+INFO - 2022-06-01 08:16:10 --> Session: Class initialized using 'files' driver.
+INFO - 2022-06-01 08:16:10 --> Controller Class Initialized
+INFO - 2022-06-01 08:16:10 --> Model "Admin_model" initialized
+ERROR - 2022-06-01 08:16:10 --> Query error: Unknown column 't_ressources.id_categorie' in 'on clause' - Invalid query: SELECT *,t_type_relation.type_relation,t_type_ressource.type_ressource,t_categorie.nom_categorie FROM t_type_relation INNER JOIN t_ressources ON t_type_relation.id_type_relation = t_ressources.id_type_relation INNER JOIN t_type_ressource ON t_type_ressource.id_type_ressource = t_ressources.id_type_ressource INNER JOIN t_categorie ON t_categorie.id_categorie = t_ressources.id_categorie WHERE t_ressources.id_ressource = t_ressources.id_ressource 
+INFO - 2022-06-01 08:16:10 --> Language file loaded: language/english/db_lang.php
+ERROR - 2022-06-01 08:17:08 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:17:08 --> Config Class Initialized
+INFO - 2022-06-01 08:17:08 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:17:08 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:17:08 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:17:08 --> URI Class Initialized
+INFO - 2022-06-01 08:17:08 --> Router Class Initialized
+INFO - 2022-06-01 08:17:08 --> Output Class Initialized
+INFO - 2022-06-01 08:17:08 --> Security Class Initialized
+DEBUG - 2022-06-01 08:17:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:17:08 --> Input Class Initialized
+INFO - 2022-06-01 08:17:08 --> Language Class Initialized
+ERROR - 2022-06-01 08:17:08 --> 404 Page Not Found: Boaform/admin
+ERROR - 2022-06-01 08:31:42 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:31:42 --> Config Class Initialized
+INFO - 2022-06-01 08:31:42 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:31:42 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:31:42 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:31:42 --> URI Class Initialized
+INFO - 2022-06-01 08:31:42 --> Router Class Initialized
+INFO - 2022-06-01 08:31:42 --> Output Class Initialized
+INFO - 2022-06-01 08:31:42 --> Security Class Initialized
+DEBUG - 2022-06-01 08:31:42 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:31:42 --> Input Class Initialized
+INFO - 2022-06-01 08:31:42 --> Language Class Initialized
+ERROR - 2022-06-01 08:31:42 --> 404 Page Not Found: _ignition/execute-solution
+ERROR - 2022-06-01 08:45:22 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:45:22 --> Config Class Initialized
+INFO - 2022-06-01 08:45:22 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:45:22 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:45:22 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:45:22 --> URI Class Initialized
+INFO - 2022-06-01 08:45:22 --> Router Class Initialized
+INFO - 2022-06-01 08:45:22 --> Output Class Initialized
+INFO - 2022-06-01 08:45:22 --> Security Class Initialized
+DEBUG - 2022-06-01 08:45:22 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:45:22 --> Input Class Initialized
+INFO - 2022-06-01 08:45:22 --> Language Class Initialized
+INFO - 2022-06-01 08:45:22 --> Loader Class Initialized
+INFO - 2022-06-01 08:45:22 --> Database Driver Class Initialized
+INFO - 2022-06-01 08:45:22 --> Session: Class initialized using 'files' driver.
+INFO - 2022-06-01 08:45:22 --> Controller Class Initialized
+INFO - 2022-06-01 08:45:22 --> Model "Admin_model" initialized
+INFO - 2022-06-01 08:45:22 --> File loaded: /home/debian/Cube/application/views//templates/header.php
+INFO - 2022-06-01 08:45:22 --> Model "Ressource_model" initialized
+INFO - 2022-06-01 08:45:22 --> File loaded: /home/debian/Cube/application/views//templates/sidebar.php
+INFO - 2022-06-01 08:45:22 --> File loaded: /home/debian/Cube/application/views//templates/wrapper.php
+INFO - 2022-06-01 08:45:22 --> File loaded: /home/debian/Cube/application/views//templates/topbar_connect.php
+INFO - 2022-06-01 08:45:22 --> File loaded: /home/debian/Cube/application/views//droit/tab_board.php
+INFO - 2022-06-01 08:45:22 --> File loaded: /home/debian/Cube/application/views//templates/footer.php
+INFO - 2022-06-01 08:45:22 --> Final output sent to browser
+DEBUG - 2022-06-01 08:45:22 --> Total execution time: 0.0101
+ERROR - 2022-06-01 08:45:22 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:45:22 --> Config Class Initialized
+INFO - 2022-06-01 08:45:22 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:45:22 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:45:22 --> Utf8 Class Initialized
+ERROR - 2022-06-01 08:45:22 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:45:22 --> Config Class Initialized
+INFO - 2022-06-01 08:45:22 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:45:22 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:45:22 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:45:22 --> URI Class Initialized
+INFO - 2022-06-01 08:45:22 --> Router Class Initialized
+INFO - 2022-06-01 08:45:22 --> Output Class Initialized
+INFO - 2022-06-01 08:45:22 --> Security Class Initialized
+DEBUG - 2022-06-01 08:45:22 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:45:22 --> Input Class Initialized
+INFO - 2022-06-01 08:45:22 --> Language Class Initialized
+ERROR - 2022-06-01 08:45:22 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 08:45:22 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:45:22 --> Config Class Initialized
+INFO - 2022-06-01 08:45:22 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:45:22 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:45:22 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:45:22 --> URI Class Initialized
+INFO - 2022-06-01 08:45:22 --> Router Class Initialized
+INFO - 2022-06-01 08:45:22 --> Output Class Initialized
+INFO - 2022-06-01 08:45:22 --> Security Class Initialized
+DEBUG - 2022-06-01 08:45:22 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:45:22 --> Input Class Initialized
+INFO - 2022-06-01 08:45:22 --> Language Class Initialized
+ERROR - 2022-06-01 08:45:22 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 08:45:22 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:45:22 --> Config Class Initialized
+INFO - 2022-06-01 08:45:22 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:45:22 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:45:22 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:45:22 --> URI Class Initialized
+DEBUG - 2022-06-01 08:45:22 --> No URI present. Default controller set.
+INFO - 2022-06-01 08:45:22 --> Router Class Initialized
+INFO - 2022-06-01 08:45:22 --> Output Class Initialized
+INFO - 2022-06-01 08:45:22 --> Security Class Initialized
+DEBUG - 2022-06-01 08:45:22 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:45:22 --> Input Class Initialized
+INFO - 2022-06-01 08:45:22 --> Language Class Initialized
+INFO - 2022-06-01 08:45:22 --> Loader Class Initialized
+INFO - 2022-06-01 08:45:22 --> Database Driver Class Initialized
+INFO - 2022-06-01 08:45:22 --> Session: Class initialized using 'files' driver.
+INFO - 2022-06-01 08:45:22 --> Controller Class Initialized
+DEBUG - 2022-06-01 08:45:22 --> login::index
+INFO - 2022-06-01 08:45:22 --> File loaded: /home/debian/Cube/application/views//templates/header.php
+INFO - 2022-06-01 08:45:22 --> File loaded: /home/debian/Cube/application/views//templates/wrapper.php
+INFO - 2022-06-01 08:45:22 --> File loaded: /home/debian/Cube/application/views//templates/topbar.php
+INFO - 2022-06-01 08:45:22 --> File loaded: /home/debian/Cube/application/views/login/authentification.php
+INFO - 2022-06-01 08:45:22 --> File loaded: /home/debian/Cube/application/views//templates/footer.php
+INFO - 2022-06-01 08:45:22 --> Final output sent to browser
+DEBUG - 2022-06-01 08:45:22 --> Total execution time: 0.0028
+ERROR - 2022-06-01 08:52:20 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 08:52:20 --> Config Class Initialized
+INFO - 2022-06-01 08:52:20 --> Hooks Class Initialized
+DEBUG - 2022-06-01 08:52:20 --> UTF-8 Support Enabled
+INFO - 2022-06-01 08:52:20 --> Utf8 Class Initialized
+INFO - 2022-06-01 08:52:20 --> URI Class Initialized
+DEBUG - 2022-06-01 08:52:20 --> No URI present. Default controller set.
+INFO - 2022-06-01 08:52:20 --> Router Class Initialized
+INFO - 2022-06-01 08:52:20 --> Output Class Initialized
+INFO - 2022-06-01 08:52:20 --> Security Class Initialized
+DEBUG - 2022-06-01 08:52:20 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 08:52:20 --> Input Class Initialized
+INFO - 2022-06-01 08:52:20 --> Language Class Initialized
+INFO - 2022-06-01 08:52:20 --> Loader Class Initialized
+INFO - 2022-06-01 08:52:20 --> Database Driver Class Initialized
+INFO - 2022-06-01 08:52:20 --> Session: Class initialized using 'files' driver.
+INFO - 2022-06-01 08:52:20 --> Controller Class Initialized
+DEBUG - 2022-06-01 08:52:20 --> login::index
+INFO - 2022-06-01 08:52:20 --> File loaded: /home/debian/Cube/application/views//templates/header.php
+INFO - 2022-06-01 08:52:20 --> File loaded: /home/debian/Cube/application/views//templates/wrapper.php
+INFO - 2022-06-01 08:52:20 --> File loaded: /home/debian/Cube/application/views//templates/topbar.php
+INFO - 2022-06-01 08:52:20 --> File loaded: /home/debian/Cube/application/views/login/authentification.php
+INFO - 2022-06-01 08:52:20 --> File loaded: /home/debian/Cube/application/views//templates/footer.php
+INFO - 2022-06-01 08:52:20 --> Final output sent to browser
+DEBUG - 2022-06-01 08:52:20 --> Total execution time: 0.0053
+ERROR - 2022-06-01 09:32:14 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 09:32:14 --> Config Class Initialized
+INFO - 2022-06-01 09:32:14 --> Hooks Class Initialized
+DEBUG - 2022-06-01 09:32:14 --> UTF-8 Support Enabled
+INFO - 2022-06-01 09:32:14 --> Utf8 Class Initialized
+INFO - 2022-06-01 09:32:14 --> URI Class Initialized
+INFO - 2022-06-01 09:32:14 --> Router Class Initialized
+INFO - 2022-06-01 09:32:14 --> Output Class Initialized
+INFO - 2022-06-01 09:32:14 --> Security Class Initialized
+DEBUG - 2022-06-01 09:32:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 09:32:14 --> Input Class Initialized
+INFO - 2022-06-01 09:32:14 --> Language Class Initialized
+INFO - 2022-06-01 09:32:14 --> Loader Class Initialized
+INFO - 2022-06-01 09:32:14 --> Database Driver Class Initialized
+INFO - 2022-06-01 09:32:14 --> Session: Class initialized using 'files' driver.
+INFO - 2022-06-01 09:32:14 --> Controller Class Initialized
+INFO - 2022-06-01 09:32:14 --> Model "Admin_model" initialized
+INFO - 2022-06-01 09:32:14 --> File loaded: /home/debian/Cube/application/views//templates/header.php
+INFO - 2022-06-01 09:32:14 --> Model "Ressource_model" initialized
+INFO - 2022-06-01 09:32:14 --> File loaded: /home/debian/Cube/application/views//templates/sidebar.php
+INFO - 2022-06-01 09:32:14 --> File loaded: /home/debian/Cube/application/views//templates/wrapper.php
+INFO - 2022-06-01 09:32:14 --> File loaded: /home/debian/Cube/application/views//templates/topbar_connect.php
+INFO - 2022-06-01 09:32:14 --> File loaded: /home/debian/Cube/application/views//droit/tab_board.php
+INFO - 2022-06-01 09:32:14 --> File loaded: /home/debian/Cube/application/views//templates/footer.php
+INFO - 2022-06-01 09:32:14 --> Final output sent to browser
+DEBUG - 2022-06-01 09:32:14 --> Total execution time: 0.0142
+ERROR - 2022-06-01 09:32:14 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 09:32:14 --> Config Class Initialized
+INFO - 2022-06-01 09:32:14 --> Hooks Class Initialized
+DEBUG - 2022-06-01 09:32:14 --> UTF-8 Support Enabled
+INFO - 2022-06-01 09:32:14 --> Utf8 Class Initialized
+ERROR - 2022-06-01 09:32:14 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 09:32:14 --> Config Class Initialized
+INFO - 2022-06-01 09:32:14 --> Hooks Class Initialized
+DEBUG - 2022-06-01 09:32:14 --> UTF-8 Support Enabled
+INFO - 2022-06-01 09:32:14 --> Utf8 Class Initialized
+INFO - 2022-06-01 09:32:14 --> URI Class Initialized
+INFO - 2022-06-01 09:32:14 --> Router Class Initialized
+INFO - 2022-06-01 09:32:14 --> Output Class Initialized
+INFO - 2022-06-01 09:32:14 --> Security Class Initialized
+DEBUG - 2022-06-01 09:32:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 09:32:14 --> Input Class Initialized
+INFO - 2022-06-01 09:32:14 --> Language Class Initialized
+ERROR - 2022-06-01 09:32:14 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 09:32:14 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 09:32:14 --> Config Class Initialized
+INFO - 2022-06-01 09:32:14 --> Hooks Class Initialized
+DEBUG - 2022-06-01 09:32:14 --> UTF-8 Support Enabled
+INFO - 2022-06-01 09:32:14 --> Utf8 Class Initialized
+INFO - 2022-06-01 09:32:14 --> URI Class Initialized
+INFO - 2022-06-01 09:32:14 --> Router Class Initialized
+INFO - 2022-06-01 09:32:14 --> Output Class Initialized
+INFO - 2022-06-01 09:32:14 --> Security Class Initialized
+DEBUG - 2022-06-01 09:32:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 09:32:14 --> Input Class Initialized
+INFO - 2022-06-01 09:32:14 --> Language Class Initialized
+ERROR - 2022-06-01 09:32:14 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 09:34:27 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 09:34:27 --> Config Class Initialized
+INFO - 2022-06-01 09:34:27 --> Hooks Class Initialized
+DEBUG - 2022-06-01 09:34:27 --> UTF-8 Support Enabled
+INFO - 2022-06-01 09:34:27 --> Utf8 Class Initialized
+INFO - 2022-06-01 09:34:27 --> URI Class Initialized
+INFO - 2022-06-01 09:34:27 --> Router Class Initialized
+INFO - 2022-06-01 09:34:27 --> Output Class Initialized
+INFO - 2022-06-01 09:34:27 --> Security Class Initialized
+DEBUG - 2022-06-01 09:34:27 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 09:34:27 --> Input Class Initialized
+INFO - 2022-06-01 09:34:27 --> Language Class Initialized
+INFO - 2022-06-01 09:34:27 --> Loader Class Initialized
+INFO - 2022-06-01 09:34:27 --> Database Driver Class Initialized
+INFO - 2022-06-01 09:34:27 --> Session: Class initialized using 'files' driver.
+INFO - 2022-06-01 09:34:27 --> Controller Class Initialized
+INFO - 2022-06-01 09:34:27 --> Model "Admin_model" initialized
+INFO - 2022-06-01 09:34:27 --> File loaded: /home/debian/Cube/application/views//templates/header.php
+INFO - 2022-06-01 09:34:27 --> Model "Ressource_model" initialized
+INFO - 2022-06-01 09:34:27 --> File loaded: /home/debian/Cube/application/views//templates/sidebar.php
+INFO - 2022-06-01 09:34:27 --> File loaded: /home/debian/Cube/application/views//templates/wrapper.php
+INFO - 2022-06-01 09:34:27 --> File loaded: /home/debian/Cube/application/views//templates/topbar_connect.php
+INFO - 2022-06-01 09:34:27 --> File loaded: /home/debian/Cube/application/views//droit/tab_board.php
+INFO - 2022-06-01 09:34:27 --> File loaded: /home/debian/Cube/application/views//templates/footer.php
+INFO - 2022-06-01 09:34:27 --> Final output sent to browser
+DEBUG - 2022-06-01 09:34:27 --> Total execution time: 0.0084
+ERROR - 2022-06-01 09:34:27 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 09:34:27 --> Config Class Initialized
+INFO - 2022-06-01 09:34:27 --> Hooks Class Initialized
+DEBUG - 2022-06-01 09:34:27 --> UTF-8 Support Enabled
+INFO - 2022-06-01 09:34:27 --> Utf8 Class Initialized
+ERROR - 2022-06-01 09:34:27 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 09:34:27 --> Config Class Initialized
+INFO - 2022-06-01 09:34:27 --> Hooks Class Initialized
+DEBUG - 2022-06-01 09:34:27 --> UTF-8 Support Enabled
+INFO - 2022-06-01 09:34:27 --> Utf8 Class Initialized
+INFO - 2022-06-01 09:34:27 --> URI Class Initialized
+INFO - 2022-06-01 09:34:27 --> Router Class Initialized
+INFO - 2022-06-01 09:34:27 --> Output Class Initialized
+INFO - 2022-06-01 09:34:27 --> Security Class Initialized
+DEBUG - 2022-06-01 09:34:27 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 09:34:27 --> Input Class Initialized
+INFO - 2022-06-01 09:34:27 --> Language Class Initialized
+ERROR - 2022-06-01 09:34:27 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 09:34:27 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 09:34:27 --> Config Class Initialized
+INFO - 2022-06-01 09:34:27 --> Hooks Class Initialized
+DEBUG - 2022-06-01 09:34:27 --> UTF-8 Support Enabled
+INFO - 2022-06-01 09:34:27 --> Utf8 Class Initialized
+INFO - 2022-06-01 09:34:27 --> URI Class Initialized
+INFO - 2022-06-01 09:34:27 --> Router Class Initialized
+INFO - 2022-06-01 09:34:27 --> Output Class Initialized
+INFO - 2022-06-01 09:34:27 --> Security Class Initialized
+DEBUG - 2022-06-01 09:34:27 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 09:34:27 --> Input Class Initialized
+INFO - 2022-06-01 09:34:27 --> Language Class Initialized
+ERROR - 2022-06-01 09:34:27 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 09:46:54 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 09:46:54 --> Config Class Initialized
+INFO - 2022-06-01 09:46:54 --> Hooks Class Initialized
+DEBUG - 2022-06-01 09:46:54 --> UTF-8 Support Enabled
+INFO - 2022-06-01 09:46:54 --> Utf8 Class Initialized
+INFO - 2022-06-01 09:46:54 --> URI Class Initialized
+DEBUG - 2022-06-01 09:46:54 --> No URI present. Default controller set.
+INFO - 2022-06-01 09:46:54 --> Router Class Initialized
+INFO - 2022-06-01 09:46:54 --> Output Class Initialized
+INFO - 2022-06-01 09:46:54 --> Security Class Initialized
+DEBUG - 2022-06-01 09:46:54 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 09:46:54 --> Input Class Initialized
+INFO - 2022-06-01 09:46:54 --> Language Class Initialized
+INFO - 2022-06-01 09:46:54 --> Loader Class Initialized
+INFO - 2022-06-01 09:46:54 --> Database Driver Class Initialized
+INFO - 2022-06-01 09:46:54 --> Session: Class initialized using 'files' driver.
+INFO - 2022-06-01 09:46:54 --> Controller Class Initialized
+DEBUG - 2022-06-01 09:46:54 --> login::index
+INFO - 2022-06-01 09:46:54 --> File loaded: /home/debian/Cube/application/views//templates/header.php
+INFO - 2022-06-01 09:46:54 --> File loaded: /home/debian/Cube/application/views//templates/wrapper.php
+INFO - 2022-06-01 09:46:54 --> File loaded: /home/debian/Cube/application/views//templates/topbar.php
+INFO - 2022-06-01 09:46:54 --> File loaded: /home/debian/Cube/application/views/login/authentification.php
+INFO - 2022-06-01 09:46:54 --> File loaded: /home/debian/Cube/application/views//templates/footer.php
+INFO - 2022-06-01 09:46:54 --> Final output sent to browser
+DEBUG - 2022-06-01 09:46:54 --> Total execution time: 0.0053
+ERROR - 2022-06-01 09:48:23 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 09:48:23 --> Config Class Initialized
+INFO - 2022-06-01 09:48:23 --> Hooks Class Initialized
+DEBUG - 2022-06-01 09:48:23 --> UTF-8 Support Enabled
+INFO - 2022-06-01 09:48:23 --> Utf8 Class Initialized
+INFO - 2022-06-01 09:48:23 --> URI Class Initialized
+INFO - 2022-06-01 09:48:23 --> Router Class Initialized
+INFO - 2022-06-01 09:48:23 --> Output Class Initialized
+INFO - 2022-06-01 09:48:23 --> Security Class Initialized
+DEBUG - 2022-06-01 09:48:23 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 09:48:23 --> Input Class Initialized
+INFO - 2022-06-01 09:48:23 --> Language Class Initialized
+INFO - 2022-06-01 09:48:23 --> Loader Class Initialized
+INFO - 2022-06-01 09:48:23 --> Database Driver Class Initialized
+ERROR - 2022-06-01 09:48:23 --> Severity: Warning --> mysqli::real_connect(): (HY000/1045): Access denied for user 'cube'@'localhost' (using password: YES) /home/debian/Cube/system/database/drivers/mysqli/mysqli_driver.php 203
+ERROR - 2022-06-01 09:48:23 --> Unable to connect to the database
+INFO - 2022-06-01 09:48:23 --> Language file loaded: language/english/db_lang.php
+ERROR - 2022-06-01 09:49:08 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 09:49:08 --> Config Class Initialized
+INFO - 2022-06-01 09:49:08 --> Hooks Class Initialized
+DEBUG - 2022-06-01 09:49:08 --> UTF-8 Support Enabled
+INFO - 2022-06-01 09:49:08 --> Utf8 Class Initialized
+INFO - 2022-06-01 09:49:08 --> URI Class Initialized
+INFO - 2022-06-01 09:49:08 --> Router Class Initialized
+INFO - 2022-06-01 09:49:08 --> Output Class Initialized
+INFO - 2022-06-01 09:49:08 --> Security Class Initialized
+DEBUG - 2022-06-01 09:49:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 09:49:08 --> Input Class Initialized
+INFO - 2022-06-01 09:49:08 --> Language Class Initialized
+INFO - 2022-06-01 09:49:08 --> Loader Class Initialized
+INFO - 2022-06-01 09:49:08 --> Database Driver Class Initialized
+INFO - 2022-06-01 09:49:08 --> Session: Class initialized using 'files' driver.
+INFO - 2022-06-01 09:49:08 --> Controller Class Initialized
+INFO - 2022-06-01 09:49:08 --> Model "Admin_model" initialized
+INFO - 2022-06-01 09:49:08 --> File loaded: /home/debian/Cube/application/views//templates/header.php
+INFO - 2022-06-01 09:49:08 --> Model "Ressource_model" initialized
+INFO - 2022-06-01 09:49:08 --> File loaded: /home/debian/Cube/application/views//templates/sidebar.php
+INFO - 2022-06-01 09:49:08 --> File loaded: /home/debian/Cube/application/views//templates/wrapper.php
+INFO - 2022-06-01 09:49:08 --> File loaded: /home/debian/Cube/application/views//templates/topbar_connect.php
+INFO - 2022-06-01 09:49:08 --> File loaded: /home/debian/Cube/application/views//droit/tab_board.php
+INFO - 2022-06-01 09:49:08 --> File loaded: /home/debian/Cube/application/views//templates/footer.php
+INFO - 2022-06-01 09:49:08 --> Final output sent to browser
+DEBUG - 2022-06-01 09:49:08 --> Total execution time: 0.0132
+ERROR - 2022-06-01 09:49:08 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 09:49:08 --> Config Class Initialized
+INFO - 2022-06-01 09:49:08 --> Hooks Class Initialized
+DEBUG - 2022-06-01 09:49:08 --> UTF-8 Support Enabled
+INFO - 2022-06-01 09:49:08 --> Utf8 Class Initialized
+INFO - 2022-06-01 09:49:08 --> URI Class Initialized
+ERROR - 2022-06-01 09:49:08 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 09:49:08 --> Config Class Initialized
+INFO - 2022-06-01 09:49:08 --> Hooks Class Initialized
+DEBUG - 2022-06-01 09:49:08 --> UTF-8 Support Enabled
+INFO - 2022-06-01 09:49:08 --> Utf8 Class Initialized
+INFO - 2022-06-01 09:49:08 --> Router Class Initialized
+INFO - 2022-06-01 09:49:08 --> Output Class Initialized
+INFO - 2022-06-01 09:49:08 --> Security Class Initialized
+DEBUG - 2022-06-01 09:49:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 09:49:08 --> Input Class Initialized
+INFO - 2022-06-01 09:49:08 --> Language Class Initialized
+ERROR - 2022-06-01 09:49:08 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 09:49:08 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 09:49:08 --> Config Class Initialized
+INFO - 2022-06-01 09:49:08 --> Hooks Class Initialized
+DEBUG - 2022-06-01 09:49:08 --> UTF-8 Support Enabled
+INFO - 2022-06-01 09:49:08 --> Utf8 Class Initialized
+INFO - 2022-06-01 09:49:08 --> URI Class Initialized
+INFO - 2022-06-01 09:49:08 --> Router Class Initialized
+INFO - 2022-06-01 09:49:08 --> Output Class Initialized
+INFO - 2022-06-01 09:49:08 --> Security Class Initialized
+DEBUG - 2022-06-01 09:49:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 09:49:08 --> Input Class Initialized
+INFO - 2022-06-01 09:49:08 --> Language Class Initialized
+ERROR - 2022-06-01 09:49:08 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 09:49:13 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 09:49:13 --> Config Class Initialized
+INFO - 2022-06-01 09:49:13 --> Hooks Class Initialized
+DEBUG - 2022-06-01 09:49:13 --> UTF-8 Support Enabled
+INFO - 2022-06-01 09:49:13 --> Utf8 Class Initialized
+INFO - 2022-06-01 09:49:13 --> URI Class Initialized
+INFO - 2022-06-01 09:49:13 --> Router Class Initialized
+INFO - 2022-06-01 09:49:13 --> Output Class Initialized
+INFO - 2022-06-01 09:49:13 --> Security Class Initialized
+DEBUG - 2022-06-01 09:49:13 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 09:49:13 --> Input Class Initialized
+INFO - 2022-06-01 09:49:13 --> Language Class Initialized
+INFO - 2022-06-01 09:49:13 --> Loader Class Initialized
+INFO - 2022-06-01 09:49:13 --> Database Driver Class Initialized
+INFO - 2022-06-01 09:49:13 --> Session: Class initialized using 'files' driver.
+INFO - 2022-06-01 09:49:13 --> Controller Class Initialized
+INFO - 2022-06-01 09:49:13 --> File loaded: /home/debian/Cube/application/views//templates/header.php
+INFO - 2022-06-01 09:49:13 --> Model "Ressource_model" initialized
+INFO - 2022-06-01 09:49:13 --> File loaded: /home/debian/Cube/application/views//templates/sidebar.php
+INFO - 2022-06-01 09:49:13 --> File loaded: /home/debian/Cube/application/views//templates/wrapper.php
+INFO - 2022-06-01 09:49:13 --> File loaded: /home/debian/Cube/application/views//templates/topbar_connect.php
+INFO - 2022-06-01 09:49:13 --> File loaded: /home/debian/Cube/application/views//templates/menu_start.php
+INFO - 2022-06-01 09:49:13 --> File loaded: /home/debian/Cube/application/views//cube/accueil.php
+INFO - 2022-06-01 09:49:13 --> File loaded: /home/debian/Cube/application/views//templates/menu_end.php
+INFO - 2022-06-01 09:49:13 --> File loaded: /home/debian/Cube/application/views//templates/footer.php
+INFO - 2022-06-01 09:49:13 --> Final output sent to browser
+DEBUG - 2022-06-01 09:49:13 --> Total execution time: 0.0093
+ERROR - 2022-06-01 09:49:13 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 09:49:13 --> Config Class Initialized
+ERROR - 2022-06-01 09:49:13 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 09:49:13 --> Config Class Initialized
+INFO - 2022-06-01 09:49:13 --> Hooks Class Initialized
+DEBUG - 2022-06-01 09:49:13 --> UTF-8 Support Enabled
+INFO - 2022-06-01 09:49:13 --> Utf8 Class Initialized
+INFO - 2022-06-01 09:49:13 --> Hooks Class Initialized
+DEBUG - 2022-06-01 09:49:13 --> UTF-8 Support Enabled
+INFO - 2022-06-01 09:49:13 --> Utf8 Class Initialized
+INFO - 2022-06-01 09:49:13 --> URI Class Initialized
+INFO - 2022-06-01 09:49:13 --> Router Class Initialized
+INFO - 2022-06-01 09:49:13 --> Output Class Initialized
+INFO - 2022-06-01 09:49:13 --> Security Class Initialized
+DEBUG - 2022-06-01 09:49:13 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 09:49:13 --> Input Class Initialized
+INFO - 2022-06-01 09:49:13 --> Language Class Initialized
+ERROR - 2022-06-01 09:49:13 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 09:49:13 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 09:49:13 --> Config Class Initialized
+INFO - 2022-06-01 09:49:13 --> Hooks Class Initialized
+DEBUG - 2022-06-01 09:49:13 --> UTF-8 Support Enabled
+INFO - 2022-06-01 09:49:13 --> Utf8 Class Initialized
+INFO - 2022-06-01 09:49:13 --> URI Class Initialized
+INFO - 2022-06-01 09:49:13 --> Router Class Initialized
+INFO - 2022-06-01 09:49:13 --> Output Class Initialized
+INFO - 2022-06-01 09:49:13 --> Security Class Initialized
+DEBUG - 2022-06-01 09:49:13 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 09:49:13 --> Input Class Initialized
+INFO - 2022-06-01 09:49:13 --> Language Class Initialized
+ERROR - 2022-06-01 09:49:13 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 09:49:14 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 09:49:14 --> Config Class Initialized
+INFO - 2022-06-01 09:49:14 --> Hooks Class Initialized
+DEBUG - 2022-06-01 09:49:14 --> UTF-8 Support Enabled
+INFO - 2022-06-01 09:49:14 --> Utf8 Class Initialized
+INFO - 2022-06-01 09:49:14 --> URI Class Initialized
+INFO - 2022-06-01 09:49:14 --> Router Class Initialized
+INFO - 2022-06-01 09:49:14 --> Output Class Initialized
+INFO - 2022-06-01 09:49:14 --> Security Class Initialized
+DEBUG - 2022-06-01 09:49:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 09:49:14 --> Input Class Initialized
+INFO - 2022-06-01 09:49:14 --> Language Class Initialized
+INFO - 2022-06-01 09:49:14 --> Loader Class Initialized
+INFO - 2022-06-01 09:49:14 --> Database Driver Class Initialized
+INFO - 2022-06-01 09:49:14 --> Session: Class initialized using 'files' driver.
+INFO - 2022-06-01 09:49:14 --> Controller Class Initialized
+INFO - 2022-06-01 09:49:14 --> Model "Admin_model" initialized
+INFO - 2022-06-01 09:49:14 --> File loaded: /home/debian/Cube/application/views//templates/header.php
+INFO - 2022-06-01 09:49:14 --> Model "Ressource_model" initialized
+INFO - 2022-06-01 09:49:14 --> File loaded: /home/debian/Cube/application/views//templates/sidebar.php
+INFO - 2022-06-01 09:49:14 --> File loaded: /home/debian/Cube/application/views//templates/wrapper.php
+INFO - 2022-06-01 09:49:14 --> File loaded: /home/debian/Cube/application/views//templates/topbar_connect.php
+INFO - 2022-06-01 09:49:14 --> File loaded: /home/debian/Cube/application/views//droit/tab_board.php
+INFO - 2022-06-01 09:49:14 --> File loaded: /home/debian/Cube/application/views//templates/footer.php
+INFO - 2022-06-01 09:49:14 --> Final output sent to browser
+DEBUG - 2022-06-01 09:49:14 --> Total execution time: 0.0072
+ERROR - 2022-06-01 09:49:14 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 09:49:14 --> Config Class Initialized
+INFO - 2022-06-01 09:49:14 --> Hooks Class Initialized
+DEBUG - 2022-06-01 09:49:14 --> UTF-8 Support Enabled
+INFO - 2022-06-01 09:49:14 --> Utf8 Class Initialized
+ERROR - 2022-06-01 09:49:14 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 09:49:14 --> Config Class Initialized
+INFO - 2022-06-01 09:49:14 --> Hooks Class Initialized
+DEBUG - 2022-06-01 09:49:14 --> UTF-8 Support Enabled
+INFO - 2022-06-01 09:49:14 --> Utf8 Class Initialized
+INFO - 2022-06-01 09:49:14 --> URI Class Initialized
+INFO - 2022-06-01 09:49:14 --> Router Class Initialized
+INFO - 2022-06-01 09:49:14 --> Output Class Initialized
+INFO - 2022-06-01 09:49:14 --> Security Class Initialized
+DEBUG - 2022-06-01 09:49:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 09:49:14 --> Input Class Initialized
+INFO - 2022-06-01 09:49:14 --> Language Class Initialized
+ERROR - 2022-06-01 09:49:14 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 09:49:14 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 09:49:14 --> Config Class Initialized
+INFO - 2022-06-01 09:49:14 --> Hooks Class Initialized
+DEBUG - 2022-06-01 09:49:14 --> UTF-8 Support Enabled
+INFO - 2022-06-01 09:49:14 --> Utf8 Class Initialized
+INFO - 2022-06-01 09:49:14 --> URI Class Initialized
+INFO - 2022-06-01 09:49:14 --> Router Class Initialized
+INFO - 2022-06-01 09:49:14 --> Output Class Initialized
+INFO - 2022-06-01 09:49:14 --> Security Class Initialized
+DEBUG - 2022-06-01 09:49:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 09:49:14 --> Input Class Initialized
+INFO - 2022-06-01 09:49:14 --> Language Class Initialized
+ERROR - 2022-06-01 09:49:14 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 09:51:31 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 09:51:31 --> Config Class Initialized
+INFO - 2022-06-01 09:51:31 --> Hooks Class Initialized
+DEBUG - 2022-06-01 09:51:31 --> UTF-8 Support Enabled
+INFO - 2022-06-01 09:51:31 --> Utf8 Class Initialized
+INFO - 2022-06-01 09:51:31 --> URI Class Initialized
+INFO - 2022-06-01 09:51:31 --> Router Class Initialized
+INFO - 2022-06-01 09:51:31 --> Output Class Initialized
+INFO - 2022-06-01 09:51:31 --> Security Class Initialized
+DEBUG - 2022-06-01 09:51:31 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 09:51:31 --> Input Class Initialized
+INFO - 2022-06-01 09:51:31 --> Language Class Initialized
+INFO - 2022-06-01 09:51:31 --> Loader Class Initialized
+INFO - 2022-06-01 09:51:31 --> Database Driver Class Initialized
+INFO - 2022-06-01 09:51:31 --> Session: Class initialized using 'files' driver.
+INFO - 2022-06-01 09:51:31 --> Controller Class Initialized
+INFO - 2022-06-01 09:51:31 --> Model "Admin_model" initialized
+INFO - 2022-06-01 09:51:31 --> File loaded: /home/debian/Cube/application/views//templates/header.php
+INFO - 2022-06-01 09:51:31 --> Model "Ressource_model" initialized
+INFO - 2022-06-01 09:51:31 --> File loaded: /home/debian/Cube/application/views//templates/sidebar.php
+INFO - 2022-06-01 09:51:31 --> File loaded: /home/debian/Cube/application/views//templates/wrapper.php
+INFO - 2022-06-01 09:51:31 --> File loaded: /home/debian/Cube/application/views//templates/topbar_connect.php
+INFO - 2022-06-01 09:51:31 --> File loaded: /home/debian/Cube/application/views//droit/tab_board.php
+INFO - 2022-06-01 09:51:31 --> File loaded: /home/debian/Cube/application/views//templates/footer.php
+INFO - 2022-06-01 09:51:31 --> Final output sent to browser
+DEBUG - 2022-06-01 09:51:31 --> Total execution time: 0.0083
+ERROR - 2022-06-01 09:51:31 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 09:51:31 --> Config Class Initialized
+INFO - 2022-06-01 09:51:31 --> Hooks Class Initialized
+DEBUG - 2022-06-01 09:51:31 --> UTF-8 Support Enabled
+INFO - 2022-06-01 09:51:31 --> Utf8 Class Initialized
+INFO - 2022-06-01 09:51:31 --> URI Class Initialized
+ERROR - 2022-06-01 09:51:31 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 09:51:31 --> Config Class Initialized
+INFO - 2022-06-01 09:51:31 --> Hooks Class Initialized
+DEBUG - 2022-06-01 09:51:31 --> UTF-8 Support Enabled
+INFO - 2022-06-01 09:51:31 --> Utf8 Class Initialized
+INFO - 2022-06-01 09:51:31 --> Router Class Initialized
+INFO - 2022-06-01 09:51:31 --> Output Class Initialized
+INFO - 2022-06-01 09:51:31 --> Security Class Initialized
+DEBUG - 2022-06-01 09:51:31 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 09:51:31 --> Input Class Initialized
+INFO - 2022-06-01 09:51:31 --> Language Class Initialized
+ERROR - 2022-06-01 09:51:31 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 09:51:31 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 09:51:31 --> Config Class Initialized
+INFO - 2022-06-01 09:51:31 --> Hooks Class Initialized
+DEBUG - 2022-06-01 09:51:31 --> UTF-8 Support Enabled
+INFO - 2022-06-01 09:51:31 --> Utf8 Class Initialized
+INFO - 2022-06-01 09:51:31 --> URI Class Initialized
+INFO - 2022-06-01 09:51:31 --> Router Class Initialized
+INFO - 2022-06-01 09:51:31 --> Output Class Initialized
+INFO - 2022-06-01 09:51:31 --> Security Class Initialized
+DEBUG - 2022-06-01 09:51:31 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 09:51:31 --> Input Class Initialized
+INFO - 2022-06-01 09:51:31 --> Language Class Initialized
+ERROR - 2022-06-01 09:51:31 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 09:51:44 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 09:51:44 --> Config Class Initialized
+INFO - 2022-06-01 09:51:44 --> Hooks Class Initialized
+DEBUG - 2022-06-01 09:51:44 --> UTF-8 Support Enabled
+INFO - 2022-06-01 09:51:44 --> Utf8 Class Initialized
+INFO - 2022-06-01 09:51:44 --> URI Class Initialized
+INFO - 2022-06-01 09:51:44 --> Router Class Initialized
+INFO - 2022-06-01 09:51:44 --> Output Class Initialized
+INFO - 2022-06-01 09:51:44 --> Security Class Initialized
+DEBUG - 2022-06-01 09:51:44 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 09:51:44 --> Input Class Initialized
+INFO - 2022-06-01 09:51:44 --> Language Class Initialized
+INFO - 2022-06-01 09:51:44 --> Loader Class Initialized
+INFO - 2022-06-01 09:51:44 --> Database Driver Class Initialized
+INFO - 2022-06-01 09:51:44 --> Session: Class initialized using 'files' driver.
+INFO - 2022-06-01 09:51:44 --> Controller Class Initialized
+ERROR - 2022-06-01 09:51:44 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 09:51:44 --> Config Class Initialized
+INFO - 2022-06-01 09:51:44 --> Hooks Class Initialized
+DEBUG - 2022-06-01 09:51:44 --> UTF-8 Support Enabled
+INFO - 2022-06-01 09:51:44 --> Utf8 Class Initialized
+INFO - 2022-06-01 09:51:44 --> URI Class Initialized
+INFO - 2022-06-01 09:51:44 --> Router Class Initialized
+INFO - 2022-06-01 09:51:44 --> Output Class Initialized
+INFO - 2022-06-01 09:51:44 --> Security Class Initialized
+DEBUG - 2022-06-01 09:51:44 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 09:51:44 --> Input Class Initialized
+INFO - 2022-06-01 09:51:44 --> Language Class Initialized
+INFO - 2022-06-01 09:51:44 --> Loader Class Initialized
+INFO - 2022-06-01 09:51:44 --> Database Driver Class Initialized
+INFO - 2022-06-01 09:51:44 --> Session: Class initialized using 'files' driver.
+INFO - 2022-06-01 09:51:44 --> Controller Class Initialized
+INFO - 2022-06-01 09:51:44 --> Model "Admin_model" initialized
+INFO - 2022-06-01 09:51:44 --> File loaded: /home/debian/Cube/application/views//templates/header.php
+INFO - 2022-06-01 09:51:44 --> Model "Ressource_model" initialized
+INFO - 2022-06-01 09:51:44 --> File loaded: /home/debian/Cube/application/views//templates/sidebar.php
+INFO - 2022-06-01 09:51:44 --> File loaded: /home/debian/Cube/application/views//templates/wrapper.php
+INFO - 2022-06-01 09:51:44 --> File loaded: /home/debian/Cube/application/views//templates/topbar_connect.php
+INFO - 2022-06-01 09:51:44 --> File loaded: /home/debian/Cube/application/views//droit/tab_board.php
+INFO - 2022-06-01 09:51:44 --> File loaded: /home/debian/Cube/application/views//templates/footer.php
+INFO - 2022-06-01 09:51:44 --> Final output sent to browser
+DEBUG - 2022-06-01 09:51:44 --> Total execution time: 0.0097
+ERROR - 2022-06-01 09:51:44 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 09:51:44 --> Config Class Initialized
+INFO - 2022-06-01 09:51:44 --> Hooks Class Initialized
+DEBUG - 2022-06-01 09:51:44 --> UTF-8 Support Enabled
+INFO - 2022-06-01 09:51:44 --> Utf8 Class Initialized
+ERROR - 2022-06-01 09:51:44 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 09:51:44 --> Config Class Initialized
+INFO - 2022-06-01 09:51:44 --> Hooks Class Initialized
+DEBUG - 2022-06-01 09:51:44 --> UTF-8 Support Enabled
+INFO - 2022-06-01 09:51:44 --> Utf8 Class Initialized
+INFO - 2022-06-01 09:51:44 --> URI Class Initialized
+INFO - 2022-06-01 09:51:44 --> Router Class Initialized
+INFO - 2022-06-01 09:51:44 --> Output Class Initialized
+INFO - 2022-06-01 09:51:44 --> Security Class Initialized
+DEBUG - 2022-06-01 09:51:44 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 09:51:44 --> Input Class Initialized
+INFO - 2022-06-01 09:51:44 --> Language Class Initialized
+ERROR - 2022-06-01 09:51:44 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 09:51:44 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 09:51:44 --> Config Class Initialized
+INFO - 2022-06-01 09:51:44 --> Hooks Class Initialized
+DEBUG - 2022-06-01 09:51:44 --> UTF-8 Support Enabled
+INFO - 2022-06-01 09:51:44 --> Utf8 Class Initialized
+INFO - 2022-06-01 09:51:44 --> URI Class Initialized
+INFO - 2022-06-01 09:51:44 --> Router Class Initialized
+INFO - 2022-06-01 09:51:44 --> Output Class Initialized
+INFO - 2022-06-01 09:51:44 --> Security Class Initialized
+DEBUG - 2022-06-01 09:51:44 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 09:51:44 --> Input Class Initialized
+INFO - 2022-06-01 09:51:44 --> Language Class Initialized
+ERROR - 2022-06-01 09:51:44 --> 404 Page Not Found: Vendor/coreui
+ERROR - 2022-06-01 09:58:19 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 09:58:19 --> Config Class Initialized
+INFO - 2022-06-01 09:58:19 --> Hooks Class Initialized
+DEBUG - 2022-06-01 09:58:19 --> UTF-8 Support Enabled
+INFO - 2022-06-01 09:58:19 --> Utf8 Class Initialized
+INFO - 2022-06-01 09:58:19 --> URI Class Initialized
+DEBUG - 2022-06-01 09:58:19 --> No URI present. Default controller set.
+INFO - 2022-06-01 09:58:19 --> Router Class Initialized
+INFO - 2022-06-01 09:58:19 --> Output Class Initialized
+INFO - 2022-06-01 09:58:19 --> Security Class Initialized
+DEBUG - 2022-06-01 09:58:19 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 09:58:19 --> Input Class Initialized
+INFO - 2022-06-01 09:58:19 --> Language Class Initialized
+INFO - 2022-06-01 09:58:19 --> Loader Class Initialized
+INFO - 2022-06-01 09:58:19 --> Database Driver Class Initialized
+INFO - 2022-06-01 09:58:19 --> Session: Class initialized using 'files' driver.
+INFO - 2022-06-01 09:58:19 --> Controller Class Initialized
+DEBUG - 2022-06-01 09:58:19 --> login::index
+INFO - 2022-06-01 09:58:19 --> File loaded: /home/debian/Cube/application/views//templates/header.php
+INFO - 2022-06-01 09:58:19 --> File loaded: /home/debian/Cube/application/views//templates/wrapper.php
+INFO - 2022-06-01 09:58:19 --> File loaded: /home/debian/Cube/application/views//templates/topbar.php
+INFO - 2022-06-01 09:58:19 --> File loaded: /home/debian/Cube/application/views/login/authentification.php
+INFO - 2022-06-01 09:58:19 --> File loaded: /home/debian/Cube/application/views//templates/footer.php
+INFO - 2022-06-01 09:58:19 --> Final output sent to browser
+DEBUG - 2022-06-01 09:58:19 --> Total execution time: 0.0037
+ERROR - 2022-06-01 10:00:43 --> Could not find the specified $config['composer_autoload'] path: /home/debian/Cube/application//vendor/autoload.php
+INFO - 2022-06-01 10:00:43 --> Config Class Initialized
+INFO - 2022-06-01 10:00:43 --> Hooks Class Initialized
+DEBUG - 2022-06-01 10:00:43 --> UTF-8 Support Enabled
+INFO - 2022-06-01 10:00:43 --> Utf8 Class Initialized
+INFO - 2022-06-01 10:00:43 --> URI Class Initialized
+DEBUG - 2022-06-01 10:00:43 --> No URI present. Default controller set.
+INFO - 2022-06-01 10:00:43 --> Router Class Initialized
+INFO - 2022-06-01 10:00:43 --> Output Class Initialized
+INFO - 2022-06-01 10:00:43 --> Security Class Initialized
+DEBUG - 2022-06-01 10:00:43 --> Global POST, GET and COOKIE data sanitized
+INFO - 2022-06-01 10:00:43 --> Input Class Initialized
+INFO - 2022-06-01 10:00:43 --> Language Class Initialized
+INFO - 2022-06-01 10:00:43 --> Loader Class Initialized
+INFO - 2022-06-01 10:00:43 --> Database Driver Class Initialized
+INFO - 2022-06-01 10:00:43 --> Session: Class initialized using 'files' driver.
+INFO - 2022-06-01 10:00:43 --> Controller Class Initialized
+DEBUG - 2022-06-01 10:00:43 --> login::index
+INFO - 2022-06-01 10:00:43 --> File loaded: /home/debian/Cube/application/views//templates/header.php
+INFO - 2022-06-01 10:00:43 --> File loaded: /home/debian/Cube/application/views//templates/wrapper.php
+INFO - 2022-06-01 10:00:43 --> File loaded: /home/debian/Cube/application/views//templates/topbar.php
+INFO - 2022-06-01 10:00:43 --> File loaded: /home/debian/Cube/application/views/login/authentification.php
+INFO - 2022-06-01 10:00:43 --> File loaded: /home/debian/Cube/application/views//templates/footer.php
+INFO - 2022-06-01 10:00:43 --> Final output sent to browser
+DEBUG - 2022-06-01 10:00:43 --> Total execution time: 0.0055
