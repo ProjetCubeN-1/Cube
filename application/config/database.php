@@ -73,7 +73,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 $active_group = 'default';
 $query_builder = TRUE;
 
-if (ENVIRONMENT == "production") { //je suis en developpement
+if (ENVIRONMENT == "production") { //je suis en developpement mais pour les test en ligne
 	$db['default'] = array(
 		'dsn'	=> '',
 		'hostname' => 'localhost',
@@ -104,10 +104,10 @@ if (ENVIRONMENT == "production") { //je suis en developpement
 
 	$db['default'] = array(
 		'dsn'	=> '',
-		'hostname' => 'localhost:8889',
-		'username' => 'root',
-		'password' => 'root',
-		'database' => 'cube_new',
+		'hostname' => 'localhost',
+		'username' => 'cube',
+		'password' => 'CESIcesi7',
+		'database' => 'cube2',
 		'dbdriver' => 'mysqli',
 		'dbprefix' => '',
 		'pconnect' => FALSE,

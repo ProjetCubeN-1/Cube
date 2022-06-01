@@ -1,9 +1,14 @@
 {
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "3d7966aa6b38852958ab3a2840b1dbec",
     "packages": [
         {
             "name": "components/jquery",
             "version": "3.6.0",
-            "version_normalized": "3.6.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/components/jquery.git",
@@ -15,7 +20,6 @@
                 "reference": "6cf38ee1fd04b6adf8e7dda161283aa35be818c3",
                 "shasum": ""
             },
-            "time": "2021-03-20T19:13:42+00:00",
             "type": "component",
             "extra": {
                 "component": {
@@ -31,7 +35,6 @@
                     ]
                 }
             },
-            "installation-source": "dist",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -50,12 +53,11 @@
                 "source": "https://github.com/jquery/jquery",
                 "wiki": "http://docs.jquery.com/"
             },
-            "install-path": "../components/jquery"
+            "time": "2021-03-20T19:13:42+00:00"
         },
         {
             "name": "coreui/coreui",
             "version": "v3.4.0",
-            "version_normalized": "3.4.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/coreui/coreui.git",
@@ -67,9 +69,7 @@
                 "reference": "1b50b82fca73549813fb448f32bff7bb4178fc2f",
                 "shasum": ""
             },
-            "time": "2020-11-23T09:43:16+00:00",
             "type": "library",
-            "installation-source": "dist",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -96,12 +96,11 @@
                     "type": "custom"
                 }
             ],
-            "install-path": "../coreui/coreui"
+            "time": "2020-11-23T09:43:16+00:00"
         },
         {
             "name": "fortawesome/font-awesome",
             "version": "5.15.4",
-            "version_normalized": "5.15.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FortAwesome/Font-Awesome.git",
@@ -113,9 +112,7 @@
                 "reference": "7d3d774145ac38663f6d1effc6def0334b68ab7e",
                 "shasum": ""
             },
-            "time": "2021-08-04T19:09:22+00:00",
             "type": "library",
-            "installation-source": "dist",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "CC-BY-4.0",
@@ -168,12 +165,11 @@
                 "issues": "https://github.com/FortAwesome/Font-Awesome/issues",
                 "source": "https://github.com/FortAwesome/Font-Awesome"
             },
-            "install-path": "../fortawesome/font-awesome"
+            "time": "2021-08-04T19:09:22+00:00"
         },
         {
             "name": "twbs/bootstrap",
             "version": "v5.1.3",
-            "version_normalized": "5.1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twbs/bootstrap.git",
@@ -188,9 +184,7 @@
             "replace": {
                 "twitter/bootstrap": "self.version"
             },
-            "time": "2021-10-09T06:43:19+00:00",
             "type": "library",
-            "installation-source": "dist",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -221,9 +215,16 @@
                 "issues": "https://github.com/twbs/bootstrap/issues",
                 "source": "https://github.com/twbs/bootstrap/tree/v5.1.3"
             },
-            "install-path": "../twbs/bootstrap"
+            "time": "2021-10-09T06:43:19+00:00"
         }
     ],
-    "dev": true,
-    "dev-package-names": []
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
 }
