@@ -25,21 +25,25 @@ class Login extends ExtraController
     public function index()
     {
         log_message('debug', 'login::index');
-
         if (!$this->session->login) {
-            // $this->view('login/index');
-            $this->view_login('login/authentification');
-        } else $this->redirect('/login/logout');
+            $this->redirect('/login/default');
+        } else {
+            $this->redirect('/login/logout');
+        }
+        //if (!$this->session->login) {
+        //    // $this->view('login/index');
+        //    $this->view_login('login/authentification');
+        //} else $this->redirect('/login/logout');
     }
     public function index_nc()
     {
         $this->session->login = false;
 
         if ($this->input->post('action') == 'nc_connect') {
-            $query = sprintf("SELECT t_type.type,t_utilisateurs.id_utilisateur,t_utilisateurs.id_type FROM t_type INNER JOIN t_utilisateurs ON t_type.id_type = t_utilisateurs.id_type WHERE t_utilisateurs.id_type = '4'");
+            $query = sprintf("SELECT t_type.type,t_utilisateurs.id_utilisateur,t_utilisateurs.id_type FROM t_type INNER JOIN t_utilisateurs ON t_type.id_type = t_utilisateurs.id_type WHERE t_utilisateurs.id_type = '5'");
 
             //$query = sprintf(
-            //    "SELECT * FROM t_utilisateurs WHERE t_utilisateurs.type= 'citoyen_nc'",
+            //    "SELECT * FROM t_utilisateurs WHERE t_utilisateurs.id_type= '5'",
             //);
             $obj_result = $this->db->query($query);
 
@@ -47,11 +51,11 @@ class Login extends ExtraController
                 $this->session->login = false;
                 $this->session->id = $row->id_utilisateur;
 ?>
+
                 <div class="alert alert-info" role="alert">
                     <h5>Veuillez-vous inscrire pour accéder aux différentes fonctionnalitées.<a href="/login/creation"> Cliquez-ici</a></h5>
                 </div>
 <?php
-
                 return $this->view('/cube/accueil');
             }
         }
@@ -130,6 +134,7 @@ class Login extends ExtraController
                 $this->db->escape(date_create('Y-m-d H:i:s'))
             );
             $this->db->query($req);
+
             $this->redirect('/login/index');
         } else {
             $this->redirect('/login/creation');
@@ -140,10 +145,13 @@ class Login extends ExtraController
     {
         $this->view('login/pass_oublie');
     }
-
+    function default()
+    {
+        $this->view_login('/login/authentification');
+    }
     function logout()
     {
         $this->session->sess_destroy();
-        return $this->redirect('/login/index');
+        return $this->redirect('/login/default');
     }
 }
