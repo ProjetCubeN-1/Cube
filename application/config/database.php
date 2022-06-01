@@ -107,7 +107,7 @@ if (ENVIRONMENT == "production") { //je suis en developpement
 		'hostname' => 'localhost:8889',
 		'username' => 'root',
 		'password' => 'root',
-		'database' => 'cube_new',
+		'database' => 'cube_dev',
 		'dbdriver' => 'mysqli',
 		'dbprefix' => '',
 		'pconnect' => FALSE,

@@ -23,25 +23,59 @@ class Test_controller extends ExtraController
     //     }
     //     $uuid_test = $value->uuid;
     // }
+    public function test_SC4_F02()
+    {
+        $this->load->model('admin_model');
+
+        $result_info_utilisateurs = $this->admin_model->get_all_utilisateurs();
+
+        $this->load->library('unit_test');
+
+        $expected_result = $result_info_utilisateurs->nom . "&" . $result_info_utilisateurs->prenom; // ici pour changer le type de l'utilisateur pour le test
+
+        echo '<h3>';
+        echo "Avoir des info sur utilisateurs : ", $expected_result;
+        echo '</h3>';
+
+        foreach ($result_info_utilisateurs as $d) {
+
+
+            $test =  $d->nom . "&" . $d->prenom . "&" . $d->email;
+
+            $expected_result = $d->nom . "&" . $d->prenom . "&" . $d->email; // ici pour changer le type de l'utilisateur pour le test
+
+            $test_name = 'Information sur l‘utilisateur n°' . $d->id_utilisateur . '. et son nom est  : ' . $d->nom . '. Son prénom est : ' . $d->prenom;
+
+            echo $this->unit->run($test, $expected_result, $test_name);
+?><br>
+        <?php
+        }
+    }
 
     public function test_SC4_F07()
     {
         $this->load->model('admin_model');
 
-        $result_util = $this->admin_model->get_type_utilisateur();
+        $result_type_utilisateurs = $this->admin_model->get_type_utilisateur();
 
         $this->load->library('unit_test');
 
-        foreach ($result_util->result() as $d) {
+        $expected_result = 'citoyen_non_connecte'; // ici pour changer le type de l'utilisateur pour le test
+
+        echo '<h3>';
+        echo "Savoir si un utilisateur est : ", $expected_result;
+        echo '</h3>';
+        foreach ($result_type_utilisateurs->result() as $d) {
 
 
             $test =  $d->type;
 
-            $expected_result = 'citoyen_nc';
 
-            $test_name = 'Test type utilisateur ' . $d->id_utilisateur . ' : ' . $d->nom;
+            $test_name = 'Tester type utilisateur avec l‘id n°' . $d->id_utilisateur . '. Il est de type : ' . $d->type;
 
             echo $this->unit->run($test, $expected_result, $test_name);
+        ?><br>
+<?php
         }
     }
 }
