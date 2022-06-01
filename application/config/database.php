@@ -104,10 +104,10 @@ if (ENVIRONMENT == "production") { //je suis en developpement
 
 	$db['default'] = array(
 		'dsn'	=> '',
-		'hostname' => 'localhost:8889',
-		'username' => 'root',
-		'password' => 'root',
-		'database' => 'cube_new',
+		'hostname' => 'localhost',
+		'username' => 'cube',
+		'password' => 'CESIcesi7',
+		'database' => 'cube2',
 		'dbdriver' => 'mysqli',
 		'dbprefix' => '',
 		'pconnect' => FALSE,
