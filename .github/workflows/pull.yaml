@@ -37,4 +37,4 @@ jobs:
           END
       - name: "Connexion au serveur de dev"
         run: |
-          ssh serveurDev 'cd /var/www/html/ && git fetch && git pull'
+          ssh serveurDev 'cd /home/debian/Cube && git fetch && git pull'
