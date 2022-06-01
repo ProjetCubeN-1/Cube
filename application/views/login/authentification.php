@@ -19,8 +19,6 @@
                 </div>
             </div>
         </div>
-        coucou je suis la
-
         <div class="row">
             <div class="col-lg-6 mt-5" style="background-color: rgba(255, 255, 255, 0.75); height:240px">
                 <form method="post" action="/login/auth">

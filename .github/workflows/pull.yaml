@@ -26,13 +26,13 @@ jobs:
           SSH_USER: ${{ secrets.SSH_USER }}
         run: |
           mkdir -p ~/.ssh/
-          echo "$SSH_KEY" > ~/.ssh/id_rsa.key
-          chmod 600 ~/.ssh/id_rsa.key
+          echo "$SSH_KEY" > ~/.ssh/id_rsa_deploy
+          chmod 600 ~/.ssh/id_rsa_deploy
           cat >>~/.ssh/config <<END
             Host serveurDev
               HostName $SSH_HOST
               User $SSH_USER
-              IdentityFile ~/.ssh/id_rsa.key
+              IdentityFile ~/.ssh/id_rsa_deploy
               StrictHostKeyChecking no
           END
       - name: "Connexion au serveur de dev"
