@@ -17,7 +17,7 @@ class Api extends ExtraController
         //préparer la requête d'insertion SQL
         $req = sprintf(
             "INSERT INTO t_utilisateurs (nom,prenom,email,date_naissance,mdp,id_type,confirmkey,date_creation,confirme)
-	        VALUES (%s,%s,%s,%s,%s,'5',%s,now(),'1')",
+	        VALUES (%s,%s,%s,%s,%s,'4',%s,now(),'1')",
             $this->db->escape($data->nom),
             $this->db->escape($data->prenom),
             $this->db->escape($data->email),
