@@ -1,4 +1,4 @@
-<div id="sidebar" class="c-sidebar c-siderbar-light c-sidebar-fixed c-sidebar">
+<div id="sidebar" class="c-sidebar c-siderbar-light c-sidebar-fixed c-sidebar" style="background-color:#197378">
     <div class="c-sidebar-brand d-down-none">
         <img src="/img/cube.png" height="80px">
     </div>

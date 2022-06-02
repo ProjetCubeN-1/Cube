@@ -31,7 +31,7 @@
                     <input type="password" id="pass" name="pass" class="form-control mt-2">
                     <br>
                     <div class="d-flex justify-content-end">
-                        <button name="action" value="Connect" class="btn btn-dark" type="submit">Connexion</button>
+                        <button name="action" value="Connect" class="btn text-white" type="submit" style="background-color:#03979e">Connexion</button>
                     </div>
                 </form>
             </div>
@@ -39,7 +39,7 @@
             <div class="col-lg-6 mt-5" style="background-color: rgba(255, 255, 255, 0.75); height:240px">
                 <h2 class="mt-5 text-center mb-5" for="devis">Créer un compte ?</h2>
                 <div class="col-lg-12 justify-content-between">
-                    <a href="/login/creation" class="mt-5 col-lg-12 btn btn-dark btn-lg">Créer un compte</a>
+                    <a href="/login/creation" class="mt-5 col-lg-12 btn text-white btn-lg" style="background-color:#03979e">Créer un compte</a>
                 </div>
             </div>
             <div class="col-lg-12 mt-5">
@@ -48,7 +48,7 @@
                         <font style="color:secondary">
                             <center>
                                 <form method="post" action="/login/index_nc">
-                                    <button name="action" value="nc_connect" class="btn btn-dark" type="submit">Consulter le site en tant que citoyen non connecté</button>
+                                    <button name="action" value="nc_connect" class="btn text-white" type="submit" style="background-color:#03979e">Consulter le site en tant que citoyen non connecté</button>
                                 </form>
                             </center>
                         </font>
