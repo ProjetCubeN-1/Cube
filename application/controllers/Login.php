@@ -24,7 +24,7 @@ class Login extends ExtraController
 
     public function default()
     {
-        $this->view('login/authentification');
+        $this->view('/');
     }
 
     public function index()
@@ -155,6 +155,6 @@ class Login extends ExtraController
     function logout()
     {
         $this->session->sess_destroy();
-        return $this->redirect('/login/index');
+        return $this->redirect('/login/default');
     }
 }
