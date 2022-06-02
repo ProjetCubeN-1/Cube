@@ -22,30 +22,14 @@ class Login extends ExtraController
      * @see https://codeigniter.com/user_guide/general/urls.html
      */
 
-    public function default()
-    {
-        $this->view_login('login/authentification');
-    }
-
     public function index()
     {
         log_message('debug', 'login::index');
 
-        if ($this->session->login) {
-            $this->redirect('/cube/accueil');
-        } else {
-            $this->redirect('/login/logout');
-
-            //if (!$this->session->login) {
-            //    // $this->view('login/index');
-            //    $this->view_login('login/authentification');
-            //} else $this->redirect('/login/logout');
-        }
-    }
-    function logout()
-    {
-        $this->session->sess_destroy();
-        $this->redirect('/login/default');
+        if (!$this->session->login) {
+            // $this->view('login/index');
+            $this->view_login('login/authentification');
+        } else $this->redirect('/login/logout');
     }
     public function index_nc()
     {
@@ -155,5 +139,11 @@ class Login extends ExtraController
     function pass_verif_oublie()
     {
         $this->view('login/pass_oublie');
+    }
+
+    function logout()
+    {
+        $this->session->sess_destroy();
+        return $this->redirect('/login/index');
     }
 }
