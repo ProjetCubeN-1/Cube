@@ -27,7 +27,7 @@ class Login extends ExtraController
         log_message('debug', 'login::index');
 
         if ($this->session->login) {
-            $this->redirect('/login/authentification');
+            $this->redirect('/login/default');
         } else {
             $this->redirect('/login/logout');
         }
