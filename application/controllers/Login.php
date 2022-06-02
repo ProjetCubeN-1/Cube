@@ -42,6 +42,11 @@ class Login extends ExtraController
             //} else $this->redirect('/login/logout');
         }
     }
+    function logout()
+    {
+        $this->session->sess_destroy();
+        $this->redirect('/login/default');
+    }
     public function index_nc()
     {
         $this->session->login = false;
@@ -150,11 +155,5 @@ class Login extends ExtraController
     function pass_verif_oublie()
     {
         $this->view('login/pass_oublie');
-    }
-
-    function logout()
-    {
-        $this->session->sess_destroy();
-        return $this->redirect('/login/default');
     }
 }
