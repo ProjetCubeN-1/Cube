@@ -153,6 +153,6 @@ class Login extends ExtraController
     function logout()
     {
         $this->session->sess_destroy();
-        $this->redirect('/login/default');
+        $this->redirect('/login/index');
     }
 }
