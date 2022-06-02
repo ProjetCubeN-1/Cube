@@ -12,7 +12,7 @@ class Admin_model extends CI_Model
 
     public function get_utilisateur_for_citoyen()
     {
-        $requete_utilisateurs = sprintf("SELECT * FROM t_utilisateurs WHERE t_utilisateurs.id_type='5' ");
+        $requete_utilisateurs = sprintf("SELECT * FROM t_utilisateurs INNER JOIN t_type ON t_utilisateurs.id_type = t_type_id_type WHERE t_type.type='citoyen_connecte'");
         $obj_result_util = $this->db->query($requete_utilisateurs);
         $result_util = $obj_result_util;
         return $result_util;

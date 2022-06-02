@@ -1,7 +1,6 @@
   <div class="container">
       <div class="mt-2">
           <div class="col-lg-12">
-              bonjour a tous!
               <div class="col-lg-12 mt-3" style="background-color: rgba(255, 255, 255, 0.75);">
                   <h1 style="text-align:left">
                       <font style="color:secondary">
