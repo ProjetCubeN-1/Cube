@@ -26,10 +26,19 @@ class Login extends ExtraController
     {
         log_message('debug', 'login::index');
 
-        if (!$this->session->login) {
-            // $this->view('login/index');
-            $this->view_login('login/authentification');
-        } else $this->redirect('/login/logout');
+        if ($this->session->login) {
+            $this->redirect('/cube/accueil');
+        } else {
+            $this->redirect('/login/logout');
+        }
+        //if (!$this->session->login) {
+        //    // $this->view('login/index');
+        //    $this->view_login('login/authentification');
+        //} else $this->redirect('/login/logout');
+    }
+    public function default()
+    {
+        $this->view_login('login/authentification');
     }
     public function index_nc()
     {
@@ -144,6 +153,6 @@ class Login extends ExtraController
     function logout()
     {
         $this->session->sess_destroy();
-        return $this->redirect('/login/index');
+        $this->redirect('/login/default');
     }
 }
