@@ -24,7 +24,7 @@ class Login extends ExtraController
 
     public function default()
     {
-        $this->view('/');
+        $this->view('/login/index');
     }
 
     public function index()
