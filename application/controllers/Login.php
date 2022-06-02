@@ -22,14 +22,25 @@ class Login extends ExtraController
      * @see https://codeigniter.com/user_guide/general/urls.html
      */
 
+    public function default()
+    {
+        $this->view('login/authentification');
+    }
+
     public function index()
     {
         log_message('debug', 'login::index');
 
-        if (!$this->session->login) {
-            // $this->view('login/index');
-            $this->view_login('login/authentification');
-        } else $this->redirect('/login/logout');
+        if ($this->session->login) {
+            $this->redirect('/cube/accueil');
+        } else {
+            $this->redirect('/login/logout');
+
+            //if (!$this->session->login) {
+            //    // $this->view('login/index');
+            //    $this->view_login('login/authentification');
+            //} else $this->redirect('/login/logout');
+        }
     }
     public function index_nc()
     {

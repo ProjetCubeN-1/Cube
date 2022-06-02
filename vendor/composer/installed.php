@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '7e222b952cd06b82a14c19d1d146a2636497fea9',
+        'reference' => 'f01c7db8552f92bd3c673dffeea0662844ee19ef',
         'name' => '__root__',
         'dev' => true,
     ),
@@ -16,7 +16,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '7e222b952cd06b82a14c19d1d146a2636497fea9',
+            'reference' => 'f01c7db8552f92bd3c673dffeea0662844ee19ef',
             'dev_requirement' => false,
         ),
         'components/jquery' => array(
@@ -44,6 +44,15 @@
             'install_path' => __DIR__ . '/../fortawesome/font-awesome',
             'aliases' => array(),
             'reference' => '7d3d774145ac38663f6d1effc6def0334b68ab7e',
+            'dev_requirement' => false,
+        ),
+        'phpmailer/phpmailer' => array(
+            'pretty_version' => 'v6.6.0',
+            'version' => '6.6.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../phpmailer/phpmailer',
+            'aliases' => array(),
+            'reference' => 'e43bac82edc26ca04b36143a48bde1c051cfd5b1',
             'dev_requirement' => false,
         ),
         'twbs/bootstrap' => array(
