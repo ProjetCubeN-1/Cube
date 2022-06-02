@@ -27,7 +27,7 @@ class Login extends ExtraController
         log_message('debug', 'login::index');
 
         if ($this->session->login) {
-            $this->redirect('/login/default');
+            $this->view('/cube/accueil');
         } else {
             $this->redirect('/login/logout');
         }
