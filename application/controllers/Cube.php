@@ -112,7 +112,7 @@ class Cube extends ExtraController
         $this->load->library('unit_test');
 
         $req = sprintf(
-            "INSERT INTO t_ressources (nom_ressources,id_type_ressource,contenu,categorie,type_relation,id_utilisateur,valide) 
+            "INSERT INTO t_ressources (nom_ressources,id_type_ressource,contenu,id_categorie,id_type_relation,id_utilisateur,valide) 
             VALUES (%s,%s,%s,%s,%s,%d,'false')",
             $this->db->escape($this->input->post('text_titre')),
             $this->db->escape($this->input->post('type_contenu')),
@@ -181,5 +181,19 @@ class Cube extends ExtraController
 
         $this->db->query($req);
         $this->redirect('/cube/ressource/' . $ressource_id);
+    }
+
+    public function ajout_categorie()
+    {
+        $this->view_portal('/cube/creation_categorie');
+    }
+
+    public function nouvelle_categorie()
+    {
+        $this->load->model('ressource_model');
+
+        $this->ressource_model->ajout_categorie();
+
+        $this->redirect('/cube/creation_ressources');
     }
 }

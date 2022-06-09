@@ -84,4 +84,15 @@ class Ressource_model extends CI_Model
         $result_com = $obj_com->result();
         return $result_com;
     }
+
+    public function ajout_categorie()
+    {
+        $req = sprintf(
+            "INSERT INTO t_categorie (nom_categorie, id_utilisateur) VALUES (%s,%s) ",
+            $this->db->escape($this->input->post('nouvelle_categorie')),
+            $this->db->escape($this->session->id)
+        );
+
+        $this->db->query($req);
+    }
 }

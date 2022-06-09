@@ -1,7 +1,10 @@
-<div class="container">
+<div class="container mt-5">
   <div class="card">
-    <div class="card-header">
+    <div class="card-header d-flex justify-content-between">
       Créer une ressource
+      <form method="post" action="/cube/ajout_categorie">
+        <button class="btn btn-light">Ajouter une catégorie</button>
+      </form>
     </div>
     <div class="card-body">
       <form method="post" action="/cube/publier_ressources">
@@ -31,7 +34,7 @@
           </select><br />
         </div>
         <div>
-          <h6>type de relation :</h6>
+          <h6>Type de relation :</h6>
           <select class="form-control" id="type_relation" name="type_relation" value="">
             <option value="None">Indiquer le type de relation</option>
             <option value="Professionnelle">Professionnelle</option>
