@@ -2,3 +2,4 @@
 *.log
 /components
 /vendor/
+application/config/database.php
