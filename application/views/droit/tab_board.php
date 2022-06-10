@@ -55,11 +55,11 @@ if ($id_result->type == "super_admin" or $id_result->type == "admin") { //accede
                                                             echo "selected";
                                                         } ?> value="3">modérateur</option>
 
-                                                <option <?php if ($info->type == "citoyen_connecté") {
+                                                <option <?php if ($info->type == "citoyen_connecte") {
                                                             echo "selected";
-                                                        } ?> value="5">citoyen_connecté</option>
+                                                        } ?> value="4">citoyen_connecté</option>
                                                 <?php if ($info->type == "citoyen_nc") { ?>
-                                                    <option selected value="4">citoyen_nc</option>
+                                                    <option selected value="5">citoyen_nc</option>
                                                 <?php }
                                                 ?>
                                             </select>
@@ -217,6 +217,7 @@ if ($id_result->type == "super_admin" or $id_result->type == "admin") { //accede
                                     <td><?php echo $resultat->type_ressource ?></td>
                                     <td><?php echo $resultat->id_utilisateur ?></td>
                                     <td>
+
                                         <select class="form-control" id="valide" name="valide" value="<?= $resultat->valide ?>">
                                             <option <?php if ($resultat->valide == "true") {
                                                         echo "selected";
