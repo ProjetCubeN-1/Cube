@@ -27,11 +27,18 @@
         </div>
         <div>
           <h6>Catégorie :</h6>
-          <select class="form-control" id="text_categorie" name="text_categorie" value="">
+
+          <select class="form-control" id="categorie" name="type_relation">
             <option value="None">Indiquer la catégorie</option>
-            <option value="Monde professionnel">Monde professionnel</option>
-            <option value="Qualité de vie">Qualité de vie</option>
-          </select><br />
+
+            <?php
+            foreach ($categorie->result() as $cat) {
+            ?>
+              <option value="<?php echo $cat->nom_categorie ?>"><?php echo $cat->nom_categorie ?></option>
+            <?php
+            }
+            ?>
+          </select>
         </div>
         <div>
           <h6>Type de relation :</h6>

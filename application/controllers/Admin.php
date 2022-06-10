@@ -12,7 +12,6 @@ class Admin extends ExtraController
 
         $result_ressources = $this->admin_model->get_ressources_by_relation_type();
         $result_ressources_categorie_relation_type = $this->admin_model->get_ressources_by_relation_type_categorie();
-
         $categorie = $this->admin_model->get_categorie();
 
         $this->view_portal('/droit/tab_board', [
@@ -72,6 +71,18 @@ class Admin extends ExtraController
         $ressource_id = $_GET['ressource_id'];
 
         $requete_change = sprintf("UPDATE t_ressources SET valide = '%s' WHERE id_ressource = %d", $valide, $ressource_id);
+        $obj_result = $this->db->query($requete_change);
+
+        $this->redirect('/admin/tab_board');
+    }
+
+    public function categorie_valide()
+    {
+        $valide = $_GET['valide'];
+
+        $categorie_id = $_GET['categorie_id'];
+
+        $requete_change = sprintf("UPDATE t_categorie SET valide = '%s' WHERE id_categorie = %d", $valide, $categorie_id);
         $obj_result = $this->db->query($requete_change);
 
         $this->redirect('/admin/tab_board');

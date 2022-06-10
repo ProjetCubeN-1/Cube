@@ -59,14 +59,16 @@ class Cube extends ExtraController
     public function creation_ressources($ressources_menu = null, $requete = null)
     {
         $this->load->model('ressource_model');
+        $this->load->model('admin_model');
 
 
         $result_ressource = $this->ressource_model->get_ressource_menu();
+        $get_categorie = $this->admin_model->get_categorie();
 
 
         $this->view_portal('/cube/creation_ressources', [
             'result' => $result_ressource,
-
+            'categorie' => $get_categorie,
         ]);
     }
 
@@ -161,9 +163,7 @@ class Cube extends ExtraController
         $this->db->query($req);
         $this->redirect('/cube/ressource/' . $ressource_id);
     }
-    public function response_commentaire($id_com, $idressource)
-    {
-    }
+   
     public function delete_commentaire($ressource_id = null)
     {
         $this->load->model('ressource_model');

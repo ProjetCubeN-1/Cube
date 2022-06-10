@@ -69,11 +69,4 @@ class Admin_model extends CI_Model
         $result_categorie = $obj_result_categorie;
         return $result_categorie;
     }
-
-    public function delete_categorie()
-    {
-    }
-    public function ajouter_categorie()
-    {
-    }
 }

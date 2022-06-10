@@ -55,11 +55,11 @@ if ($id_result->type == "super_admin" or $id_result->type == "admin") { //accede
                                                             echo "selected";
                                                         } ?> value="3">modérateur</option>
 
-                                                <option <?php if ($info->type == "citoyen_connecté") {
+                                                <option <?php if ($info->type == "citoyen_connecte") {
                                                             echo "selected";
-                                                        } ?> value="5">citoyen_connecté</option>
+                                                        } ?> value="4">citoyen_connecté</option>
                                                 <?php if ($info->type == "citoyen_nc") { ?>
-                                                    <option selected value="4">citoyen_nc</option>
+                                                    <option selected value="5">citoyen_nc</option>
                                                 <?php }
                                                 ?>
                                             </select>
@@ -78,7 +78,6 @@ if ($id_result->type == "super_admin" or $id_result->type == "admin") { //accede
         </div>
     </div>
 <?php } ?>
-
 
 <?php if ($id_result->type == "admin" or $id_result->type == "super_admin") { //Désactivé un compte citoyen 
 ?>
@@ -143,7 +142,6 @@ if ($id_result->type == "super_admin" or $id_result->type == "admin") { //accede
                     <table class="table table-striped">
                         <thead>
                             <tr>
-                                <th>id</th>
                                 <th>Nom de la ressource</th>
                                 <th>Catégorie</th>
                                 <th>Type de relation</th>
@@ -160,7 +158,6 @@ if ($id_result->type == "super_admin" or $id_result->type == "admin") { //accede
                             ?>
                                 <tr>
                                     <td style="display:none;"><input type="text" readonly name="ressource_id_text" value="<?php echo $resultat->id_ressource ?>"></td>
-                                    <td><?php echo $resultat->id_ressource ?></td>
                                     <td><?php echo $resultat->nom_ressources ?></td>
                                     <td><?php echo $resultat->nom_categorie ?></td>
                                     <td><?php echo $resultat->type_relation ?></td>
@@ -249,7 +246,6 @@ if ($id_result->type == "super_admin" or $id_result->type == "admin") { //accede
                     <table class="table table-striped">
                         <thead>
                             <tr>
-                                <th>id</th>
                                 <th>Nom de la catégorie</th>
                                 <th>id du créateur</th>
                                 <th>Sélectionner</th>
@@ -261,7 +257,6 @@ if ($id_result->type == "super_admin" or $id_result->type == "admin") { //accede
                             foreach ($categorie->result() as $resultat) { ?>
                                 <tr>
                                     <td style="display:none;"><input type="text" readonly name="categorie_id_text" value="<?php echo $resultat->id_categorie ?>"></td>
-                                    <td><?php echo $resultat->id_categorie ?></td>
                                     <td><?php echo $resultat->nom_categorie ?></td>
                                     <td><?php echo $resultat->id_utilisateur ?></td>
                                     <td>
@@ -283,7 +278,7 @@ if ($id_result->type == "super_admin" or $id_result->type == "admin") { //accede
     </div>
 <?php } ?>
 
-<?php if ($id_result->type == "admin" or $id_result->type == "super_admin") { //Supprimer une catégorie 
+<?php if ($id_result->type == "admin" or $id_result->type == "super_admin" or $id_result->type == "modérateur") { //Gerer une catégorie 
 ?>
     <div class="card">
         <div class="card-header">
@@ -291,39 +286,41 @@ if ($id_result->type == "super_admin" or $id_result->type == "admin") { //accede
         </div>
         <div class="card-body">
             <div class="col-12">
-                <form method="post" action="/admin/supprimer_categorie">
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th>id</th>
-                                <th>Nom de la catégorie</th>
-                                <th>id du créateur</th>
-                                <th>Sélectionner</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php
-                            foreach ($categorie->result() as $resultat) { ?>
+
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Nom de la catégorie</th>
+                            <th>id du créateur</th>
+                            <th>Valide</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                        foreach ($categorie->result() as $resultat) { ?>
+                            <form method="get" action="/admin/categorie_valide">
                                 <tr>
-                                    <td style="display:none;"><input type="text" readonly name="categorie_id_text" value="<?php echo $resultat->id_categorie ?>"></td>
-                                    <td><?php echo $resultat->id_categorie ?></td>
+                                    <td style="display:none;"><input type="text" readonly name="categorie_id" value="<?php echo $resultat->id_categorie ?>"></td>
                                     <td><?php echo $resultat->nom_categorie ?></td>
                                     <td><?php echo $resultat->id_utilisateur ?></td>
                                     <td>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" name="categorie_id[]" value="<?= $resultat->id_categorie ?>" id="<?php echo $resultat->id_categorie ?>">
-                                        </div>
-                                    </td>
-                                </tr>
-                            <?php } ?>
-                        </tbody>
-                    </table>
-                    <?php if ($id_result->type != "modérateur") { ?>
-                        <input type="submit" name="action" class="btn btn-danger" value="Supprimer"></input>
-                    <?php } ?>
-                </form>
+                                        <select class="form-control" id="valide" name="valide" value="<?= $resultat->valide ?>">
+                                            <option <?php if ($resultat->valide == "true") {
+                                                        echo "selected";
+                                                    } ?> value="true">true</option>
 
+                                            <option <?php if ($resultat->valide == "false") {
+                                                        echo "selected";
+                                                    } ?> value="false">false</option>
+                                        </select>
+                                    </td>
+                                    <td><input type="submit" name="action" class="btn btn-secondary" value="Valider"></td>
+                                </tr>
+                            </form>
+                        <?php } ?>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
