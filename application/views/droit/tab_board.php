@@ -214,6 +214,7 @@ if ($id_result->type == "super_admin" or $id_result->type == "admin") { //accede
                                     <td><?php echo $resultat->type_ressource ?></td>
                                     <td><?php echo $resultat->id_utilisateur ?></td>
                                     <td>
+
                                         <select class="form-control" id="valide" name="valide" value="<?= $resultat->valide ?>">
                                             <option <?php if ($resultat->valide == "true") {
                                                         echo "selected";
