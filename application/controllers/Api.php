@@ -28,4 +28,19 @@ class Api extends ExtraController
         );
         $this->db->query($req);
     }
+
+    public function ressources_mobile()
+    {
+        $this->load->model('ressource_model');
+
+        $result_ressource = $this->ressource_model->get_ressource_menu();
+
+        foreach ($result_ressource as $r) {
+            $this->json([
+                'id_ressource' => $r->id_ressource,
+                'nom_ressources' => $r->nom_ressources,
+                'contenu' => $r->contenu
+            ]);
+        }
+    }
 }
