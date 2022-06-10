@@ -41,7 +41,7 @@
           </select>
         </div>
         <div>
-          <h6>Type de relation :</h6>
+          <h6 class="mt-3">Type de relation :</h6>
           <select class="form-control" id="type_relation" name="type_relation" value="">
             <option value="None">Indiquer le type de relation</option>
             <option value="Professionnelle">Professionnelle</option>
