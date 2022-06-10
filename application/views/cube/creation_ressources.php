@@ -27,7 +27,6 @@
         </div>
         <div>
           <h6>Catégorie :</h6>
-
           <select class="form-control" id="categorie" name="type_relation">
             <option value="None">Indiquer la catégorie</option>
 
