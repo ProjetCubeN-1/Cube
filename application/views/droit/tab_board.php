@@ -306,12 +306,12 @@ if ($id_result->type == "super_admin" or $id_result->type == "admin") { //accede
                                     <td><?php echo $resultat->nom_categorie ?></td>
                                     <td><?php echo $resultat->id_utilisateur ?></td>
                                     <td>
-                                        <select class="form-control" id="valide" name="valide" value="<?= $resultat->valide ?>">
-                                            <option <?php if ($resultat->valide == "true") {
+                                        <select class="form-control" id="valide" name="valide" value="<?= $resultat->valide_categorie ?>">
+                                            <option <?php if ($resultat->valide_categorie == "true") {
                                                         echo "selected";
                                                     } ?> value="true">true</option>
 
-                                            <option <?php if ($resultat->valide == "false") {
+                                            <option <?php if ($resultat->valide_categorie == "false") {
                                                         echo "selected";
                                                     } ?> value="false">false</option>
                                         </select>
