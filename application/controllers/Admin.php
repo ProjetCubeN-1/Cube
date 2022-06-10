@@ -82,7 +82,7 @@ class Admin extends ExtraController
 
         $categorie_id = $_GET['categorie_id'];
 
-        $requete_change = sprintf("UPDATE t_categorie SET valide = '%s' WHERE id_categorie = %d", $valide, $categorie_id);
+        $requete_change = sprintf("UPDATE t_categorie SET valide_categorie = '%s' WHERE id_categorie = %d", $valide, $categorie_id);
         $obj_result = $this->db->query($requete_change);
 
         $this->redirect('/admin/tab_board');
