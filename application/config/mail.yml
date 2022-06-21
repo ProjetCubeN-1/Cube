@@ -3,5 +3,5 @@ username: cesicube.noreply@gmail.com
 password: CubeCESI17
 from: cesicube.noreply@gmail.com
 from_name: Cube CESI La Rochelle
-port: 587
+port: 465
 debug_mail: gg@yopmail.com

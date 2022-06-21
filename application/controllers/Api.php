@@ -58,7 +58,7 @@ class Api extends ExtraController
         $result_ressource = $this->ressource_model->get_ressource_menu();
 
         foreach ($result_ressource as $r) {
-            $this->json([
+            json_encode([
                 'id_ressource' => $r->id_ressource,
                 'nom_ressources' => $r->nom_ressources,
                 'contenu' => $r->contenu

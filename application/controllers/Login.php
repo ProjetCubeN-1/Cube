@@ -1,6 +1,10 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
 
 class Login extends ExtraController
 {
@@ -49,7 +53,7 @@ class Login extends ExtraController
                 <div class="alert alert-info" role="alert">
                     <h5>Veuillez-vous inscrire pour accéder aux différentes fonctionnalitées.<a href="/login/creation"> Cliquez-ici</a></h5>
                 </div>
-        <?php
+            <?php
 
                 return $this->view('/cube/accueil');
             }
@@ -135,7 +139,42 @@ class Login extends ExtraController
             $this->db->query($req);
 
 
-            $this->redirect('login/index');
+            $mail = new PHPMailer;
+            //Server settings
+
+            //$mail->SMTPDebug = 2;                      //Enable verbose debug output
+            $mail->isSMTP();                                            //Send using SMTP
+            $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
+            $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
+            $mail->Username   = 'cesicube.noreply@gmail.com';                     //SMTP username
+            $mail->Password   = 'iobjifegiwdcxyxo';                               //SMTP password
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
+            $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+
+            //Recipients
+            $mail->setFrom('cesicube.noreply@gmail.com', 'Cube CESI La Rochelle');
+            $mail->addAddress($email);     //Add a recipient
+
+
+            //Attachments
+
+            //Content
+            $mail->isHTML(true);
+            $mail->CharSet = "UTF-8"; //Set email format to HTML
+            $mail->Subject = '[CUBE] vérifier votre compte';
+            $mail->Body = $this->load->view('/cube/mail_confirm', [
+                'url' => $this->config->item('base_url') . 'login/confirmation/?email=' . urlencode($this->session->email) . '&key=' . $key
+            ], true);
+            //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+
+            if ($mail->send()) {
+            ?>
+                <div class="alert alert-info" role="alert">
+                    <h5>Veuillez verifier vos mails pour activer votre compte.</h5>
+                </div>
+        <?php
+                $this->view_login('/login/authentification');
+            }
         } else {
             $this->redirect('/login/creation');
         }
@@ -175,10 +214,10 @@ class Login extends ExtraController
             } else {
             }
         } ?>
-        <div class="alert alert-info" role="alert">
+        <div class="alert alert-success" role="alert">
             <h5>Votre compte a bien été activé.</h5>
         </div>
 <?php
-        $this->view('/login/index');
+        return $this->view('/cube/accueil');
     }
 }
