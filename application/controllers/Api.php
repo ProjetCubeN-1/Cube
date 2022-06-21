@@ -28,7 +28,29 @@ class Api extends ExtraController
         );
         $this->db->query($req);
     }
+    function connexion()
+    {
 
+        $data = json_decode(file_get_contents('php://input'));
+        $email = $data->email;
+        $pass = $data->pass;
+
+        $query = sprintf(
+            "SELECT * FROM t_utilisateurs WHERE email = %s",
+            $this->db->escape($email)
+        );
+
+        $obj_result = $this->db->query($query);
+
+        while ($row = $obj_result->unbuffered_row()) {
+            $hash = $row->mdp;
+            //password_verify($data->pass, $hash) && $row->confirme == 1;
+            if (($pass == $hash) && $row->confirme == 1) {
+
+                $data = json_encode(file_get_contents($row));
+            }
+        }
+    }
     public function ressources_mobile()
     {
         $this->load->model('ressource_model');
