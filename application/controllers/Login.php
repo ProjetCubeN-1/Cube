@@ -1,9 +1,6 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-use PHPMailer\PHPMailer\SMTP;
 
 class Login extends ExtraController
 {
@@ -52,7 +49,7 @@ class Login extends ExtraController
                 <div class="alert alert-info" role="alert">
                     <h5>Veuillez-vous inscrire pour accéder aux différentes fonctionnalitées.<a href="/login/creation"> Cliquez-ici</a></h5>
                 </div>
-            <?php
+        <?php
 
                 return $this->view('/cube/accueil');
             }
@@ -134,36 +131,8 @@ class Login extends ExtraController
             );
             $this->db->query($req);
 
-            $conf_mail = 'yaml_parse_file'(APPPATH . '/config/mail.yml');
 
-            $mail = new PHPMailer(true);
-            //$mail->isSMTP();                                            //Send using SMTP
-            $mail->Host       = $conf_mail['host'];                     //Set the SMTP server to send through
-            $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-            $mail->Username   = $conf_mail['username'];                     //SMTP username
-            $mail->Password   =  $conf_mail['password'];                               //SMTP password
-            $mail->Port       = (int) $conf_mail['port'];
-            //Recipients
-            $mail->setFrom($conf_mail['from'], $conf_mail['from_name']);
-            if (ENVIRONMENT != 'production')
-                $mail->addAddress($email);     //Add a recipient
-            else
-                $mail->addAddress($conf_mail['debug_mail']);
-            //Content
-            $mail->isHTML(true);                                  //Set email format to HTML
-            $mail->CharSet = "UTF-8";
-
-            $mail->Body = $this->load->view('/cube/mail_confirm', [
-                'url' => $this->config->item('base_url') . 'login/confirmation/?email=' . urlencode($this->session->email) . '&key=' . $key
-            ], true);
-            if ($mail->send()) {
-            ?>
-                <div class="alert alert-info" role="alert">
-                    <h5>Veuillez verifier vos mails pour activer votre compte.</h5>
-                </div>
-        <?php
-                $this->redirect('login/index');
-            }
+            $this->redirect('login/index');
         } else {
             $this->redirect('/login/creation');
         }
@@ -198,12 +167,9 @@ class Login extends ExtraController
                     $this->db->query(
                         sprintf("UPDATE t_utilisateurs SET confirme = 1 WHERE id= %d", $user->id)
                     );
-                    log_message('debug', '************** COMPTE OK ');
                 } else {
-                    log_message('debug', '************** COMPTE DEJA CONFIRME ');
                 }
             } else {
-                log_message('debug', '************** PAS DE COMPTE !! ');
             }
         } ?>
         <div class="alert alert-info" role="alert">
