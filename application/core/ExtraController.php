@@ -28,6 +28,16 @@ class ExtraController extends CI_Controller
         header('Content-type: application/json');
         echo json_encode($data);
     }
+    protected function userWithEmail($email)
+    {
+        $query = sprintf(
+            "SELECT * FROM t_user WHERE email = %s  and confirme = 1 and active = 1 LIMIT 1",
+            $this->db->escape($email)
+        );
+
+        $obj_result = $this->db->query($query);
+        return $obj_result->unbuffered_row();
+    }
 
     protected function userWithId($id)
     {

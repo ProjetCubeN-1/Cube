@@ -107,7 +107,7 @@ if (ENVIRONMENT == "production") { //je suis en developpement mais pour les test
 		'hostname' => 'localhost:8889',
 		'username' => 'root',
 		'password' => 'root',
-		'database' => 'cube_dev',
+		'database' => 'cube',
 		'dbdriver' => 'mysqli',
 		'dbprefix' => '',
 		'pconnect' => FALSE,

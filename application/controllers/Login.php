@@ -1,6 +1,10 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\SMTP;
+
 class Login extends ExtraController
 {
     var $acl = false;
@@ -24,8 +28,6 @@ class Login extends ExtraController
 
     public function index()
     {
-        log_message('debug', 'login::index');
-
         if (!$this->session->login) {
             /// $this->view('login/index');
             $this->view_login('login/authentification');
@@ -50,16 +52,16 @@ class Login extends ExtraController
                 <div class="alert alert-info" role="alert">
                     <h5>Veuillez-vous inscrire pour accéder aux différentes fonctionnalitées.<a href="/login/creation"> Cliquez-ici</a></h5>
                 </div>
-<?php
+            <?php
 
                 return $this->view('/cube/accueil');
             }
         }
     }
 
+
     function auth()
     {
-        log_message('debug', 'Login::auth()');
         $this->session->login = false;
         $this->session->id = null;
 
@@ -85,7 +87,6 @@ class Login extends ExtraController
                 }
             }
         } else {
-            log_message('debug', '************** COMPTE non verifié ');
             return $this->view_login('/login/index');
         }
         return $this->view_login('/login/authentification');
@@ -113,6 +114,8 @@ class Login extends ExtraController
             $this->session->set_userdata('datenaissance', $this->input->post('datenaissance'));
             $this->session->set_userdata('pass', $this->input->post('pass'));
 
+            $email = $this->input->post('email');
+
             $new_pass = $this->input->post('pass');
             $hashed_pasword = password_hash($new_pass, PASSWORD_DEFAULT);
             $date = date('Y-m-d H:i:s');
@@ -120,7 +123,7 @@ class Login extends ExtraController
             //préparer la requête d'insertion SQL
             $req = sprintf(
                 "INSERT INTO t_utilisateurs (nom,prenom,email,date_naissance,mdp,id_type,confirmkey,date_creation,confirme)
-	        VALUES (%s,%s,%s,%s,%s,'4',%s,now(),'1')",
+	        VALUES (%s,%s,%s,%s,%s,'4',%s,now(),'0')",
                 $this->db->escape($this->input->post('nom')),
                 $this->db->escape($this->input->post('prenom')),
                 $this->db->escape($this->input->post('email')),
@@ -130,7 +133,37 @@ class Login extends ExtraController
                 $this->db->escape(date_create('Y-m-d H:i:s'))
             );
             $this->db->query($req);
-            $this->redirect('/login/index');
+
+            $conf_mail = 'yaml_parse_file'(APPPATH . '/config/mail.yml');
+
+            $mail = new PHPMailer(true);
+            //$mail->isSMTP();                                            //Send using SMTP
+            $mail->Host       = $conf_mail['host'];                     //Set the SMTP server to send through
+            $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
+            $mail->Username   = $conf_mail['username'];                     //SMTP username
+            $mail->Password   =  $conf_mail['password'];                               //SMTP password
+            $mail->Port       = (int) $conf_mail['port'];
+            //Recipients
+            $mail->setFrom($conf_mail['from'], $conf_mail['from_name']);
+            if (ENVIRONMENT != 'production')
+                $mail->addAddress($email);     //Add a recipient
+            else
+                $mail->addAddress($conf_mail['debug_mail']);
+            //Content
+            $mail->isHTML(true);                                  //Set email format to HTML
+            $mail->CharSet = "UTF-8";
+
+            $mail->Body = $this->load->view('/cube/mail_confirm', [
+                'url' => $this->config->item('base_url') . 'login/confirmation/?email=' . urlencode($this->session->email) . '&key=' . $key
+            ], true);
+            if ($mail->send()) {
+            ?>
+                <div class="alert alert-info" role="alert">
+                    <h5>Veuillez verifier vos mails pour activer votre compte.</h5>
+                </div>
+        <?php
+                $this->redirect('login/index');
+            }
         } else {
             $this->redirect('/login/creation');
         }
@@ -145,5 +178,38 @@ class Login extends ExtraController
     {
         $this->session->sess_destroy();
         return $this->redirect('/login/index');
+    }
+    function confirmation()
+    {
+        $email = $this->input->get('email');
+        $key = (int)$this->input->get('key');
+
+        if ($email && $key) {
+            $res = $this->db->query(
+                sprintf(
+                    "SELECT * FROM t_utilisateurs WHERE email = %s AND confirmkey = %s",
+                    $this->db->escape($email),
+                    $this->db->escape($key)
+                )
+            );
+            $user = $res->unbuffered_row();
+            if ($user) {
+                if ($user->confirme == 0) {
+                    $this->db->query(
+                        sprintf("UPDATE t_utilisateurs SET confirme = 1 WHERE id= %d", $user->id)
+                    );
+                    log_message('debug', '************** COMPTE OK ');
+                } else {
+                    log_message('debug', '************** COMPTE DEJA CONFIRME ');
+                }
+            } else {
+                log_message('debug', '************** PAS DE COMPTE !! ');
+            }
+        } ?>
+        <div class="alert alert-info" role="alert">
+            <h5>Votre compte a bien été activé.</h5>
+        </div>
+<?php
+        $this->view('/login/index');
     }
 }
