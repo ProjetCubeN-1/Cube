@@ -75,7 +75,8 @@ class Login extends ExtraController
 
             while ($row = $obj_result->unbuffered_row()) {
                 $hash = $row->mdp;
-                if (password_verify($pass, $hash) && $row->confirme == 1) {
+                //if (password_verify($pass, $hash) && $row->confirme == 1) {
+                if (($pass = $hash) && $row->confirme == 1) {
                     $this->session->login = true;
                     $this->session->id = $row->id_utilisateur;
                     return $this->view('/cube/accueil');
@@ -114,7 +115,9 @@ class Login extends ExtraController
             $email = $this->input->post('email');
 
             $new_pass = $this->input->post('pass');
-            $hashed_pasword = password_hash($new_pass, PASSWORD_DEFAULT);
+            //$hashed_pasword = password_hash($new_pass, PASSWORD_DEFAULT);
+            $hashed_pasword = hash('sha256', $new_pass);
+
             $date = date('Y-m-d H:i:s');
 
             //préparer la requête d'insertion SQL
