@@ -37,10 +37,12 @@
                   <input type="date" required="true" id="datenaissance" name="datenaissance" class="form-control mt-2">
 
                   <label class="mt-1" for="pass">Mot de passe*</label>
-                  <input type="password" required="true" id="pass" name="pass" class="form-control mt-2">
+                  <input type="password" required="true" pattern="(?=^.{8,}$)((?=.*d)|(?=.*W+))(?![.n])(?=.*[A-Z])
+(?=.*[a-z]).*" placeholder="Au moins 8 caractères, un chiffre, une lettre majuscule et une minuscule" title="Au moins 8 caractères, un chiffre, une lettre majuscule et une minuscule" id="pass" name="pass" class="form-control mt-2">
 
                   <label for="confmdp">Confirmez le mot de passe*</label>
-                  <input type="password" require="true" id="confmdp" name="confmdp" class="form-control mt-2">
+                  <input type="password" require="true" pattern="(?=^.{8,}$)((?=.*d)|(?=.*W+))(?![.n])(?=.*[A-Z])
+(?=.*[a-z]).*" placeholder="Au moins 8 caractères, un chiffre, une lettre majuscule et une minuscule" title="Au moins 8 caractères, un chiffre, une lettre majuscule et une minuscule" id="confmdp" name="confmdp" class="form-control mt-2">
 
                   </br>
 
