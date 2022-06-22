@@ -3,9 +3,9 @@
 <head>
 </head>
 
-<body style="font-family:Arial, Helvetica, sans-serif; font: size 12px">
+<body style="font-family:Arial, Helvetica, sans-serif; font: size 13px">
     <font>
-        <p style="font: size 12px;">
+        <p style="font: size 13px;">
             Bonjour,
             <br /> <br />
             Ce mail a pour but de vérifier votre compte.
@@ -22,9 +22,10 @@
     </p>
     </font>
     <br>
-    <div style="display: flex; margin-top: 30px; margin-left: -30px;">
-        <div class="flex">
-            <a href="localhost:8000"><img src="cid:irts"></a>
+    <div style="display: flex; margin-top: -50px; margin-left: -30px;">
+        <div style="display:flex;">
+            <!--<a href=""></a>-->
+
         </div>
     </div>
 </body>
