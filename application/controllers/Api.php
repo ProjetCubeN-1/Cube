@@ -30,10 +30,10 @@ class Api extends ExtraController
     }
     function connexion()
     {
-
         $data = json_decode(file_get_contents('php://input'));
         $email = $data->email;
         $pass = $data->pass;
+
 
         $query = sprintf(
             "SELECT * FROM t_utilisateurs WHERE email = %s",
@@ -45,9 +45,12 @@ class Api extends ExtraController
         while ($row = $obj_result->unbuffered_row()) {
             $hash = $row->mdp;
             //password_verify($data->pass, $hash) && $row->confirme == 1;
-            if (($pass == $hash) && $row->confirme == 1) {
-
-                $data = json_encode(file_get_contents($row));
+            if ($row->confirme == 1 && ($pass = $hash) && ($email == $row->email)) {
+                $message = json_encode('Authentification reussi');
+                echo $message;
+            } else {
+                $message = json_encode('Authentification echouee');
+                echo $message;
             }
         }
     }
@@ -57,12 +60,15 @@ class Api extends ExtraController
 
         $result_ressource = $this->ressource_model->get_ressource_menu();
 
+        $array_json = [];
         foreach ($result_ressource as $r) {
-            json_encode([
-                'id_ressource' => $r->id_ressource,
+            $array_json[] = [
+                'id_ressource' => intval($r->id_ressource),
                 'nom_ressources' => $r->nom_ressources,
                 'contenu' => $r->contenu
-            ]);
+            ];
+            $json = json_encode($array_json);
         }
+        echo $json;
     }
 }

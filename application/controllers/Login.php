@@ -103,26 +103,49 @@ class Login extends ExtraController
     function create()
     {
 
+        $this->load->model('ressource_model');
+        $result_utilisateurs = $this->ressource_model->get_utilisateurs();
+
+        $this->session->set_userdata('nom', $this->input->post('nom'));
+        $this->session->set_userdata('prenom', $this->input->post('prenom'));
+        $this->session->set_userdata('email', $this->input->post('email'));
+        $this->session->set_userdata('datenaissance', $this->input->post('datenaissance'));
+        $this->session->set_userdata('pass', $this->input->post('pass'));
+
+        $email = $this->input->post('email');
+
+        $new_pass = $this->input->post('pass');
+
+        $requete = sprintf(
+            "SELECT email FROM t_utilisateurs WHERE email = %s",
+            $this->db->escape($email)
+        );
+        $obj_result_util = $this->db->query($requete);
+        $result_util = $obj_result_util->row();
+
+
+        if (isset($result_util)) {
+            ?>
+            <div class="alert alert-danger" role="alert">
+                <h5>Compte déjà existant <a href="/login/index">Connectez-vous</a></h5>
+            </div>
+            <?php
+            return $this->view_login("/login/creation");
+        }
+
+
         if ($this->input->post('pass') == $this->input->post('confmdp')) {
+
 
             $longueurkey = 15;
             $key = "";
             for ($i = 1; $i < $longueurkey; $i++)
                 $key .= mt_rand(0, 9);
 
-            $this->session->set_userdata('nom', $this->input->post('nom'));
-            $this->session->set_userdata('prenom', $this->input->post('prenom'));
-            $this->session->set_userdata('email', $this->input->post('email'));
-            $this->session->set_userdata('datenaissance', $this->input->post('datenaissance'));
-            $this->session->set_userdata('pass', $this->input->post('pass'));
 
-            $email = $this->input->post('email');
-
-            $new_pass = $this->input->post('pass');
             //$hashed_pasword = password_hash($new_pass, PASSWORD_DEFAULT);
             $hashed_pasword = hash('sha256', $new_pass);
 
-            $date = date('Y-m-d H:i:s');
 
             //préparer la requête d'insertion SQL
             $req = sprintf(
@@ -138,21 +161,22 @@ class Login extends ExtraController
             );
             $this->db->query($req);
 
+            $conf_mail = yaml_parse_file(APPPATH . '/config/mail.yml');
 
             $mail = new PHPMailer;
             //Server settings
 
             //$mail->SMTPDebug = 2;                      //Enable verbose debug output
-            $mail->isSMTP();                                            //Send using SMTP
-            $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
-            $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-            $mail->Username   = 'cesicube.noreply@gmail.com';                     //SMTP username
-            $mail->Password   = 'iobjifegiwdcxyxo';                               //SMTP password
+            $mail->isSMTP();
+            $mail->Host       = $conf_mail['host'];
+            $mail->SMTPAuth   = true;
+            $mail->Username   = $conf_mail['username'];       //cesicube.noreply@gmail.com       
+            $mail->Password   = $conf_mail['password'];    //CubeCESI17 mdp de la vrai @mail
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
-            $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+            $mail->Port       = (int) $conf_mail['port'];                                  //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
             //Recipients
-            $mail->setFrom('cesicube.noreply@gmail.com', 'Cube CESI La Rochelle');
+            $mail->setFrom($conf_mail['from'], $conf_mail['from_name']);
             $mail->addAddress($email);     //Add a recipient
 
 
@@ -207,7 +231,7 @@ class Login extends ExtraController
             if ($user) {
                 if ($user->confirme == 0) {
                     $this->db->query(
-                        sprintf("UPDATE t_utilisateurs SET confirme = 1 WHERE id= %d", $user->id)
+                        sprintf("UPDATE t_utilisateurs SET confirme = 1 WHERE id_utilisateur= %d", $user->id_utilisateur)
                     );
                 } else {
                 }
@@ -218,6 +242,6 @@ class Login extends ExtraController
             <h5>Votre compte a bien été activé.</h5>
         </div>
 <?php
-        return $this->view('/cube/accueil');
+        return $this->view_login('/login/authentification');
     }
 }

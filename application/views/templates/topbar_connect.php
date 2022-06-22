@@ -5,10 +5,11 @@
             <ul class="c-header-nav d-md-down-none">
             </ul>
 
-            <a href="/cube/accueil" ><img class="ml-5" src="/img/logo.png" width="150" height="80"></a>
+            <a href="/cube/accueil"><img class="ml-5" src="/img/logo.png" width="150" height="80"></a>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             </div>
+
             <?php if ($id_result->type == "super_admin" or $id_result->type == "admin" or $id_result->type == "modérateur") {
             ?>
                 <a class="navbar-brand" href="/admin/tab_board">
