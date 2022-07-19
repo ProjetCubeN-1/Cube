@@ -39,7 +39,7 @@ class Login extends ExtraController
         $this->session->login = false;
 
         if ($this->input->post('action') == 'nc_connect') {
-            $query = sprintf("SELECT t_type.type,t_utilisateurs.id_utilisateur,t_utilisateurs.id_type FROM t_type INNER JOIN t_utilisateurs ON t_type.id_type = t_utilisateurs.id_type WHERE t_utilisateurs.id_type = '4'");
+            $query = sprintf("SELECT t_type.type,t_utilisateurs.id_utilisateur,t_utilisateurs.id_type FROM t_type INNER JOIN t_utilisateurs ON t_type.id_type = t_utilisateurs.id_type WHERE t_utilisateurs.id_type = '5'");
 
             //$query = sprintf(
             //    "SELECT * FROM t_utilisateurs WHERE t_utilisateurs.type= 'citoyen_nc'",
@@ -59,7 +59,6 @@ class Login extends ExtraController
             }
         }
     }
-
 
     function auth()
     {
@@ -198,6 +197,7 @@ class Login extends ExtraController
                 </div>
         <?php
                 $this->view_login('/login/authentification');
+                $this->session->key=$key;
             }
         } else {
             $this->redirect('/login/creation');

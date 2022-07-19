@@ -23,14 +23,14 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             </div>
         </div>
-
+<?php if($this->session->id !="5"){ ?>
             <a class="c-header-nav-link mr-4" href="/cube/creation_ressources">
                 <i class="fas fa-plus fa-lg" style="color:white;"></i>
             </a>
-
+<?php } ?>
+            
             <a class="c-header-nav-link mr-3" href="/login/index">
                 <i class="fas fa-power-off fa-lg" style="color:white;"></i>
             </a>
-
 
     </nav>
