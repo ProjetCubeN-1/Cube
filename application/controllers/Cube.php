@@ -75,11 +75,13 @@ class Cube extends ExtraController
 
         $result_ressource = $this->ressource_model->get_ressource_menu();
         $get_categorie = $this->admin_model->get_categorie();
+        $get_type = $this->admin_model->get_type();
 
 
         $this->view_portal('/cube/creation_ressources', [
             'result' => $result_ressource,
             'categorie' => $get_categorie,
+            'type' => $get_type
         ]);
     }
 
@@ -125,23 +127,21 @@ class Cube extends ExtraController
         $this->load->library('unit_test');
 
         $req = sprintf(
-            "INSERT INTO t_ressources (nom_ressources,id_type_ressource,contenu,id_categorie,id_type_relation,id_utilisateur,valide) 
-            VALUES (%s,%s,%s,%s,%s,%d,'false')",
+            "INSERT INTO t_ressources (nom_ressources,id_categorie,id_type_relation,contenu,id_type_ressource,id_utilisateur,valide) 
+            VALUES (%s,%s,%s,%s,%s,%s,'false')",
             $this->db->escape($this->input->post('text_titre')),
-            $this->db->escape($this->input->post('type_contenu')),
-            $this->db->escape($this->input->post('text_contenu')),
-            $this->db->escape($this->input->post('text_categorie')),
+            $this->db->escape($this->input->post('categorie')),
             $this->db->escape($this->input->post('type_relation')),
+            $this->db->escape($this->input->post('text_contenu')),
+            $this->db->escape($this->input->post('type_contenu')),
             $this->db->escape($this->session->id)
         );
+        
         $test = $this->db->query($req);
 
         $last_res_id = $this->db->insert_id();
 
-        $test_name = "coucou";
         $this->session->ressource_id =  $last_res_id;
-
-        echo $this->unit->run($req, $test, $test_name);
 
         $this->redirect('/cube/accueil');
     }

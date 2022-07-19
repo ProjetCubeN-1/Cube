@@ -69,4 +69,12 @@ class Admin_model extends CI_Model
         $result_categorie = $obj_result_categorie;
         return $result_categorie;
     }
+
+    public function get_type()
+    {
+        $requete_type = sprintf("SELECT * FROM t_type_ressource");
+        $obj_result_type = $this->db->query($requete_type);
+        $result_type = $obj_result_type;
+        return $result_type;
+    }
 }

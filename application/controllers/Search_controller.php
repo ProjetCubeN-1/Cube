@@ -3,7 +3,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Search_controller extends ExtraController
 {
-
+    // Barre de recherche
     public function searchfunction()
     {
         $search_args = $_GET['search_ressources'];
