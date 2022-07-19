@@ -101,7 +101,8 @@ class Api extends ExtraController
             $array_json[] = [
                 'id_ressource' => intval($r->id_ressource),
                 'nom_ressources' => $r->nom_ressources,
-                'contenu' => $r->contenu
+                'contenu' => $r->contenu,
+                'valide' => $r->valide
             ];
             $json = json_encode($array_json);
         }

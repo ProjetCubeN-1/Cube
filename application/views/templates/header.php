@@ -19,6 +19,7 @@
     <script src="/vendor/components/jquery/jquery.min.js"></script>
     <script src="/vendor/coreui/coreui/dist/js/coreui.bundle.min.js"></script>
     <script src="https://cdn.tiny.cloud/1/e66dlkvh0jrbrgeljzqy05y24sbmfoc00eolal10g1p6d8dx/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </head>
 

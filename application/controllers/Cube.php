@@ -9,6 +9,7 @@ class Cube extends ExtraController
         $this->add_path("Accueil", '/cube/Accueil', '');
         $this->view('/cube/accueil');
     }
+
     public function mail()
     {
         $longueurkey = 15;
@@ -67,6 +68,23 @@ class Cube extends ExtraController
         ]);
     }
 
+    public function statistiques()
+    {
+        $this->load->model('ressource_model');
+        $result_ressource = $this->ressource_model->get_ressource_menu();
+
+
+        $ressource_avec_id = [];
+        $ressources_valide = [];
+        foreach ($result_ressource as $rs) {
+        }
+        $ressource_avec_id[] = $rs->id_ressource;
+        $ressources_valide[] = $rs->valide;
+        $this->view_portal("/cube/statistiques", [
+            "ressource_avec_id" => $ressource_avec_id,
+            "ressource_valide" => $ressources_valide
+        ]);
+    }
     public function creation_ressources($ressources_menu = null, $requete = null)
     {
         $this->load->model('ressource_model');
