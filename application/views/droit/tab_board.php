@@ -66,12 +66,13 @@ if ($id_result->type == "super_admin" or $id_result->type == "admin") { //accede
                                         </td>
                                         <?php if ($info->type != "citoyen_nc") { ?>
                                             <td><input type="submit" class="btn btn-info" value="Valider"></td>
-                                <?php }
-                                    }
-                                }
-                                ?>
+
                                     </tr>
                                 </form>
+                    <?php }
+                                    }
+                                }
+                    ?>
                     </tbody>
                 </table>
             </div>
@@ -87,20 +88,21 @@ if ($id_result->type == "super_admin" or $id_result->type == "admin") { //accede
         </div>
         <div class="card-body">
             <div class="col-12">
-                <form method="post" action="/admin/desactive_citoyen">
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th>nom</th>
-                                <th>prenom</th>
-                                <th>email</th>
-                                <th>type</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php
-                            foreach ($citoyen->result() as $conf_citoyen) { ?>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>nom</th>
+                            <th>prenom</th>
+                            <th>email</th>
+                            <th>type</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                        foreach ($citoyen->result() as $conf_citoyen) { ?>
+                            <form method="post" action="/admin/desactive_citoyen">
+
                                 <tr>
                                     <td style="display:none;"><input type="text" readonly name="id_user" value="<?php echo $conf_citoyen->id_utilisateur ?>"></td>
                                     <td><?php echo $conf_citoyen->nom ?></td>
@@ -121,10 +123,11 @@ if ($id_result->type == "super_admin" or $id_result->type == "admin") { //accede
                                         <input type="submit" name="action" class="btn btn-warning" value="Valider"></input>
                                     </td>
                                 </tr>
-                            <?php } ?>
-                        </tbody>
-                    </table>
-                </form>
+                            </form>
+
+                        <?php } ?>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>

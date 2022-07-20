@@ -10,6 +10,13 @@ class Ressource_model extends CI_Model
         $ressources_menu = $obj_result->result();
         return $ressources_menu;
     }
+    public function get_ressource_for_statistique()
+    {
+        $requete = sprintf("SELECT count(*) FROM t_ressources");
+        $obj_result = $this->db->query($requete);
+        $ressources_menu = $obj_result->result();
+        return $ressources_menu;
+    }
 
     public function get_ressources_cote()
     {

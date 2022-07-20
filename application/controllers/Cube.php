@@ -1,6 +1,10 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
 class Cube extends ExtraController
 {
     public function accueil()
@@ -154,7 +158,7 @@ class Cube extends ExtraController
             $this->db->escape($this->input->post('type_contenu')),
             $this->db->escape($this->session->id)
         );
-        
+
         $test = $this->db->query($req);
 
         $last_res_id = $this->db->insert_id();
@@ -222,7 +226,43 @@ class Cube extends ExtraController
         $this->load->model('ressource_model');
 
         $this->ressource_model->ajout_categorie();
+        $conf_mail = yaml_parse_file(APPPATH . '/config/mail.yml');
 
-        $this->redirect('/cube/creation_ressources');
+        $mail = new PHPMailer;
+        //Server settings
+
+        //$mail->SMTPDebug = 2;                      //Enable verbose debug output
+        $mail->isSMTP();
+        $mail->Host       = $conf_mail['host'];
+        $mail->SMTPAuth   = true;
+        $mail->Username   = $conf_mail['username'];       //cesicube.noreply@gmail.com       
+        $mail->Password   = $conf_mail['password'];    //CubeCESI17 mdp de la vrai @mail
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
+        $mail->Port       = (int) $conf_mail['port'];                                  //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+
+        //Recipients
+        $mail->setFrom($conf_mail['from'], $conf_mail['from_name']);
+        $mail->addAddress($conf_mail['username']);     //Add a recipient
+
+
+        //Attachments
+
+        //Content
+        $mail->isHTML(true);
+        $mail->CharSet = "UTF-8"; //Set email format to HTML
+        $mail->Subject = '[CUBE] vérifier votre compte';
+        $mail->Body = $this->load->view('/cube/mail_confirm', [
+            'url' => $this->config->item('base_url') . 'login/confirmation/?email=' . urlencode($this->session->email) . '&key=' . $key
+        ], true);
+        //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+
+        if ($mail->send()) {
+?>
+            <div class="alert alert-info" role="alert">
+                <h5>Veuillez verifier vos mails pour activer votre compte.</h5>
+            </div>
+<?php
+            $this->redirect('/cube/creation_ressources');
+        }
     }
 }
