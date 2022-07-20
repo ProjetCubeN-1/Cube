@@ -150,7 +150,7 @@ class Cube extends ExtraController
 
         $req = sprintf(
             "INSERT INTO t_ressources (nom_ressources,id_categorie,id_type_relation,contenu,id_type_ressource,id_utilisateur,valide) 
-            VALUES (%s,%s,%s,%s,%s,%s,'false')",
+            VALUES (%s,%s,%s,%s,%s,%s,'true')",
             $this->db->escape($this->input->post('text_titre')),
             $this->db->escape($this->input->post('categorie')),
             $this->db->escape($this->input->post('type_relation')),
@@ -165,7 +165,47 @@ class Cube extends ExtraController
 
         $this->session->ressource_id =  $last_res_id;
 
-        $this->redirect('/cube/accueil');
+        // Envoie de mail pour avertir la création d'une nouvelle ressource
+        $conf_mail = yaml_parse_file(APPPATH . '/config/mail.yml');
+
+        $mail = new PHPMailer;
+        //Server settings
+
+        //$mail->SMTPDebug = 2;                      //Enable verbose debug output
+        $mail->isSMTP();
+        $mail->Host       = $conf_mail['host'];
+        $mail->SMTPAuth   = true;
+        $mail->Username   = $conf_mail['username'];       //cesicube.noreply@gmail.com       
+        $mail->Password   = $conf_mail['password'];    //CubeCESI17 mdp de la vrai @mail
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
+        $mail->Port       = (int) $conf_mail['port'];                                  //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+
+        //Recipients
+        $mail->setFrom($conf_mail['from'], $conf_mail['from_name']);
+        $mail->addAddress($conf_mail['username']);     //Add a recipient
+
+
+        //Attachments
+
+        //Content
+        $mail->isHTML(true);
+        $mail->CharSet = "UTF-8"; //Set email format to HTML
+        $mail->Subject = '[CUBE] Une nouvelle ressource à été créée !';
+        $mail->Body = $this->load->view('/cube/mail_ressource', [
+            'url' => $this->config->item('base_url') . 'login/confirmation/?email=' . urlencode($this->session->email) . '&key=' . $key
+        ], true);
+        //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+
+        if ($mail->send()) {
+?>
+            <div class="alert alert-info" role="alert">
+                <h5>Votre catégorie a bien été créée.</h5>
+            </div>
+        <?php
+
+
+            $this->redirect('/cube/accueil');
+        }
     }
 
     public function ajout_favoris($ressource_id = null)
@@ -226,6 +266,8 @@ class Cube extends ExtraController
         $this->load->model('ressource_model');
 
         $this->ressource_model->ajout_categorie();
+
+        // Envoie de mail pour avertir la création d'une nouvelle catégorie
         $conf_mail = yaml_parse_file(APPPATH . '/config/mail.yml');
 
         $mail = new PHPMailer;
@@ -250,16 +292,16 @@ class Cube extends ExtraController
         //Content
         $mail->isHTML(true);
         $mail->CharSet = "UTF-8"; //Set email format to HTML
-        $mail->Subject = '[CUBE] vérifier votre compte';
-        $mail->Body = $this->load->view('/cube/mail_confirm', [
+        $mail->Subject = '[CUBE] Une nouvelle catégorie à été créée !';
+        $mail->Body = $this->load->view('/cube/mail_categorie', [
             'url' => $this->config->item('base_url') . 'login/confirmation/?email=' . urlencode($this->session->email) . '&key=' . $key
         ], true);
         //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
         if ($mail->send()) {
-?>
+        ?>
             <div class="alert alert-info" role="alert">
-                <h5>Veuillez verifier vos mails pour activer votre compte.</h5>
+                <h5>Votre catégorie a bien été créée.</h5>
             </div>
 <?php
             $this->redirect('/cube/creation_ressources');

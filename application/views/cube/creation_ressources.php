@@ -10,11 +10,11 @@
       <form method="post" action="/cube/publier_ressources">
         <div>
           <h6>Titre :</h6>
-          <input class="form-control form-control" id="text_titre" name="text_titre"></input><br>
+          <input class="form-control form-control" id="text_titre" name="text_titre" required></input><br>
         </div>
         <div>
           <h6>Type :</h6>
-          <select class="form-control" id="type_contenu" name="type_contenu" value="">
+          <select required class="form-control" id="type_contenu" name="type_contenu" value="">
             <?php
             foreach ($type->result() as $typ) {
 
@@ -27,12 +27,11 @@
         </div>
         <div>
           <h6>Contenu :</h6>
-          <textarea class="form-control form-control-lg" id="text_contenu" name="text_contenu"></textarea><br>
+          <textarea class="form-control form-control-lg" id="text_contenu" name="text_contenu" required></textarea><br>
         </div>
         <div>
           <h6>Catégorie :</h6>
           <select class="form-control" id="categorie" name="categorie">
-            <option value="None">Indiquer la catégorie</option>
 
             <?php
             foreach ($categorie->result() as $cat) {
@@ -50,7 +49,6 @@
           ?>
           <h6 class="mt-3">Type de relation :</h6>
           <select class="form-control" id="type_relation" name="type_relation" value="" required>
-            <option value="None">Indiquer le type de relation</option>
             <option value="1">Professionnelle</option>
             <option value="2">Famille</option>
           </select><br />

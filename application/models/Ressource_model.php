@@ -95,7 +95,7 @@ class Ressource_model extends CI_Model
     public function ajout_categorie()
     {
         $req = sprintf(
-            "INSERT INTO t_categorie (nom_categorie, id_utilisateur, valide_categorie) VALUES (%s,%s, 'false') ",
+            "INSERT INTO t_categorie (nom_categorie, id_utilisateur, valide_categorie) VALUES (%s,%s, 'true') ",
             $this->db->escape($this->input->post('nouvelle_categorie')),
             $this->db->escape($this->session->id)
         );
