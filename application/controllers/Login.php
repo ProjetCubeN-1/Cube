@@ -79,7 +79,7 @@ class Login extends ExtraController
             while ($row = $obj_result->unbuffered_row()) {
                 $hash = $row->mdp;
                 //if (password_verify($pass, $hash) && $row->confirme == 1) {
-                if (($pass = $hash) && $row->confirme == 1) {
+                if (password_verify($pass, $hash) && $row->confirme == 1) {
                     $this->session->login = true;
                     $this->session->id = $row->id_utilisateur;
                     return $this->view('/cube/accueil');
@@ -112,6 +112,8 @@ class Login extends ExtraController
         $this->session->set_userdata('pass', $this->input->post('pass'));
 
         $email = $this->input->post('email');
+        $nom = $this->input->post('nom');
+        $prenom = $this->input->post('prenom');
 
         $new_pass = $this->input->post('pass');
 
@@ -197,7 +199,38 @@ class Login extends ExtraController
                 </div>
         <?php
                 $this->view_login('/login/authentification');
-                $this->session->key=$key;
+                $this->session->key = $key;
+                // Envoie de mail pour avertir la création d'un nouveau compte
+        if ($result_utilisateurs['confirme']= 1) {
+
+            $mail_signup = new PHPMailer;
+            //Server settings
+
+            //$mail->SMTPDebug = 2;                      //Enable verbose debug output
+            $mail_signup->isSMTP();
+            $mail_signup->Host       = $conf_mail['host'];
+            $mail_signup->SMTPAuth   = true;
+            $mail_signup->Username   = $conf_mail['username'];       //cesicube.noreply@gmail.com       
+            $mail_signup->Password   = $conf_mail['password'];    //CubeCESI17 mdp de la vrai @mail
+            $mail_signup->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
+            $mail_signup->Port       = (int) $conf_mail['port'];                                  //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+
+            //Recipients
+            $mail_signup->setFrom($conf_mail['from'], $conf_mail['from_name']);
+            $mail_signup->addAddress($conf_mail['username']);     //Add a recipient
+
+
+            //Attachments
+
+            //Content
+            $mail_signup->isHTML(true);
+            $mail_signup->CharSet = "UTF-8"; //Set email format to HTML
+            $mail_signup->Subject = '[CUBE] Un nouvel utilisateur s\'est inscrit !';
+            $mail_signup->Body = $this->load->view('/cube/mail_signup', [ 'nom' => $nom, 'prenom' => $prenom,
+            ], true);
+            //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+            $mail_signup->send();
+        }
             }
         } else {
             $this->redirect('/login/creation');
