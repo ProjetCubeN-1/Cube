@@ -81,7 +81,7 @@ class Api extends ExtraController
         while ($row = $obj_result->unbuffered_row()) {
             $hash = $row->mdp;
             //password_verify($data->pass, $hash) && $row->confirme == 1;
-            if ($row->confirme == 1 && ($pass = $hash) && ($email == $row->email)) {
+            if ($row->confirme == 1 && (password_verify($data->pass, $hash)) && ($email == $row->email)) {
                 $message = json_encode('Authentification reussi');
                 echo $message;
             } else {

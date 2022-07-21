@@ -1,6 +1,9 @@
 <div class="p-4">
     <div class="card">
         <div class="card-body">
+            <button class="btn btn-info" id="btn-download">
+                Download
+            </button>
             <div>
                 <canvas id="myChart" width="100" height="30"></canvas>
             </div>
@@ -37,4 +40,14 @@
         document.getElementById('myChart'),
         config
     );
+    var image = myChart.toBase64Image();
+    console.log(image);
+
+    document.getElementById('btn-download').onclick = function() {
+            // Trigger the download
+            var a = document.createElement('a');
+            a.href = myChart.toBase64Image();
+            a.download = 'my_file_name.png';
+            a.click();
+    }
 </script>
