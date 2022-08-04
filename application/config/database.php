@@ -73,6 +73,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 $active_group = 'default';
 $query_builder = TRUE;
 
+<<<<<<< Updated upstream
 if (ENVIRONMENT == "production") { //je suis en developpement
 	$db['default'] = array(
 		'dsn'	=> '',
@@ -105,9 +106,14 @@ if (ENVIRONMENT == "production") { //je suis en developpement
 	$db['default'] = array(
 		'dsn'	=> '',
 		'hostname' => 'localhost:8889',
+=======
+	$db['default'] = array(
+		'dsn'	=> '',
+		'hostname' => 'localhost',
+>>>>>>> Stashed changes
 		'username' => 'root',
 		'password' => 'root',
-		'database' => 'cube_dev',
+		'database' => '',
 		'dbdriver' => 'mysqli',
 		'dbprefix' => '',
 		'pconnect' => FALSE,
@@ -123,4 +129,3 @@ if (ENVIRONMENT == "production") { //je suis en developpement
 		'failover' => array(),
 		'save_queries' => TRUE
 	);
-}

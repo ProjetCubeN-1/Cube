@@ -1,1 +1,0 @@
-<div class="c-wrapper c-fixed-components">

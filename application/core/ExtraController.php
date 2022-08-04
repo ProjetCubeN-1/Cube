@@ -3,11 +3,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class ExtraController extends CI_Controller
 {
-    var $title = 'Accueil';
-    var $path = [["text" => "Accueil", 'url' => '/cube/accueil', 'title' => "Retour à l'accueil"]];
-    var $acl = false; // access control list  // doit d'acces
-    var $localdatas = [];
-
 
     protected function  redirect($url)
     {
@@ -18,11 +13,12 @@ class ExtraController extends CI_Controller
     {
         parent::__construct();
 
-        if (!$this->session->login && $this->acl) {
+        if (!$this->session->login) {
             $this->redirect('/login');
             die();
         }
     }
+<<<<<<< Updated upstream
     protected function json($data)
     {
         header('Content-type: application/json');
@@ -153,4 +149,6 @@ class ExtraController extends CI_Controller
 
         $this->load->view('/templates/footer');
     }
+=======
+>>>>>>> Stashed changes
 }

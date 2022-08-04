@@ -1,4 +1,5 @@
-#Back
+Ceci est le dossier de création d'un projet avec Codeigniter
 
-Je suis en Production pour le moment donc j'utilise la Base de donnée cube
-cette option ce change dans le index.php puis vérifier dans le database.php
+il y a composer deja installé.
+
+Il faut rename le dossier et le prendre de GitHub.
